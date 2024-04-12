@@ -1,2 +1,2 @@
 # PROGRAMMING TECHNIQUES FOR EMBEDDED SYSTEMS I - 🖥️
-## 
+## Developer: 👥
