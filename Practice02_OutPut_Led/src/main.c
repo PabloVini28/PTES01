@@ -12,7 +12,7 @@
 #define CM_PER_GPIO2_CLKCTRL_MODULEMODE_ENABLE   						(0x2u) //Table 8-59. CM_PER_GPIO2_CLKCTRL Register 
 #define CM_PER_GPIO2_CLKCTRL_OPTFCLKEN_GPIO_2_GDBCLK  					(0x00040000u)//Table 8-59. CM_PER_GPIO2_CLKCTRL 
 
-// endereçõs de registradores para configurar os pinos do modo de controle
+// endereços de registradores para configurar os pinos do modo de controle
 #define CM_conf_gpmc_ben1      	 								0x0878
 #define CM_conf_gpmc_a5         								0x0854// Table 9-8. CONTROL_MODULE REGISTERS (((
 #define CM_conf_gpmc_a6         								0x0818// Table 9-8. CONTROL_MODULE REGISTERS (( pode usar do 
@@ -50,12 +50,6 @@ static void ledToggle2_e();
 static void ledToggle3_e();
 static void watchdog();
 
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  main
- *  Description:  
- * =====================================================================================
- */
 int _main(void){
 
 	watchdog();
@@ -150,11 +144,7 @@ int _main(void){
 	}
 	return(0);
 }
-/*FUNCTION*-------------------------------------------------------
-*
-* Function Name : Delay
-* Comments      :
-*END*-----------------------------------------------------------*/
+
 void delay(int i){
 	volatile unsigned int ra;
 	if(i < 3){
@@ -168,14 +158,6 @@ void delay(int i){
 	}
 }
 
-
-
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  ledInit
- *  Description:  
- * =====================================================================================
- */
 
 void ledInit_e( ){
 	
