@@ -12,7 +12,7 @@
 #define CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK  					(0x00040000u)//Table 8-58. CM_PER_GPIO1_CLKCTRL Register Field Descriptions(USAR BIT 0 ou 10
 
 
-// endereçõs de registradores para configurar os pinos do modo de controle
+// endereços de registradores para configurar os pinos do modo de controle
 #define CM_conf_gpmc_ben1      	 								0x0878
 #define CM_conf_gpmc_a5         								0x0854// Table 9-8. CONTROL_MODULE REGISTERS (((
 #define CM_conf_gpmc_a6         								0x0818// Table 9-8. CONTROL_MODULE REGISTERS (( pode usar do pino 1 ao 15
@@ -47,12 +47,6 @@ static void ledToggle2();
 static void ledToggle3();
 static void watchdog();
 
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  main
- *  Description:  
- * =====================================================================================
- */
 int _main(void){
 	watchdog();
 	flagBlink0=0;	
