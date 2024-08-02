@@ -1,149 +1,126 @@
 #include	"hw_types.h"
 #include	"soc_AM335x.h"
 
-/*****************************************************************************
-**                INTERNAL MACRO DEFINITIONS
-*****************************************************************************/
 #define TIME															1000000
 #define TOGGLE          												(0x01u)
-//registradores de configuração do clock
 
-#define CM_PER_GPIO2                                                    0XB0 // 
-#define CM_PER_GPIO2_CLKCTRL_MODULEMODE_ENABLE   						(0x2u) //Table 8-59. CM_PER_GPIO2_CLKCTRL Register 
-#define CM_PER_GPIO2_CLKCTRL_OPTFCLKEN_GPIO_2_GDBCLK  					(0x00040000u)//Table 8-59. CM_PER_GPIO2_CLKCTRL 
+//configuração do GPIO1
+#define CM_PER_GPIO1                                                    0XAC // 
+#define CM_PER_GPIO1_CLKCTRL_MODULEMODE_ENABLE   						(0x2u) //Table 8-59. 
+#define CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK  					(0x00040000u)
 
 // endereços de registradores para configurar os pinos do modo de controle
-#define CM_conf_gpmc_ben1      	 								0x0878
-#define CM_conf_gpmc_a5         								0x0854// Table 9-8. CONTROL_MODULE REGISTERS (((
-#define CM_conf_gpmc_a6         								0x0818// Table 9-8. CONTROL_MODULE REGISTERS (( pode usar do 
-#define CM_conf_gpmc_a7         								0x081C// Table 9-8. CONTROL_MODULE REGISTERS ((
-#define CM_conf_gpmc_a8         								0x0820// Table 9-8. CONTROL_MODULE REGISTERS ((((
-#define CM_conf_gpmc_ad11                                       0x0820
-#define CM_conf_gpmc_ad12         								0x0830
-
-// endereços de registradores para configurar o watchdog
-#define WDT1 													0x44E35000
-#define WDT_WSPR 												0x48 // temporizador watchdog / Registro de proteção de serviço de gravação do cronômetro de vigilância 
-#define WDT_WWPS												0x34 // Escrever registro de status postado / Este registrador contém os bits de postagem de gravação para todos os registradores funcionais graváveis.
-#define W_PEND_WSPR												(1<< 0x4u)
-
+#define CM_conf_gpmc_ben1      	 								0x878
+#define conf_gpmc_ad13                                          0x834
+#define conf_gpmc_ad12                                          0x830
+#define GPMC_A1                                                 0X844
 
 // manipular diretamente os registradores GPIO correspondentes( entrada, saida, setar, limpar)
-#define GPIO_OE                 								0x134 //controla a capacidade de saída/entrada para cada pino - Table 25-5. GPIO Registers
-#define GPIO_CLEARDATAOUT       								0x190 // limpar dados de saida - Table 25-5. GPIO Registers
-#define GPIO_SETDATAOUT         								0x194 // setar dados de saida - - Table 25-5. GPIO Registers
+#define GPIO_OE                 								0x134 
+#define GPIO_CLEARDATAOUT       								0x190 
+#define GPIO_SETDATAOUT         								0x194 
 
-//variaveis temporarias para controlar o comportamento do leds
-unsigned int flagBlink0_e;
-unsigned int flagBlink1_e;
-unsigned int flagBlink2_e;
-unsigned int flagBlink3_e;
+unsigned int led0_e;
+unsigned int led1_e;
+unsigned int led2_e;
+unsigned int led3_e;
 
-/*****************************************************************************
-**                INTERNAL FUNCTION PROTOTYPES
-*****************************************************************************/
 static void delay(int);
-static void ledInit_e();
-static void ledToggle0_e();
-static void ledToggle1_e();
-static void ledToggle2_e();
-static void ledToggle3_e();
-static void watchdog();
+static void iniciaLed_e();
+static void ativaLed0_e();
+static void ativaLed1_e();
+static void ativaLed2_e();
+static void ativaLed3_e();
 
 int _main(void){
 
 	watchdog();
+  	led0_e = 0;
+	led1_e = 0;
+	led2_e = 0;
+	led3_e = 0;
   	
-  	flagBlink0_e = 0;
-  	flagBlink1_e = 0;
-	flagBlink2_e = 0;
-  	flagBlink3_e = 0;
-  	
-  	ledInit_e();
+  	iniciaLed_e();
   	
   	int i;
   	for(i = 0; i <= 16; i++){
     	if (i == 1){
-    	ledToggle0_e();
+    	ativaLed0_e();
 		delay(i);
 	}if (i == 2){
-		ledToggle0_e();
-		ledToggle1_e();
+		ativaLed0_e();
+		ativaLed1_e();
 		delay(i);
 	}if (i == 3){
-		ledToggle0_e();
-		int x= 3;
-		delay(x);
+		ativaLed0_e();
+		delay(i);
 	}if (i == 4){
-		ledToggle0_e();
-		ledToggle1_e();
-		ledToggle2_e();
-		int x= 3;
-		delay(x);
+		ativaLed2_e();
+		ativaLed0_e();
+		ativaLed1_e();
+		delay(i);
 	}if (i == 5){
-    		ledToggle0_e();
-		int x= 3;
-		delay(x);
+    	ativaLed0_e();
+		delay(i);
 	}if (i == 6){
-		ledToggle0_e();
-		ledToggle1_e();
-		int x= 3;
-		delay(x);
+		ativaLed0_e();
+		ativaLed1_e();
+		delay(i);
 	}if (i == 7){
-		ledToggle0_e();
-		int x= 3;
-		delay(x);
-	}if (i == 8){
-    	ledToggle0_e();
-		ledToggle1_e();
-		ledToggle2_e();
-		ledToggle3_e();
-		int x= 3;
-		delay(x);
-	}if (i == 9){
-		ledToggle0_e();
-		int x= 3;
-		delay(x);
-	}if (i == 10){
-		ledToggle0_e();
-		ledToggle1_e();
-		int x= 3;
-		delay(x);
-	}if (i == 11){
-		ledToggle0_e();
-		int x= 3;
-		delay(x);
-	}if (i == 12){
-		ledToggle0_e();
-		ledToggle1_e();
-		ledToggle2_e();
-		int x= 3;
-		delay(x);
-	}if (i == 13){
-		ledToggle0_e();
-		int x= 3;
-		delay(x);
-	}if (i == 14){
-		ledToggle0_e();
-		ledToggle1_e();
-		int x= 3;
-		delay(x);
-	}if (i == 15){
-		ledToggle0_e();
-		int x= 3;
-		delay(x);
-	}if(i == 16){
-		i= 0;
-		ledToggle0_e();
-		ledToggle1_e();
-		ledToggle2_e();
-		ledToggle3_e();
-		int x= 3;
-		delay(x);
+		ativaLed0_e();
+		delay(i);
 	}
+	if(i == 8){
+		ativaLed0_e();
+		ativaLed1_e();
+		ativaLed2_e();
+		ativaLed3_e();
+		delay(i);
 	}
+	if(i == 9){
+		ativaLed0_e();
+		delay(i);
+	}
+	if(i == 10){
+		ativaLed0_e();
+		ativaLed1_e();
+		delay(i);
+	}
+	if(i == 11){
+		ativaLed0_e();
+		delay(i);
+	}
+	if(i == 12){
+		ativaLed0_e();
+		ativaLed1_e();
+		ativaLed2_e();
+		delay(i);
+	}
+	if(i == 13){
+		ativaLed0_e();
+		delay(i);
+	}
+	if(i == 14){
+		ativaLed0_e();
+		ativaLed1_e();
+		delay(i);
+	}
+	if(i == 15){
+		ativaLed0_e();
+		delay(i);
+	}
+	if(i == 16){
+		ativaLed0_e();
+		ativaLed1_e();
+		ativaLed2_e();
+		ativaLed3_e();
+		delay(i);
+		i = 0;
+	}
+}
 	return(0);
 }
+	
 
 void delay(int i){
 	volatile unsigned int ra;
@@ -158,80 +135,68 @@ void delay(int i){
 	}
 }
 
-
-void ledInit_e( ){
+void iniciaLed_e( ){
 	
 	unsigned int val_temp; 	
-	HWREG(SOC_CM_PER_REGS+CM_PER_GPIO2) |= CM_PER_GPIO2_CLKCTRL_OPTFCLKEN_GPIO_2_GDBCLK | CM_PER_GPIO2_CLKCTRL_MODULEMODE_ENABLE; // configuração de clock
+	HWREG(SOC_CM_PER_REGS+CM_PER_GPIO1) |= CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK| CM_PER_GPIO1_CLKCTRL_MODULEMODE_ENABLE;// configuração de clock
 	
 	/*-----------------------------------------------------------------------------
-	 * MULTIPLEXAR O PINO NO MODULO DE CONTROLE GPI02
+	 * MULTIPLEXAR O PINO NO MODULO DE CONTROLE GPI01
 	 *-----------------------------------------------------------------------------*/
- 	HWREG(SOC_CONTROL_REGS+CM_conf_gpmc_ad11) |= 7; 
- 	HWREG(SOC_CONTROL_REGS+CM_conf_gpmc_ad12) |= 7;		
+ 	HWREG(SOC_CONTROL_REGS+CM_conf_gpmc_ben1) |= 7;
+	HWREG(SOC_CONTROL_REGS+conf_gpmc_ad13) |= 7;
+	HWREG(SOC_CONTROL_REGS+conf_gpmc_ad12) |= 7;
+	HWREG(SOC_CONTROL_REGS+GPMC_A1) |= 7;
  
 	/*-----------------------------------------------------------------------------
 	 *  DEFINE OS PINOS COMO SAÍDA
 	 *-----------------------------------------------------------------------------*/
-	val_temp = HWREG(SOC_GPIO_2_REGS+GPIO_OE);
-	val_temp &= ~(1<<6);                                                            //25.4.10 GPIO_OE Register
-	val_temp &= ~(1<<7);
-	val_temp &= ~(1<<8);
-	val_temp &= ~(1<<9);
-	HWREG(SOC_GPIO_2_REGS+GPIO_OE) = val_temp;
+	val_temp = HWREG(SOC_GPIO_1_REGS+GPIO_OE);
+	val_temp &= ~(1<<28);  
+	val_temp &= ~(1<<13);    
+	val_temp &= ~(1<<12);  
+	val_temp &= ~(1<<17);                                                   
+	HWREG(SOC_GPIO_1_REGS+GPIO_OE) = val_temp;
 	
-}/* -----  configura o clock e o modo de operação do módulo GPIO2, configura o pino GPIO2_6 ----- */
+}
 
-void ledToggle0_e(){
-		flagBlink0_e ^= TOGGLE;
+void ativaLed0_e(){
+		led0_e ^= TOGGLE;
 
-		if(flagBlink0_e){
-			HWREG(SOC_GPIO_2_REGS+GPIO_SETDATAOUT) = 1<<6;
+		if(led0_e){
+			HWREG(SOC_GPIO_1_REGS+GPIO_SETDATAOUT) = 1<<28;
 		}else{
-			HWREG(SOC_GPIO_2_REGS+GPIO_CLEARDATAOUT) = 1<<6;
+			HWREG(SOC_GPIO_1_REGS+GPIO_CLEARDATAOUT) = 1<<28;
 		}
 }
 
+void ativaLed1_e(){
+	led1_e ^= TOGGLE;
 
-void ledToggle1_e(){
-		flagBlink1_e ^= TOGGLE;
-		
-		if(flagBlink1_e){
-			HWREG(SOC_GPIO_2_REGS+GPIO_SETDATAOUT) = 1<<7;
+		if(led1_e){
+			HWREG(SOC_GPIO_1_REGS+GPIO_SETDATAOUT) = 1<<13;
 		}else{
-			HWREG(SOC_GPIO_2_REGS+GPIO_CLEARDATAOUT) = 1<<7;
+			HWREG(SOC_GPIO_1_REGS+GPIO_CLEARDATAOUT) = 1<<13;
 		}
 }
 
-void ledToggle2_e(){
-		flagBlink2_e ^= TOGGLE;
-		
-		if(flagBlink2_e){
-			HWREG(SOC_GPIO_2_REGS+GPIO_SETDATAOUT) = 1<<8;
+void ativaLed2_e(){
+	led2_e ^= TOGGLE;
+
+		if(led2_e){
+			HWREG(SOC_GPIO_1_REGS+GPIO_SETDATAOUT) = 1<<12;
 		}else{
-			HWREG(SOC_GPIO_2_REGS+GPIO_CLEARDATAOUT) = 1<<8;
+			HWREG(SOC_GPIO_1_REGS+GPIO_CLEARDATAOUT) = 1<<12;
 		}
 }
 
-void ledToggle3_e(){
-		flagBlink3_e ^= TOGGLE;
-		
-		if(flagBlink3_e){
-			HWREG(SOC_GPIO_2_REGS+GPIO_SETDATAOUT) = 1<<9;
-		}else{
-			HWREG(SOC_GPIO_2_REGS+GPIO_CLEARDATAOUT) = 1<<9;
-		}
-}
-	
-void watchdog(){
-	//Table 20-119. WDT_WWPS Register Field Descriptions
-	HWREG(WDT1+WDT_WSPR) = 0xAAAA; //reconfigura o registrador 
+void ativaLed3_e(){
+	led3_e ^= TOGGLE;
 
-	while((HWREG(WDT1+WDT_WWPS) & W_PEND_WSPR) != 0x0){}; // garante o loop 
-
-	HWREG(WDT1+WDT_WSPR) = 0x5555;
-
-	while((HWREG(WDT1+WDT_WWPS) & W_PEND_WSPR) != 0x0){};
-
+	if(led3_e){
+		HWREG(SOC_GPIO_1_REGS+GPIO_SETDATAOUT) = 1 << 17;
+	}else{
+		HWREG(SOC_GPIO_1_REGS+GPIO_CLEARDATAOUT) = 1 << 17;
+	}
 }
 
