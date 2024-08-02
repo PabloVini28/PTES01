@@ -1,34 +1,23 @@
 #include	"hw_types.h"
 #include	"soc_AM335x.h"
 
-/*****************************************************************************
-**                INTERNAL MACRO DEFINITIONS
-*****************************************************************************/
 #define TIME															1000000
 #define TOGGLE          												(0x01u)
 //registradores de configuração do clock
-#define CM_PER_GPIO1										0xAC // 8.1.2.1 CM_PER Registers - registrador de controle de energia (CM_PER) 
-#define CM_PER_GPIO1_CLKCTRL_MODULEMODE_ENABLE   						(0x2u) //Table 8-58. CM_PER_GPIO1_CLKCTRL Register Field Descriptions(USAR BIT 18)
-#define CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK  					(0x00040000u)//Table 8-58. CM_PER_GPIO1_CLKCTRL Register Field Descriptions(USAR BIT 0 ou 10
+#define CM_PER_GPIO1													0xAC 
+#define CM_PER_GPIO1_CLKCTRL_MODULEMODE_ENABLE   						(0x2u)
+#define CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK  					(0x00040000u)
 
-
-// endereços de registradores para configurar os pinos do modo de controle
-#define CM_conf_gpmc_ben1      	 								0x0878
-#define CM_conf_gpmc_a5         								0x0854// Table 9-8. CONTROL_MODULE REGISTERS (((
-#define CM_conf_gpmc_a6         								0x0818// Table 9-8. CONTROL_MODULE REGISTERS (( pode usar do pino 1 ao 15
-#define CM_conf_gpmc_a7         								0x081C// Table 9-8. CONTROL_MODULE REGISTERS ((
-#define CM_conf_gpmc_a8         								0x0820// Table 9-8. CONTROL_MODULE REGISTERS ((((
-
-// endereços de registradores para configurar o watchdog
-#define WDT1 													0x44E35000
-#define WDT_WSPR 												0x48 // temporizador watchdog / Registro de proteção de serviço de gravação do cronômetro de vigilância 
-#define WDT_WWPS												0x34 // Escrever registro de status postado / Este registrador contém os bits de postagem de gravação para todos os registradores funcionais graváveis.
-#define W_PEND_WSPR												(1<< 0x4u)
+// endereçõs de registradores para configurar os pinos do modo de controle
+#define CM_conf_gpmc_a5         								0x0854
+#define CM_conf_gpmc_a6         								0x0818
+#define CM_conf_gpmc_a7         								0x081C
+#define CM_conf_gpmc_a8         								0x0820
 
 // manipular diretamente os registradores GPIO correspondentes( entrada, saida, setar, limpar)
-#define GPIO_OE                 								0x134 //controla a capacidade de saída/entrada para cada pino - Table 25-5. GPIO Registers
-#define GPIO_CLEARDATAOUT       								0x190 // limpar dados de saida - Table 25-5. GPIO Registers
-#define GPIO_SETDATAOUT         								0x194 // setar dados de saida - - Table 25-5. GPIO Registers
+#define GPIO_OE                 								0x134 
+#define GPIO_CLEARDATAOUT       								0x190 
+#define GPIO_SETDATAOUT         								0x194
 
 //variaveis temporarias para controlar o comportamento do leds
 unsigned int flagBlink0;
@@ -36,19 +25,16 @@ unsigned int flagBlink1;
 unsigned int flagBlink2;
 unsigned int flagBlink3;
 
-/*****************************************************************************
-**                INTERNAL FUNCTION PROTOTYPES
-*****************************************************************************/
 static void delay(int);
 static void ledInit_i();
 static void ledToggle0();
 static void ledToggle1();
 static void ledToggle2();
 static void ledToggle3();
-static void watchdog();
+
 
 int _main(void){
-	watchdog();
+
 	flagBlink0=0;	
   	flagBlink1=0;
   	flagBlink2=0;
@@ -157,13 +143,13 @@ void ledInit_i( ){
 	 *  DEFINE OS PINOS COMO SAÍDA
 	 *-----------------------------------------------------------------------------*/
 	val_temp = HWREG(SOC_GPIO_1_REGS+GPIO_OE);
-	val_temp &= ~(1<<21);                                                            //25.4.10 GPIO_OE Register
+	val_temp &= ~(1<<21);                                   
 	val_temp &= ~(1<<22);
 	val_temp &= ~(1<<23);
 	val_temp &= ~(1<<24);
 	HWREG(SOC_GPIO_1_REGS+GPIO_OE) = val_temp;
 	
-}/* -----  configura o clock e o modo de operação do módulo GPIO1, configura o pino GPIO1_21 ----- */
+}
 
 
 void ledToggle0(){
@@ -201,16 +187,4 @@ void ledToggle3(){
 		}else{
 			HWREG(SOC_GPIO_1_REGS+GPIO_CLEARDATAOUT) = 1<<24;
 		}
-}
-
-void watchdog(){
-	//Table 20-119. WDT_WWPS Register Field Descriptions
-	HWREG(WDT1+WDT_WSPR) = 0xAAAA; //reconfigura o registrador 
-
-	while((HWREG(WDT1+WDT_WWPS) & W_PEND_WSPR) != 0x0){}; // garante o loop 
-
-	HWREG(WDT1+WDT_WSPR) = 0x5555;
-
-	while((HWREG(WDT1+WDT_WWPS) & W_PEND_WSPR) != 0x0){};
-
 }
