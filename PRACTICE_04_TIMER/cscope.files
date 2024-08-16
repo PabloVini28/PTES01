@@ -1,0 +1,12 @@
+inc/hw_types.h
+inc/soc_AM335x.h
+inc/pad.h
+inc/control_module.h
+inc/gpio.h
+inc/uart.h
+inc/clock_module.h
+src/main.c
+src/clock_module.c
+src/control_module.c
+src/pad.c
+src/gpio.c
