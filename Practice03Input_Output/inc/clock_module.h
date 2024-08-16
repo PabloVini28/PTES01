@@ -1,28 +1,7 @@
 #ifndef __CLOCK_MODULE_H
 #define __CLOCK_MODULE_H
 
-/*
- * =====================================================================================
- *
- *       Filename:  clock_module.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  20/02/2022 10:50:03
- *       Revision:  none
- *       Compiler:  arm-none-eabi-gcc
- *
- *         Author: José Adrian 
- *   Organization:  UFC-Quixadá
- *
- * =====================================================================================
- */
 
-
-/*-----------------------------------------------------------------------------
- *  ENUM
- *-----------------------------------------------------------------------------*/
 typedef enum _CKM_MODULE_REG{
    // CKM_PER zone
 	CKM_PER_L4LS_CLKSTCTRL      = 0x000,

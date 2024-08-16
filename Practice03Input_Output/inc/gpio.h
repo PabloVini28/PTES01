@@ -114,7 +114,6 @@ typedef enum Direction{
 
 int Init_module_gpio(gpioMod);
 int Init_pin_gpio(gpioMod , unsigned char , Direction);
-static void Set_direction_pin_gpio(gpioMod, Direction, unsigned char);
 unsigned int Get_direction_pin_gpio(gpioMod , unsigned char);
 void GpioSetPinValue(gpioMod , ucPinNumber , Level);
 unsigned int GpioGetPinValue(gpioMod , ucPinNumber);

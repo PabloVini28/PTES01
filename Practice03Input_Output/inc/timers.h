@@ -1,25 +1,11 @@
 #ifndef TIMERS_H_
 #define TIMERS_H_
-/*
- * =====================================================================================
- *
- *       Filename:  timers.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  20/02/2022
- *       Revision:  none
- *       Compiler:  arm-none-eabi-gcc
- *
- *         Author: José Adrian 
- *   Organization:  UFC-Quixadá
- *
- * =====================================================================================
- */
+
 #include "interruption.h"
 #include "soc_AM335x.h"
 #include "hw_types.h"
+#include "control_module.h"
+#include "clock_module.h"
 
 /* The Input clock is selected as 24MHz. So for 1ms set the count to 0x5DC0. 
  *If the input clock is changed to different source this value has to be updated 

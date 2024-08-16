@@ -71,23 +71,11 @@ _start:
     msr cpsr, r0
 
     /* IRQ Handler */
-    ldr r0, =_irq
-    ldr r1, =.irq_handler
-    str r1, [r0]
 
     bl main
 
-.loop:    b .loop 
-
-
-.irq_handler:
-        stmfd sp!, {r0-r12, lr}
-        MRS r11, spsr
-	     bl ISR_Handler 
-        dsb
-        msr spsr, r11
-        ldmfd sp!, {r0-r12, lr}
-        subs pc, lr, #4
+.loop:    
+    b .loop 
 
 
 

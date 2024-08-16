@@ -1,26 +1,6 @@
 #ifndef __PAD_H
 #define __PAD_H
 
-/*
- * =====================================================================================
- *
- *       Filename:  pad.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  20/02/2022
- *       Revision:  none
- *       Compiler:  arm-none-eabi-gcc
- *
- *         Author: José Adrian 
- *   Organization:  UFC-Quixadá
- *
- * =====================================================================================
- */
-
-
-
 #include "control_module.h"
 
 /*-----------------------------------------------------------------------------

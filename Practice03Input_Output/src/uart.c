@@ -1,31 +1,15 @@
-/*
- * =====================================================================================
- *
- *       Filename:  uart.c
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  20/02/2017 10:50:03
- *       Revision:  none
- *       Compiler:  arm-none-eabi-gcc
- *
- *         Author: José Adrian, jadriannassilva@gmail.com
- *   Organization:  UFC-Quixadá
- *
- * =====================================================================================
- */
-
-
 #include "uart.h"
 
-/*static bool checkValidUart(UART_t uart){
+/*
+
+static bool checkValidUart(UART_t uart){
    if((uart < UART0) || (uart > UART5)){
       // TODO: raise error (Uart number is either too big or negative: /uart)
       return(false);
    }
    return(true);
 }
+
 void uartInitModule(UART_t uart, unsigned int baudrate, STOP_BIT_t stopBit, PARITY_BIT_t parity, FLOW_t flowControl){
    if(checkValidUart(uart)){
       unsigned int uart_base =  UART_ARRAY_BASE[uart];
@@ -127,4 +111,5 @@ void uartClearBuffer(UART_t uart){
    unsigned int uart_base = UART_ARRAY_BASE[uart];
    while((HWREG(uart_base+0x14)&0x1)==1)
       getCh(uart);
-}*/
+}
+*/
