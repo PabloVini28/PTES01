@@ -1,0 +1,5444 @@
+cscope 15 $HOME/UFC/disciplinas/QXD0149/lab/pratica_01_3               0000036295
+	@inc/clock_module.h
+
+1 #iâdeà
+__CLOCK_MODULE_H
+
+
+2 
+	#__CLOCK_MODULE_H
+
+
+	)
+
+21 
+	~<soc_AM335x.h
+>
+
+26 
+	e_CKM_MODULE_REG
+{
+
+28 
+	mCKM_PER_L4LS_CLKSTCTRL
+ = 0x000,
+
+29 
+	mCKM_PER_L3S_CLKSTCTRL
+ = 0x004,
+
+30 
+	mCKM_PER_L4FW_CLKSTCTRL
+ = 0x008,
+
+31 
+	mCKM_PER_L3_CLKSTCTRL
+ = 0x00C,
+
+32 
+	mCKM_PER_CPGMAC0_CLKCTRL
+ = 0x014,
+
+33 
+	mCKM_PER_LCDC_CLKCTRL
+ = 0x018,
+
+34 
+	mCKM_PER_USB0_CLKCTRL
+ = 0x01C,
+
+35 
+	mCKM_PER_TPTC0_CLKCTRL
+ = 0x024,
+
+36 
+	mCKM_PER_EMIF_CLKCTRL
+ = 0x028,
+
+37 
+	mCKM_PER_OCMCRAM_CLKCTRL
+ = 0x02C,
+
+38 
+	mCKM_PER_GPMC_CLKCTRL
+ = 0x030,
+
+39 
+	mCKM_PER_MCASP0_CLKCTRL
+ = 0x034,
+
+40 
+	mCKM_PER_UART5_CLKCTRL
+ = 0x038,
+
+41 
+	mCKM_PER_MMC0_CLKCTRL
+ = 0x03C,
+
+42 
+	mCKM_PER_ELM_CLKCTRL
+ = 0x040,
+
+43 
+	mCKM_PER_I2C2_CLKCTRL
+ = 0x044,
+
+44 
+	mCKM_PER_I2C1_CLKCTRL
+ = 0x048,
+
+45 
+	mCKM_PER_SPI0_CLKCTRL
+ = 0x04C,
+
+46 
+	mCKM_PER_SPI1_CLKCTRL
+ = 0x050,
+
+47 
+	mCKM_PER_L4LS_CLKCTRL
+ = 0x060,
+
+48 
+	mCKM_PER_L4FW_CLKCTRL
+ = 0x064,
+
+49 
+	mCKM_PER_MCASP1_CLKCTRL
+ = 0x068,
+
+50 
+	mCKM_PER_UART1_CLKCTRL
+ = 0x06C,
+
+51 
+	mCKM_PER_UART2_CLKCTRL
+ = 0x070,
+
+52 
+	mCKM_PER_UART3_CLKCTRL
+ = 0x074,
+
+53 
+	mCKM_PER_UART4_CLKCTRL
+ = 0x078,
+
+54 
+	mCKM_PER_TIMER7_CLKCTRL
+ = 0x07C,
+
+55 
+	mCKM_PER_TIMER2_CLKCTRL
+ = 0x080,
+
+56 
+	mCKM_PER_TIMER3_CLKCTRL
+ = 0x084,
+
+57 
+	mCKM_PER_TIMER4_CLKCTRL
+ = 0x088,
+
+58 
+	mCKM_PER_GPIO1_CLKCTRL
+ = 0x0AC,
+
+59 
+	mCKM_PER_GPIO2_CLKCTRL
+ = 0x0B0,
+
+60 
+	mCKM_PER_GPIO3_CLKCTRL
+ = 0x0B4,
+
+61 
+	mCKM_PER_TPCC_CLKCTRL
+ = 0x0BC,
+
+62 
+	mCKM_PER_DCAN0_CLKCTRL
+ = 0x0C0,
+
+63 
+	mCKM_PER_DCAN1_CLKCTRL
+ = 0x0C4,
+
+64 
+	mCKM_PER_EPWMSS1_CLKCTRL
+ = 0x0CC,
+
+65 
+	mCKM_PER_EMIF_FW_CLKCTRL
+ = 0x0D0,
+
+66 
+	mCKM_PER_EPWMSS0_CLKCTRL
+ = 0x0D4,
+
+67 
+	mCKM_PER_EPWMSS2_CLKCTRL
+ = 0x0D8,
+
+68 
+	mCKM_PER_L3_INSTR_CLKCTRL
+ = 0x0DC,
+
+69 
+	mCKM_PER_L3_CLKCTRL
+ = 0x0E0,
+
+70 
+	mCKM_PER_IEEE5000_CLKCTRL
+ = 0x0E4,
+
+71 
+	mCKM_PER_PRU_ICSS_CLKCTRL
+ = 0x0E8,
+
+72 
+	mCKM_PER_TIMER5_CLKCTRL
+ = 0x0EC,
+
+73 
+	mCKM_PER_TIMER6_CLKCTRL
+ = 0x0F0,
+
+74 
+	mCKM_PER_MMC1_CLKCTRL
+ = 0x0F4,
+
+75 
+	mCKM_PER_MMC2_CLKCTRL
+ = 0x0F8,
+
+76 
+	mCKM_PER_TPTC1_CLKCTRL
+ = 0x0FC,
+
+77 
+	mCKM_PER_TPTC2_CLKCTRL
+ = 0x100,
+
+78 
+	mCKM_PER_SPINLOCK_CLKCTRL
+ = 0x10C,
+
+79 
+	mCKM_PER_MAILBOX0_CLKCTRL
+ = 0x110,
+
+80 
+	mCKM_PER_L4HS_CLKSTCTRL
+ = 0x11C,
+
+81 
+	mCKM_PER_L4HS_CLKCTRL
+ = 0x120,
+
+82 
+	mCKM_PER_OCPWP_L3_CLKSTCTRL
+ = 0x12C,
+
+83 
+	mCKM_PER_OCPWP_CLKCTRL
+ = 0x130,
+
+84 
+	mCKM_PER_PRU_ICSS_CLKSTCTRL
+ = 0x140,
+
+85 
+	mCKM_PER_CPSW_CLKSTCTRL
+ = 0x144,
+
+86 
+	mCKM_PER_LCDC_CLKSTCTRL
+ = 0x148,
+
+87 
+	mCKM_PER_CLKDIV32K_CLKCTRL
+ = 0x14C,
+
+88 
+	mCKM_PER_CLK_24MHZ_CLKSTCTRL
+ = 0x150,
+
+90 
+	mCKM_WKUP_CLKSTCTRL
+ = 0x00,
+
+91 
+	mCKM_WKUP_CONTROL_CLKCTRL
+ = 0x04,
+
+92 
+	mCKM_WKUP_GPIO0_CLKCTRL
+ = 0x08,
+
+93 
+	mCKM_WKUP_L4WKUP_CLKCTRL
+ = 0x0C,
+
+94 
+	mCKM_WKUP_TIMER0_CLKCTRL
+ = 0x10,
+
+95 
+	mCKM_WKUP_DEBUGSS_CLKCTRL
+ = 0x14,
+
+96 
+	mCKM_L3_AON_CLKSTCTRL
+ = 0x18,
+
+97 
+	mCKM_AUTOIDLE_DPLL_MPU
+ = 0x1C,
+
+98 
+	mCKM_IDLEST_DPLL_MPU
+ = 0x20,
+
+99 
+	mCKM_SSC_DELTAMSTEP_DPLL_MPU
+ = 0x24,
+
+100 
+	mCKM_SSC_MODFREQDIV_DPLL_MPU
+ = 0x28,
+
+101 
+	mCKM_CLKSEL_DPLL_MPU
+ = 0x2C,
+
+102 
+	mCKM_AUTOIDLE_DPLL_DDR
+ = 0x30,
+
+103 
+	mCKM_IDLEST_DPLL_DDR
+ = 0x34,
+
+104 
+	mCKM_SSC_DELTAMSTEP_DPLL_DDR
+ = 0x38,
+
+105 
+	mCKM_SSC_MODFREQDIV_DPLL_DDR
+ = 0x3C,
+
+106 
+	mCKM_CLKSEL_DPLL_DDR
+ = 0x40,
+
+107 
+	mCKM_AUTOIDLE_DPLL_DISP
+ = 0x44,
+
+108 
+	mCKM_IDLEST_DPLL_DISP
+ = 0x48,
+
+109 
+	mCKM_SSC_DELTAMSTEP_DPLL_DISP
+ = 0x4C,
+
+110 
+	mCKM_SSC_MODFREQDIV_DPLL_DISP
+ = 0x50,
+
+111 
+	mCKM_CLKSEL_DPLL_DISP
+ = 0x54,
+
+112 
+	mCKM_AUTOIDLE_DPLL_CORE
+ = 0x58,
+
+113 
+	mCKM_IDLEST_DPLL_CORE
+ = 0x5C,
+
+114 
+	mCKM_SSC_DELTAMSTEP_DPLL_CORE
+ = 0x60,
+
+115 
+	mCKM_SSC_MODFREQDIV_DPLL_CORE
+ = 0x64,
+
+116 
+	mCKM_CLKSEL_DPLL_CORE
+ = 0x68,
+
+117 
+	mCKM_AUTOIDLE_DPLL_PER
+ = 0x6C,
+
+118 
+	mCKM_IDLEST_DPLL_PER
+ = 0x70,
+
+119 
+	mCKM_SSC_DELTAMSTEP_DPLL_PER
+ = 0x74,
+
+120 
+	mCKM_SSC_MODFREQDIV_DPLL_PER
+ = 0x78,
+
+121 
+	mCKM_CLKDCOLDO_DPLL_PER
+ = 0x7C,
+
+122 
+	mCKM_DIV_M4_DPLL_CORE
+ = 0x80,
+
+123 
+	mCKM_DIV_M5_DPLL_CORE
+ = 0x84,
+
+124 
+	mCKM_CLKMODE_DPLL_MPU
+ = 0x88,
+
+125 
+	mCKM_CLKMODE_DPLL_PER
+ = 0x8C,
+
+126 
+	mCKM_CLKMODE_DPLL_CORE
+ = 0x90,
+
+127 
+	mCKM_CLKMODE_DPLL_DDR
+ = 0x94,
+
+128 
+	mCKM_CLKMODE_DPLL_DISP
+ = 0x98,
+
+129 
+	mCKM_CLKSEL_DPLL_PERIPH
+ = 0x9C,
+
+130 
+	mCKM_DIV_M2_DPLL_DDR
+ = 0xA0,
+
+131 
+	mCKM_DIV_M2_DPLL_DISP
+ = 0xA4,
+
+132 
+	mCKM_DIV_M2_DPLL_MPU
+ = 0xA8,
+
+133 
+	mCKM_DIV_M2_DPLL_PER
+ = 0xAC,
+
+134 
+	mCKM_WKUP_WKUP_M3_CLKCTRL
+ = 0xB0,
+
+135 
+	mCKM_WKUP_UART0_CLKCTRL
+ = 0xB4,
+
+136 
+	mCKM_WKUP_I2C0_CLKCTRL
+ = 0xB8,
+
+137 
+	mCKM_WKUP_ADC_TSC_CLKCTRL
+ = 0xBC,
+
+138 
+	mCKM_WKUP_SMARTREFLEX0_CLKCTRL
+ = 0xC0,
+
+139 
+	mCKM_WKUP_TIMER1_CLKCTRL
+ = 0xC4,
+
+140 
+	mCKM_WKUP_SMARTREFLEX1_CLKCTRL
+ = 0xC8,
+
+141 
+	mCKM_L4_WKUP_AON_CLKSTCTRL
+ = 0xCC,
+
+142 
+	mCKM_WKUP_WDT1_CLKCTRL
+ = 0xD4,
+
+143 
+	mCKM_DIV_M6_DPLL_CORE
+ = 0xD8
+
+144 }
+	tCKM_MODULE_REG
+;
+
+149 
+	e_CKM_MODULE
+{
+
+150 
+	mCKM_PER
+ = 
+SOC_CM_PER_REGS
+,
+
+151 
+	mCKM_WKUP
+ = 
+SOC_CM_WKUP_REGS
+,
+
+152 
+	mCKM_DPLL
+ = 
+SOC_CM_DPLL_REGS
+,
+
+153 
+	mCKM_MPU
+ = 
+SOC_CM_MPU_REGS
+,
+
+154 
+	mCKM_DEVICE
+ = 
+SOC_CM_DEVICE_REGS
+,
+
+155 
+	mCKM_RTC
+ = 
+SOC_CM_RTC_REGS
+,
+
+156 
+	mCKM_GFX
+ = 
+SOC_CM_GFX_REGS
+,
+
+157 
+	mCKM_CEFUSE
+ = 
+SOC_CM_CEFUSE_REGS
+
+
+158 }
+	tCKM_MODULE
+;
+
+165 
+ckmS‘CLKModuËRegi¡”
+(
+CKM_MODULE
+ 
+ba£
+, 
+CKM_MODULE_REG
+ 
+off£t
+, 
+v®ue
+);
+
+166 
+ckmG‘CLKModuËRegi¡”
+(
+CKM_MODULE
+ 
+ba£
+, 
+CKM_MODULE_REG
+ 
+off£t
+);
+
+	@inc/control_module.h
+
+1 #iâdeà
+__CONTROL_MODULE_H
+
+
+2 
+	#__CONTROL_MODULE_H
+
+
+	)
+
+25 
+	mCM_cÚŒÞ_»visiÚ
+ = 0x0000,
+
+26 
+	mCM_cÚŒÞ_hwšfo
+ = 0x0004,
+
+27 
+	mCM_cÚŒÞ_syscÚfig
+ = 0x0010,
+
+28 
+	mCM_cÚŒÞ_¡©us
+ = 0x0040,
+
+29 
+	mCM_cÚŒÞ_emif_sd¿m_cÚfig
+ = 0x0110,
+
+30 
+	mCM_cÜ‹x_vbbldo_ù¾
+ = 0x041C,
+
+31 
+	mCM_cÜe_¦do_ù¾
+ = 0x0428,
+
+32 
+	mCM_mpu_¦do_ù¾
+ = 0x042C,
+
+33 
+	mCM_þk32kdiv¿tio_ù¾
+ = 0x0444,
+
+34 
+	mCM_bªdg­_ù¾
+ = 0x0448,
+
+35 
+	mCM_bªdg­_Œim
+ = 0x044C,
+
+36 
+	mCM_¶l_þkšpulow_ù¾
+ = 0x0458,
+
+37 
+	mCM_mosc_ù¾
+ = 0x0468,
+
+38 
+	mCM_d“p¦“p_ù¾
+ = 0x0470,
+
+39 
+	mCM_d¶l_pwr_sw_¡©us
+ = 0x050C,
+
+40 
+	mCM_deviû_id
+ = 0x0600,
+
+41 
+	mCM_dev_ã©u»
+ = 0x0604,
+
+42 
+	mCM_š™_´iÜ™y_0
+ = 0x0608,
+
+43 
+	mCM_š™_´iÜ™y_1
+ = 0x060C,
+
+44 
+	mCM_mmu_cfg
+ = 0x0610,
+
+45 
+	mCM_tc_cfg
+ = 0x0614,
+
+46 
+	mCM_usb_ù¾0
+ = 0x0620,
+
+47 
+	mCM_usb_¡s0
+ = 0x0624,
+
+48 
+	mCM_usb_ù¾1
+ = 0x0628,
+
+49 
+	mCM_usb_¡s1
+ = 0x062C,
+
+50 
+	mCM_mac_id0_lo
+ = 0x0630,
+
+51 
+	mCM_mac_id0_hi
+ = 0x0634,
+
+52 
+	mCM_mac_id1_lo
+ = 0x0638,
+
+53 
+	mCM_mac_id1_hi
+ = 0x063C,
+
+54 
+	mCM_dÿn_¿mš™
+ = 0x0644,
+
+55 
+	mCM_usb_wkup_ù¾
+ = 0x0648,
+
+56 
+	mCM_gmii_£l
+ = 0x0650,
+
+57 
+	mCM_pwmss_ù¾
+ = 0x0664,
+
+58 
+	mCM_m»q´io_0
+ = 0x0670,
+
+59 
+	mCM_m»q´io_1
+ = 0x0674,
+
+60 
+	mCM_hw_ev’t_£l_g½1
+ = 0x0690,
+
+61 
+	mCM_hw_ev’t_£l_g½2
+ = 0x0694,
+
+62 
+	mCM_hw_ev’t_£l_g½3
+ = 0x0698,
+
+63 
+	mCM_hw_ev’t_£l_g½4
+ = 0x069C,
+
+64 
+	mCM_sm¹_ù¾
+ = 0x06A0,
+
+65 
+	mCM_mpuss_hw_debug_£l
+ = 0x06A4,
+
+66 
+	mCM_mpuss_hw_dbg_šfo
+ = 0x06A8,
+
+67 
+	mCM_vdd_mpu_Ýp_050
+ = 0x0770,
+
+68 
+	mCM_vdd_mpu_Ýp_100
+ = 0x0774,
+
+69 
+	mCM_vdd_mpu_Ýp_120
+ = 0x0778,
+
+70 
+	mCM_vdd_mpu_Ýp_turbo
+ = 0x077C,
+
+71 
+	mCM_vdd_cÜe_Ýp_050
+ = 0x07B8,
+
+72 
+	mCM_vdd_cÜe_Ýp_100
+ = 0x07BC,
+
+73 
+	mCM_bb_sÿË
+ = 0x07D0,
+
+74 
+	mCM_usb_vid_pid
+ = 0x07F4,
+
+75 
+	mCM_efu£_sma
+ = 0x07FC,
+
+76 
+	mCM_cÚf_gpmc_ad0
+ = 0x0800,
+
+77 
+	mCM_cÚf_gpmc_ad1
+ = 0x0804,
+
+78 
+	mCM_cÚf_gpmc_ad2
+ = 0x0808,
+
+79 
+	mCM_cÚf_gpmc_ad3
+ = 0x080C,
+
+80 
+	mCM_cÚf_gpmc_ad4
+ = 0x0810,
+
+81 
+	mCM_cÚf_gpmc_ad5
+ = 0x0814,
+
+82 
+	mCM_cÚf_gpmc_ad6
+ = 0x0818,
+
+83 
+	mCM_cÚf_gpmc_ad7
+ = 0x081C,
+
+84 
+	mCM_cÚf_gpmc_ad8
+ = 0x0820,
+
+85 
+	mCM_cÚf_gpmc_ad9
+ = 0x0824,
+
+86 
+	mCM_cÚf_gpmc_ad10
+ = 0x0828,
+
+87 
+	mCM_cÚf_gpmc_ad11
+ = 0x082C,
+
+88 
+	mCM_cÚf_gpmc_ad12
+ = 0x0830,
+
+89 
+	mCM_cÚf_gpmc_ad13
+ = 0x0834,
+
+90 
+	mCM_cÚf_gpmc_ad14
+ = 0x0838,
+
+91 
+	mCM_cÚf_gpmc_ad15
+ = 0x083C,
+
+92 
+	mCM_cÚf_gpmc_a0
+ = 0x0840,
+
+93 
+	mCM_cÚf_gpmc_a1
+ = 0x0844,
+
+94 
+	mCM_cÚf_gpmc_a2
+ = 0x0848,
+
+95 
+	mCM_cÚf_gpmc_a3
+ = 0x084C,
+
+96 
+	mCM_cÚf_gpmc_a4
+ = 0x0850,
+
+97 
+	mCM_cÚf_gpmc_a5
+ = 0x0854,
+
+98 
+	mCM_cÚf_gpmc_a6
+ = 0x0858,
+
+99 
+	mCM_cÚf_gpmc_a7
+ = 0x085C,
+
+100 
+	mCM_cÚf_gpmc_a8
+ = 0x0860,
+
+101 
+	mCM_cÚf_gpmc_a9
+ = 0x0864,
+
+102 
+	mCM_cÚf_gpmc_a10
+ = 0x0868,
+
+103 
+	mCM_cÚf_gpmc_a11
+ = 0x086C,
+
+104 
+	mCM_cÚf_gpmc_wa™0
+ = 0x0870,
+
+105 
+	mCM_cÚf_gpmc_w²
+ = 0x0874,
+
+106 
+	mCM_cÚf_gpmc_b’1
+ = 0x0878,
+
+107 
+	mCM_cÚf_gpmc_c¢0
+ = 0x087C,
+
+108 
+	mCM_cÚf_gpmc_c¢1
+ = 0x0880,
+
+109 
+	mCM_cÚf_gpmc_c¢2
+ = 0x0884,
+
+110 
+	mCM_cÚf_gpmc_c¢3
+ = 0x0888,
+
+111 
+	mCM_cÚf_gpmc_þk
+ = 0x088C,
+
+112 
+	mCM_cÚf_gpmc_advn_®e
+ = 0x0890,
+
+113 
+	mCM_cÚf_gpmc_Ûn_»n
+ = 0x0894,
+
+114 
+	mCM_cÚf_gpmc_w’
+ = 0x0898,
+
+115 
+	mCM_cÚf_gpmc_b’0_þe
+ = 0x089C,
+
+116 
+	mCM_cÚf_lcd_d©a0
+ = 0x08A0,
+
+117 
+	mCM_cÚf_lcd_d©a1
+ = 0x08A4,
+
+118 
+	mCM_cÚf_lcd_d©a2
+ = 0x08A8,
+
+119 
+	mCM_cÚf_lcd_d©a3
+ = 0x08AC,
+
+120 
+	mCM_cÚf_lcd_d©a4
+ = 0x08B0,
+
+121 
+	mCM_cÚf_lcd_d©a5
+ = 0x08B4,
+
+122 
+	mCM_cÚf_lcd_d©a6
+ = 0x08B8,
+
+123 
+	mCM_cÚf_lcd_d©a7
+ = 0x08BC,
+
+124 
+	mCM_cÚf_lcd_d©a8
+ = 0x08C0,
+
+125 
+	mCM_cÚf_lcd_d©a9
+ = 0x08C4,
+
+126 
+	mCM_cÚf_lcd_d©a10
+ = 0x08C8,
+
+127 
+	mCM_cÚf_lcd_d©a11
+ = 0x08CC,
+
+128 
+	mCM_cÚf_lcd_d©a12
+ = 0x08D0,
+
+129 
+	mCM_cÚf_lcd_d©a13
+ = 0x08D4,
+
+130 
+	mCM_cÚf_lcd_d©a14
+ = 0x08D8,
+
+131 
+	mCM_cÚf_lcd_d©a15
+ = 0x08DC,
+
+132 
+	mCM_cÚf_lcd_vsync
+ = 0x08E0,
+
+133 
+	mCM_cÚf_lcd_hsync
+ = 0x08E4,
+
+134 
+	mCM_cÚf_lcd_pþk
+ = 0x08E8,
+
+135 
+	mCM_cÚf_lcd_ac_bŸs_’
+ = 0x08EC,
+
+136 
+	mCM_cÚf_mmc0_d©3
+ = 0x08F0,
+
+137 
+	mCM_cÚf_mmc0_d©2
+ = 0x08F4,
+
+138 
+	mCM_cÚf_mmc0_d©1
+ = 0x08F8,
+
+139 
+	mCM_cÚf_mmc0_d©0
+ = 0x08FC,
+
+140 
+	mCM_cÚf_mmc0_þk
+ = 0x0900,
+
+141 
+	mCM_cÚf_mmc0_cmd
+ = 0x0904,
+
+142 
+	mCM_cÚf_mii1_cÞ
+ = 0x0908,
+
+143 
+	mCM_cÚf_mii1_üs
+ = 0x090C,
+
+144 
+	mCM_cÚf_mii1_rx_”
+ = 0x0910,
+
+145 
+	mCM_cÚf_mii1_tx_’
+ = 0x0914,
+
+146 
+	mCM_cÚf_mii1_rx_dv
+ = 0x0918,
+
+147 
+	mCM_cÚf_mii1_txd3
+ = 0x091C,
+
+148 
+	mCM_cÚf_mii1_txd2
+ = 0x0920,
+
+149 
+	mCM_cÚf_mii1_txd1
+ = 0x0924,
+
+150 
+	mCM_cÚf_mii1_txd0
+ = 0x0928,
+
+151 
+	mCM_cÚf_mii1_tx_þk
+ = 0x092C,
+
+152 
+	mCM_cÚf_mii1_rx_þk
+ = 0x0930,
+
+153 
+	mCM_cÚf_mii1_rxd3
+ = 0x0934,
+
+154 
+	mCM_cÚf_mii1_rxd2
+ = 0x0938,
+
+155 
+	mCM_cÚf_mii1_rxd1
+ = 0x093C,
+
+156 
+	mCM_cÚf_mii1_rxd0
+ = 0x0940,
+
+157 
+	mCM_cÚf_rmii1_»f_þk
+ = 0x0944,
+
+158 
+	mCM_cÚf_mdio
+ = 0x0948,
+
+159 
+	mCM_cÚf_mdc
+ = 0x094C,
+
+160 
+	mCM_cÚf_¥i0_sþk
+ = 0x0950,
+
+161 
+	mCM_cÚf_¥i0_d0
+ = 0x0954,
+
+162 
+	mCM_cÚf_¥i0_d1
+ = 0x0958,
+
+163 
+	mCM_cÚf_¥i0_cs0
+ = 0x095C,
+
+164 
+	mCM_cÚf_¥i0_cs1
+ = 0x0960,
+
+165 
+	mCM_cÚf_eÿp0_š_pwm0_out
+ = 0x0964,
+
+166 
+	mCM_cÚf_u¬t0_ù¢
+ = 0x0968,
+
+167 
+	mCM_cÚf_u¬t0_¹¢
+ = 0x096C,
+
+168 
+	mCM_cÚf_u¬t0_rxd
+ = 0x0970,
+
+169 
+	mCM_cÚf_u¬t0_txd
+ = 0x0974,
+
+170 
+	mCM_cÚf_u¬t1_ù¢
+ = 0x0978,
+
+171 
+	mCM_cÚf_u¬t1_¹¢
+ = 0x097C,
+
+172 
+	mCM_cÚf_u¬t1_rxd
+ = 0x0980,
+
+173 
+	mCM_cÚf_u¬t1_txd
+ = 0x0984,
+
+174 
+	mCM_cÚf_i2c0_sda
+ = 0x0988,
+
+175 
+	mCM_cÚf_i2c0_sþ
+ = 0x098C,
+
+176 
+	mCM_cÚf_mÿ¥0_aþkx
+ = 0x0990,
+
+177 
+	mCM_cÚf_mÿ¥0_fsx
+ = 0x0994,
+
+178 
+	mCM_cÚf_mÿ¥0_axr0
+ = 0x0998,
+
+179 
+	mCM_cÚf_mÿ¥0_ahþkr
+ = 0x099C,
+
+180 
+	mCM_cÚf_mÿ¥0_aþkr
+ = 0x09A0,
+
+181 
+	mCM_cÚf_mÿ¥0_f¤
+ = 0x09A4,
+
+182 
+	mCM_cÚf_mÿ¥0_axr1
+ = 0x09A8,
+
+183 
+	mCM_cÚf_mÿ¥0_ahþkx
+ = 0x09AC,
+
+184 
+	mCM_cÚf_xdma_ev’t_šŒ0
+ = 0x09B0,
+
+185 
+	mCM_cÚf_xdma_ev’t_šŒ1
+ = 0x09B4,
+
+186 
+	mCM_cÚf_w¬mr¡n
+ = 0x09B8,
+
+187 
+	mCM_cÚf_Âmi
+ = 0x09C0,
+
+188 
+	mCM_cÚf_tms
+ = 0x09D0,
+
+189 
+	mCM_cÚf_tdi
+ = 0x09D4,
+
+190 
+	mCM_cÚf_tdo
+ = 0x09D8,
+
+191 
+	mCM_cÚf_tck
+ = 0x09DC,
+
+192 
+	mCM_cÚf_Œ¡n
+ = 0x09E0,
+
+193 
+	mCM_cÚf_emu0
+ = 0x09E4,
+
+194 
+	mCM_cÚf_emu1
+ = 0x09E8,
+
+195 
+	mCM_cÚf_¹c_pwrÚr¡n
+ = 0x09F8,
+
+196 
+	mCM_cÚf_pmic_pow”_’
+ = 0x09FC,
+
+197 
+	mCM_cÚf_ext_wakeup
+ = 0x0A00,
+
+198 
+	mCM_cÚf_¹c_k®do_’n
+ = 0x0A04,
+
+199 
+	mCM_cÚf_usb0_drvvbus
+ = 0x0A1C,
+
+200 
+	mCM_cÚf_usb1_drvvbus
+ = 0x0A34,
+
+201 
+	mCM_cqd‘eù_¡©us
+ = 0x0E00,
+
+202 
+	mCM_ddr_io_ù¾
+ = 0x0E04,
+
+203 
+	mCM_v_ù¾
+ = 0x0E0C,
+
+204 
+	mCM_v»f_ù¾
+ = 0x0E14,
+
+205 
+	mCM_cc_evt_mux_0_3
+ = 0x0F90,
+
+206 
+	mCM_cc_evt_mux_4_7
+ = 0x0F94,
+
+207 
+	mCM_cc_evt_mux_8_11
+ = 0x0F98,
+
+208 
+	mCM_cc_evt_mux_12_15
+ = 0x0F9C,
+
+209 
+	mCM_cc_evt_mux_16_19
+ = 0x0FA0,
+
+210 
+	mCM_cc_evt_mux_20_23
+ = 0x0FA4,
+
+211 
+	mCM_cc_evt_mux_24_27
+ = 0x0FA8,
+
+212 
+	mCM_cc_evt_mux_28_31
+ = 0x0FAC,
+
+213 
+	mCM_cc_evt_mux_32_35
+ = 0x0FB0,
+
+214 
+	mCM_cc_evt_mux_36_39
+ = 0x0FB4,
+
+215 
+	mCM_cc_evt_mux_40_43
+ = 0x0FB8,
+
+216 
+	mCM_cc_evt_mux_44_47
+ = 0x0FBC,
+
+217 
+	mCM_cc_evt_mux_48_51
+ = 0x0FC0,
+
+218 
+	mCM_cc_evt_mux_52_55
+ = 0x0FC4,
+
+219 
+	mCM_cc_evt_mux_56_59
+ = 0x0FC8,
+
+220 
+	mCM_cc_evt_mux_60_63
+ = 0x0FCC,
+
+221 
+	mCM_tim”_evt_ÿ±
+ = 0x0FD0,
+
+222 
+	mCM_eÿp_evt_ÿ±
+ = 0x0FD4,
+
+223 
+	mCM_adc_evt_ÿ±
+ = 0x0FD8,
+
+224 
+	mCM_»£t_iso
+ = 0x1000,
+
+225 
+	mCM_d¶l_pwr_sw_ù¾
+ = 0x1318,
+
+226 
+	mCM_ddr_cke_ù¾
+ = 0x131C,
+
+227 
+	mCM_sma2
+ = 0x1320,
+
+228 
+	mCM_m3_txev_eoi
+ = 0x1324,
+
+229 
+	mCM_c_msg_»g0
+ = 0x1328,
+
+230 
+	mCM_c_msg_»g1
+ = 0x132C,
+
+231 
+	mCM_c_msg_»g2
+ = 0x1330,
+
+232 
+	mCM_c_msg_»g3
+ = 0x1334,
+
+233 
+	mCM_c_msg_»g4
+ = 0x1338,
+
+234 
+	mCM_c_msg_»g5
+ = 0x133C,
+
+235 
+	mCM_c_msg_»g6
+ = 0x1340,
+
+236 
+	mCM_c_msg_»g7
+ = 0x1344,
+
+237 
+	mCM_ddr_cmd0_ioù¾
+ = 0x1404,
+
+238 
+	mCM_ddr_cmd1_ioù¾
+ = 0x1408,
+
+239 
+	mCM_ddr_cmd2_ioù¾
+ = 0x140C,
+
+240 
+	mCM_ddr_d©a0_ioù¾
+ = 0x1440,
+
+241 
+	mCM_ddr_d©a1_ioù¾
+ = 0x1444
+
+242 }
+	tCONTROL_MODULE
+;
+
+247 
+cmS‘CŒlModuË
+(
+CONTROL_MODULE
+ 
+off£t
+, 
+v®ue
+);
+
+248 
+cmG‘CŒlModuË
+(
+CONTROL_MODULE
+ 
+off£t
+);
+
+	@inc/gpio.h
+
+1 #iâdeà
+GPIO_H_
+
+
+2 
+	#GPIO_H_
+
+
+	)
+
+22 
+	~"þock_moduË.h
+"
+
+23 
+	~"cÚŒÞ_moduË.h
+"
+
+24 
+	~"·d.h
+"
+
+25 
+	~"soc_AM335x.h
+"
+
+26 
+	~"hw_ty³s.h
+"
+
+28 
+	#GPIO_REVISION
+ 0x000
+
+	)
+
+29 
+	#GPIO_SYSCONFIG
+ 0x010
+
+	)
+
+30 
+	#GPIO_EOI
+ 0x020
+
+	)
+
+31 
+	#GPIO_IRQSTATUS_RAW_0
+ 0x024
+
+	)
+
+32 
+	#GPIO_IRQSTATUS_RAW_1
+ 0x028
+
+	)
+
+33 
+	#GPIO_IRQSTATUS_0
+ 0x02C
+
+	)
+
+34 
+	#GPIO_IRQSTATUS_1
+ 0x030
+
+	)
+
+35 
+	#GPIO_IRQSTATUS_SET_0
+ 0x034
+
+	)
+
+36 
+	#GPIO_IRQSTATUS_SET_1
+ 0x038
+
+	)
+
+37 
+	#GPIO_IRQSTATUS_CLR_0
+ 0x03C
+
+	)
+
+38 
+	#GPIO_IRQSTATUS_CLR_1
+ 0x040
+
+	)
+
+39 
+	#GPIO_IRQWAKEN_0
+ 0x044
+
+	)
+
+40 
+	#GPIO_IRQWAKEN_1
+ 0x048
+
+	)
+
+41 
+	#GPIO_SYSSTATUS
+ 0x114
+
+	)
+
+42 
+	#GPIO_CTRL
+ 0x130
+
+	)
+
+43 
+	#GPIO_OE
+ 0x134
+
+	)
+
+44 
+	#GPIO_DATAIN
+ 0x138
+
+	)
+
+45 
+	#GPIO_DATAOUT
+ 0x13C
+
+	)
+
+46 
+	#GPIO_LEVELDETECT0
+ 0x140
+
+	)
+
+47 
+	#GPIO_LEVELDETECT1
+ 0x144
+
+	)
+
+48 
+	#GPIO_RISINGDETECT
+ 0x148
+
+	)
+
+49 
+	#GPIO_FALLINGDETECT
+ 0x14C
+
+	)
+
+50 
+	#GPIO_DEBOUNCENABLE
+ 0x150
+
+	)
+
+51 
+	#GPIO_DEBOUNCINGTIME
+ 0x154
+
+	)
+
+52 
+	#GPIO_CLEARDATAOUT
+ 0x190
+
+	)
+
+53 
+	#GPIO_SETDATAOUT
+ 0x194
+
+	)
+
+60 
+	tucPšNumb”
+;
+
+65 
+	e_pšLev–
+{
+
+66 
+	mLOW
+,
+
+67 
+	mHIGH
+
+
+68 }
+	tpšLev–
+;
+
+70 
+	e_gpioPÜt
+{
+
+71 
+	mGPIO0
+,
+
+72 
+	mGPIO1
+,
+
+73 
+	mGPIO2
+,
+
+74 
+	mGPIO3
+
+
+75 }
+	tgpioPÜt
+;
+
+77 
+	e_pšDœeùiÚ
+{
+
+78 
+	mOUTPUT
+,
+
+79 
+	mINPUT
+
+
+80 }
+	tpšDœeùiÚ
+;
+
+87 
+gpioIn™ModuË
+(
+gpioPÜt
+ );
+
+88 
+gpioIn™Pš
+(
+gpioPÜt
+ ,
+ucPšNumb”
+ );
+
+89 
+gpioS‘DœeùiÚ
+(
+gpioPÜt
+ ,
+ucPšNumb”
+ ,
+pšDœeùiÚ
+ );
+
+90 
+gpioG‘DœeùiÚ
+(
+ucPšNumb”
+ ,ucPinNumber );
+
+91 
+gpioS‘PšV®ue
+(
+gpioPÜt
+ ,
+ucPšNumb”
+ ,
+pšLev–
+ );
+
+92 
+gpioG‘PšV®ue
+(
+gpioPÜt
+ ,
+ucPšNumb”
+ );
+
+	@inc/hw_types.h
+
+42 #iâdeà
+_HW_TYPES_H_
+
+
+43 
+	#_HW_TYPES_H_
+
+
+	)
+
+50 
+	ttBoÞ—n
+;
+
+53 
+	mŒue
+ = 1,
+
+54 
+	mçl£
+ = 0
+
+55 }
+	tboÞ
+;
+
+57 #iâdeà
+NULL
+
+
+58 
+	#NULL
+ ((*è0)
+
+	)
+
+66 
+	#HWREG
+(
+x
+) \
+
+67 (*((vÞ©ž*)(
+x
+)))
+
+	)
+
+68 
+	#HWREGH
+(
+x
+) \
+
+69 (*((vÞ©ž*)(
+x
+)))
+
+	)
+
+70 
+	#HWREGB
+(
+x
+) \
+
+71 (*((vÞ©ž*)(
+x
+)))
+
+	)
+
+72 
+	#HWREGBITW
+(
+x
+, 
+b
+) \
+
+73 
+	`HWREG
+((()(
+x
+) & 0xF0000000) | 0x02000000 | \
+
+74 ((()(
+x
+è& 0x000FFFFFè<< 5è| ((
+b
+è<< 2))
+
+	)
+
+75 
+	#HWREGBITH
+(
+x
+, 
+b
+) \
+
+76 
+	`HWREGH
+((()(
+x
+) & 0xF0000000) | 0x02000000 | \
+
+77 ((()(
+x
+è& 0x000FFFFFè<< 5è| ((
+b
+è<< 2))
+
+	)
+
+78 
+	#HWREGBITB
+(
+x
+, 
+b
+) \
+
+79 
+	`HWREGB
+((()(
+x
+) & 0xF0000000) | 0x02000000 | \
+
+80 ((()(
+x
+è& 0x000FFFFFè<< 5è| ((
+b
+è<< 2))
+
+	)
+
+82 
+	#TRUE
+ 1
+
+	)
+
+83 
+	#FALSE
+ 0
+
+	)
+
+	@inc/pad.h
+
+1 #iâdeà
+__PAD_H
+
+
+2 
+	#__PAD_H
+
+
+	)
+
+23 
+	~"cÚŒÞ_moduË.h
+"
+
+29 
+	mMODE_0
+ = 0,
+
+30 
+	mMODE_1
+ = 1,
+
+31 
+	mMODE_2
+ = 2,
+
+32 
+	mMODE_3
+ = 3,
+
+33 
+	mMODE_4
+ = 4,
+
+34 
+	mMODE_5
+ = 5,
+
+35 
+	mMODE_6
+ = 6,
+
+36 
+	mMODE_7
+ = 7
+
+38 }
+	tpšmode_t
+;
+
+43 
+·dS‘Mode
+(
+CONTROL_MODULE
+ 
+off£t
+, 
+pšmode_t
+ 
+mode
+);
+
+44 
+pšmode_t
+ 
+·dG‘Mode
+(
+CONTROL_MODULE
+ 
+off£t
+);
+
+	@inc/soc_AM335x.h
+
+44 #iâdeà
+_SOC_AM33XX_H_
+
+
+45 
+	#_SOC_AM33XX_H_
+
+
+	)
+
+47 #ifdeà
+__ýlu¥lus
+
+
+52 
+	#SOC_CACHELINE_SIZE_MAX
+ (64)
+
+	)
+
+55 
+	#SOC_AINTC_REGS
+ (0x48200000)
+
+	)
+
+58 
+	#SOC_UART_0_REGS
+ (0x44E09000)
+
+	)
+
+59 
+	#SOC_UART_1_REGS
+ (0x48022000)
+
+	)
+
+60 
+	#SOC_UART_2_REGS
+ (0x48024000)
+
+	)
+
+61 
+	#SOC_UART_3_REGS
+ (0x481A6000)
+
+	)
+
+62 
+	#SOC_UART_4_REGS
+ (0x481A8000)
+
+	)
+
+63 
+	#SOC_UART_5_REGS
+ (0x481AA000)
+
+	)
+
+66 
+	#SOC_USB_0_BASE
+ (0x47401400)
+
+	)
+
+67 
+	#SOC_USB_1_BASE
+ (0x47401C00)
+
+	)
+
+69 
+	#SOC_SPI_0_REGS
+ (0x48030000)
+
+	)
+
+70 
+	#SOC_SPI_1_REGS
+ (0x481A0000)
+
+	)
+
+73 
+	#SOC_GPIO_0_REGS
+ (0x44E07000)
+
+	)
+
+74 
+	#SOC_GPIO_1_REGS
+ (0x4804C000)
+
+	)
+
+75 
+	#SOC_GPIO_2_REGS
+ (0x481AC000)
+
+	)
+
+76 
+	#SOC_GPIO_3_REGS
+ (0x481AE000)
+
+	)
+
+79 
+	#SOC_DMTIMER_0_REGS
+ (0x44E05000)
+
+	)
+
+80 
+	#SOC_DMTIMER_1_REGS
+ (0x44E31000)
+
+	)
+
+81 
+	#SOC_DMTIMER_2_REGS
+ (0x48040000)
+
+	)
+
+82 
+	#SOC_DMTIMER_3_REGS
+ (0x48042000)
+
+	)
+
+83 
+	#SOC_DMTIMER_4_REGS
+ (0x48044000)
+
+	)
+
+84 
+	#SOC_DMTIMER_5_REGS
+ (0x48046000)
+
+	)
+
+85 
+	#SOC_DMTIMER_6_REGS
+ (0x48048000)
+
+	)
+
+86 
+	#SOC_DMTIMER_7_REGS
+ (0x4804A000)
+
+	)
+
+89 
+	#SOC_MMCHS_0_REGS
+ (0x48060000)
+
+	)
+
+90 
+	#SOC_MMCHS_1_REGS
+ (0x481D8000)
+
+	)
+
+91 
+	#SOC_MMCHS_2_REGS
+ (0x47810000)
+
+	)
+
+94 
+	#SOC_GPMC_0_REGS
+ (0x50000000)
+
+	)
+
+97 
+	#SOC_ELM_0_REGS
+ (0x48080000)
+
+	)
+
+100 
+	#SOC_I2C_0_REGS
+ (0x44E0B000)
+
+	)
+
+101 
+	#SOC_I2C_1_REGS
+ (0x4802A000)
+
+	)
+
+102 
+	#SOC_I2C_2_REGS
+ (0x4819C000)
+
+	)
+
+105 
+	#SOC_WDT_0_REGS
+ (0x44E33000)
+
+	)
+
+106 
+	#SOC_WDT_1_REGS
+ (0x44E35000)
+
+	)
+
+109 
+	#SOC_CPSW_SS_REGS
+ (0x4A100000)
+
+	)
+
+110 
+	#SOC_CPSW_MDIO_REGS
+ (0x4A101000)
+
+	)
+
+111 
+	#SOC_CPSW_WR_REGS
+ (0x4A101200)
+
+	)
+
+112 
+	#SOC_CPSW_CPDMA_REGS
+ (0x4A100800)
+
+	)
+
+113 
+	#SOC_CPSW_ALE_REGS
+ (0x4A100D00)
+
+	)
+
+114 
+	#SOC_CPSW_STAT_REGS
+ (0x4A100900)
+
+	)
+
+115 
+	#SOC_CPSW_PORT_0_REGS
+ (0x4A100100)
+
+	)
+
+116 
+	#SOC_CPSW_PORT_1_REGS
+ (0x4A100200)
+
+	)
+
+117 
+	#SOC_CPSW_SLIVER_1_REGS
+ (0x4A100D80)
+
+	)
+
+118 
+	#SOC_CPSW_PORT_2_REGS
+ (0x4A100300)
+
+	)
+
+119 
+	#SOC_CPSW_SLIVER_2_REGS
+ (0x4A100DC0)
+
+	)
+
+120 
+	#SOC_CPSW_CPPI_RAM_REGS
+ (0x4A102000)
+
+	)
+
+123 
+	#SOC_MCASP_0_CTRL_REGS
+ (0x48038000)
+
+	)
+
+124 
+	#SOC_MCASP_0_FIFO_REGS
+ (
+SOC_MCASP_0_CTRL_REGS
+ + 0x1000)
+
+	)
+
+125 
+	#SOC_MCASP_0_DATA_REGS
+ (0x46000000)
+
+	)
+
+126 
+	#SOC_MCASP_1_CTRL_REGS
+ (0x4803C000)
+
+	)
+
+127 
+	#SOC_MCASP_1_FIFO_REGS
+ (
+SOC_MCASP_1_CTRL_REGS
+ + 0x1000)
+
+	)
+
+128 
+	#SOC_MCASP_1_DATA_REGS
+ (0x46400000)
+
+	)
+
+131 
+	#SOC_EMIF_0_REGS
+ (0x4C000000)
+
+	)
+
+134 
+	#SOC_RTC_0_REGS
+ (0x44E3E000)
+
+	)
+
+137 
+	#SOC_PRCM_REGS
+ (0x44E00000)
+
+	)
+
+138 
+	#SOC_CM_PER_REGS
+ (
+SOC_PRCM_REGS
+ + 0)
+
+	)
+
+139 
+	#SOC_CM_WKUP_REGS
+ (
+SOC_PRCM_REGS
+ + 0x400)
+
+	)
+
+140 
+	#SOC_CM_DPLL_REGS
+ (
+SOC_PRCM_REGS
+ + 0x500)
+
+	)
+
+141 
+	#SOC_CM_MPU_REGS
+ (
+SOC_PRCM_REGS
+ + 0x600)
+
+	)
+
+142 
+	#SOC_CM_DEVICE_REGS
+ (
+SOC_PRCM_REGS
+ + 0x700)
+
+	)
+
+143 
+	#SOC_CM_RTC_REGS
+ (
+SOC_PRCM_REGS
+ + 0x800)
+
+	)
+
+144 
+	#SOC_CM_GFX_REGS
+ (
+SOC_PRCM_REGS
+ + 0x900)
+
+	)
+
+145 
+	#SOC_CM_CEFUSE_REGS
+ (
+SOC_PRCM_REGS
+ + 0xA00)
+
+	)
+
+146 
+	#SOC_OCP_SOCKET_RAM_REGS
+ (
+SOC_PRCM_REGS
+ + 0xB00)
+
+	)
+
+147 
+	#SOC_PRM_PER_REGS
+ (
+SOC_PRCM_REGS
+ + 0xC00)
+
+	)
+
+148 
+	#SOC_PRM_WKUP_REGS
+ (
+SOC_PRCM_REGS
+ + 0xD00)
+
+	)
+
+149 
+	#SOC_PRM_MPU_REGS
+ (
+SOC_PRCM_REGS
+ + 0xE00)
+
+	)
+
+150 
+	#SOC_PRM_DEVICE_REGS
+ (
+SOC_PRCM_REGS
+ + 0xF00)
+
+	)
+
+151 
+	#SOC_PRM_RTC_REGS
+ (
+SOC_PRCM_REGS
+ + 0x1000)
+
+	)
+
+152 
+	#SOC_PRM_GFX_REGS
+ (
+SOC_PRCM_REGS
+ + 0x1100)
+
+	)
+
+153 
+	#SOC_PRM_CEFUSE_REGS
+ (
+SOC_PRCM_REGS
+ + 0x1200)
+
+	)
+
+156 
+	#SOC_CONTROL_REGS
+ (0x44E10000)
+
+	)
+
+160 
+	#SOC_EDMA30CC_0_REGS
+ (0x49000000)
+
+	)
+
+163 
+	#SOC_DCAN_0_REGS
+ (0x481CC000)
+
+	)
+
+164 
+	#SOC_DCAN_1_REGS
+ (0x481D0000)
+
+	)
+
+170 
+	#TPCC_MUX
+(
+n
+è0xF90 + (Òè* 4)
+
+	)
+
+173 
+	#SOC_LCDC_0_REGS
+ 0x4830E000
+
+	)
+
+175 
+	#SOC_ADC_TSC_0_REGS
+ 0x44E0D000
+
+	)
+
+179 
+	#SOC_PWMSS0_REGS
+ (0x48300000)
+
+	)
+
+180 
+	#SOC_PWMSS1_REGS
+ (0x48302000)
+
+	)
+
+181 
+	#SOC_PWMSS2_REGS
+ (0x48304000)
+
+	)
+
+183 
+	#SOC_ECAP_REGS
+ (0x00000100)
+
+	)
+
+184 
+	#SOC_EQEP_REGS
+ (0x00000180)
+
+	)
+
+185 
+	#SOC_EPWM_REGS
+ (0x00000200)
+
+	)
+
+187 
+	#SOC_ECAP_0_REGS
+ (
+SOC_PWMSS0_REGS
+ + 
+SOC_ECAP_REGS
+)
+
+	)
+
+188 
+	#SOC_ECAP_1_REGS
+ (
+SOC_PWMSS1_REGS
+ + 
+SOC_ECAP_REGS
+)
+
+	)
+
+189 
+	#SOC_ECAP_2_REGS
+ (
+SOC_PWMSS2_REGS
+ + 
+SOC_ECAP_REGS
+)
+
+	)
+
+191 
+	#SOC_EQEP_0_REGS
+ (
+SOC_PWMSS0_REGS
+ + 
+SOC_EQEP_REGS
+)
+
+	)
+
+192 
+	#SOC_EQEP_1_REGS
+ (
+SOC_PWMSS1_REGS
+ + 
+SOC_EQEP_REGS
+)
+
+	)
+
+193 
+	#SOC_EQEP_2_REGS
+ (
+SOC_PWMSS2_REGS
+ + 
+SOC_EQEP_REGS
+)
+
+	)
+
+195 
+	#SOC_EPWM_0_REGS
+ (
+SOC_PWMSS0_REGS
+ + 
+SOC_EPWM_REGS
+)
+
+	)
+
+196 
+	#SOC_EPWM_1_REGS
+ (
+SOC_PWMSS1_REGS
+ + 
+SOC_EPWM_REGS
+)
+
+	)
+
+197 
+	#SOC_EPWM_2_REGS
+ (
+SOC_PWMSS2_REGS
+ + 
+SOC_EPWM_REGS
+)
+
+	)
+
+200 
+	#SOC_EPWM_MODULE_FREQ
+ 100
+
+	)
+
+202 #ifdeà
+__ýlu¥lus
+
+
+	@inc/uart.h
+
+1 #iâdeà
+UART_H_
+
+
+2 
+	#UART_H_
+
+
+	)
+
+22 
+	~"hw_ty³s.h
+"
+
+23 
+	~"soc_AM335x.h
+"
+
+24 
+	~"gpio.h
+"
+
+25 
+	~"·d.h
+"
+
+26 
+	~"cÚŒÞ_moduË.h
+"
+
+27 
+	~"þock_moduË.h
+"
+
+29 
+	#UARTx_OP_R_RHR
+ 0x0
+
+	)
+
+30 
+	#UARTx_OP_R_IER
+ 0x4
+
+	)
+
+31 
+	#UARTx_OP_R_IIR
+ 0x8
+
+	)
+
+32 
+	#UARTx_OP_R_LCR
+ 0xC
+
+	)
+
+33 
+	#UARTx_OP_R_MCR
+ 0x10
+
+	)
+
+34 
+	#UARTx_OP_R_LSR
+ 0x14
+
+	)
+
+35 
+	#UARTx_OP_R_MSRTCR
+ 0x18
+
+	)
+
+36 
+	#UARTx_OP_R_SPRTLR
+ 0x1C
+
+	)
+
+37 
+	#UARTx_OP_R_MDR1
+ 0x20
+
+	)
+
+38 
+	#UARTx_OP_R_MDR2
+ 0x24
+
+	)
+
+39 
+	#UARTx_OP_R_SFLSR
+ 0x28
+
+	)
+
+40 
+	#UARTx_OP_R_RESUME
+ 0x2C
+
+	)
+
+41 
+	#UARTx_OP_R_SFREGL
+ 0x30
+
+	)
+
+42 
+	#UARTx_OP_R_SFREGH
+ 0x34
+
+	)
+
+43 
+	#UARTx_OP_R_BLR
+ 0x38
+
+	)
+
+44 
+	#UARTx_OP_R_ACREG
+ 0x3C
+
+	)
+
+45 
+	#UARTx_OP_R_SCR
+ 0x40
+
+	)
+
+46 
+	#UARTx_OP_R_SSR
+ 0x44
+
+	)
+
+47 
+	#UARTx_OP_R_EBLR
+ 0x48
+
+	)
+
+48 
+	#UARTx_OP_R_MVR
+ 0x50
+
+	)
+
+49 
+	#UARTx_OP_R_SYSC
+ 0x54
+
+	)
+
+50 
+	#UARTx_OP_R_SYSS
+ 0x58
+
+	)
+
+51 
+	#UARTx_OP_R_WER
+ 0x5C
+
+	)
+
+52 
+	#UARTx_OP_R_CFPS
+ 0x60
+
+	)
+
+53 
+	#UARTx_OP_R_RXFIFO_LVL
+ 0x64
+
+	)
+
+54 
+	#UARTx_OP_R_TXFIFO_LVL
+ 0x68
+
+	)
+
+55 
+	#UARTx_OP_R_IER2
+ 0x6C
+
+	)
+
+56 
+	#UARTx_OP_R_ISR2
+ 0x70
+
+	)
+
+57 
+	#UARTx_OP_R_FREQ_SEL
+ 0x74
+
+	)
+
+58 
+	#UARTx_OP_R_MDR3
+ 0x80
+
+	)
+
+59 
+	#UARTx_OP_R_TXDMA
+ 0x84
+
+	)
+
+61 
+	#UARTx_OP_W_THR
+ 0x0
+
+	)
+
+62 
+	#UARTx_OP_W_IER
+ 0x4
+
+	)
+
+63 
+	#UARTx_OP_W_FCR
+ 0x8
+
+	)
+
+64 
+	#UARTx_OP_W_LCR
+ 0xC
+
+	)
+
+65 
+	#UARTx_OP_W_MCR
+ 0x10
+
+	)
+
+66 
+	#UARTx_OP_W_TCR
+ 0x18
+
+	)
+
+67 
+	#UARTx_OP_W_SPRTLR
+ 0x1C
+
+	)
+
+68 
+	#UARTx_OP_W_MDR1
+ 0x20
+
+	)
+
+69 
+	#UARTx_OP_W_MDR2
+ 0x24
+
+	)
+
+70 
+	#UARTx_OP_W_TXFLL
+ 0x28
+
+	)
+
+71 
+	#UARTx_OP_W_TXFLH
+ 0x2C
+
+	)
+
+72 
+	#UARTx_OP_W_RXFLL
+ 0x30
+
+	)
+
+73 
+	#UARTx_OP_W_RXFLH
+ 0x34
+
+	)
+
+74 
+	#UARTx_OP_W_BLR
+ 0x38
+
+	)
+
+75 
+	#UARTx_OP_W_ACREG
+ 0x3C
+
+	)
+
+76 
+	#UARTx_OP_W_SCR
+ 0x40
+
+	)
+
+77 
+	#UARTx_OP_W_SSR
+ 0x44
+
+	)
+
+78 
+	#UARTx_OP_W_EBLR
+ 0x48
+
+	)
+
+79 
+	#UARTx_OP_W_SYSC
+ 0x54
+
+	)
+
+80 
+	#UARTx_OP_W_WER
+ 0x5C
+
+	)
+
+81 
+	#UARTx_OP_W_CFPS
+ 0x60
+
+	)
+
+82 
+	#UARTx_OP_W_RXFIFO_LVL
+ 0x64
+
+	)
+
+83 
+	#UARTx_OP_W_TXFIFO_LVL
+ 0x68
+
+	)
+
+84 
+	#UARTx_OP_W_IER2
+ 0x6C
+
+	)
+
+85 
+	#UARTx_OP_W_ISR2
+ 0x70
+
+	)
+
+86 
+	#UARTx_OP_W_FREQ_SEL
+ 0x74
+
+	)
+
+87 
+	#UARTx_OP_W_MDR3
+ 0x80
+
+	)
+
+88 
+	#UARTx_OP_W_TXDMA
+ 0x84
+
+	)
+
+91 
+	#UARTx_MA_R_DLL
+ 0x0
+
+	)
+
+92 
+	#UARTx_MA_R_DLH
+ 0x4
+
+	)
+
+93 
+	#UARTx_MA_R_IIR
+ 0x8
+
+	)
+
+94 
+	#UARTx_MA_R_LCR
+ 0xC
+
+	)
+
+95 
+	#UARTx_MA_R_MCR
+ 0x10
+
+	)
+
+96 
+	#UARTx_MA_R_LSR
+ 0x14
+
+	)
+
+97 
+	#UARTx_MA_R_MSRTCR
+ 0x18
+
+	)
+
+98 
+	#UARTx_MA_R_SPRTLR
+ 0x1C
+
+	)
+
+99 
+	#UARTx_MA_R_MDR1
+ 0x20
+
+	)
+
+100 
+	#UARTx_MA_R_MDR2
+ 0x24
+
+	)
+
+101 
+	#UARTx_MA_R_SFLR
+ 0x28
+
+	)
+
+102 
+	#UARTx_MA_R_RESUME
+ 0x2C
+
+	)
+
+103 
+	#UARTx_MA_R_SFREGL
+ 0x30
+
+	)
+
+104 
+	#UARTx_MA_R_SFREGH
+ 0x34
+
+	)
+
+105 
+	#UARTx_MA_R_UASR
+ 0x38
+
+	)
+
+106 
+	#UARTx_MA_R_SCR
+ 0x40
+
+	)
+
+107 
+	#UARTx_MA_R_SSR
+ 0x44
+
+	)
+
+108 
+	#UARTx_MA_R_
+ 0x48
+
+	)
+
+109 
+	#UARTx_MA_R_MVR
+ 0x50
+
+	)
+
+110 
+	#UARTx_MA_R_SYSC
+ 0x54
+
+	)
+
+111 
+	#UARTx_MA_R_SYSS
+ 0x58
+
+	)
+
+112 
+	#UARTx_MA_R_WER
+ 0x5C
+
+	)
+
+113 
+	#UARTx_MA_R_CFPS
+ 0x60
+
+	)
+
+114 
+	#UARTx_MA_R_RXFIFO_LVL
+ 0x64
+
+	)
+
+115 
+	#UARTx_MA_R_TXFIFO_LVL
+ 0x68
+
+	)
+
+116 
+	#UARTx_MA_R_IER2
+ 0x6C
+
+	)
+
+117 
+	#UARTx_MA_R_ISR2
+ 0x70
+
+	)
+
+118 
+	#UARTx_MA_R_FREQ_SEL
+ 0x74
+
+	)
+
+119 
+	#UARTx_MA_R_MDR3
+ 0x80
+
+	)
+
+120 
+	#UARTx_MA_R_TXDMA
+ 0x84
+
+	)
+
+122 
+	#UARTx_MA_W_DLL
+ 0x00
+
+	)
+
+123 
+	#UARTx_MA_W_DLH
+ 0x04
+
+	)
+
+124 
+	#UARTx_MA_W_FCR
+ 0x08
+
+	)
+
+125 
+	#UARTx_MA_W_LCR
+ 0x0C
+
+	)
+
+126 
+	#UARTx_MA_W_MCR
+ 0x10
+
+	)
+
+127 
+	#UARTx_MA_W_TCR
+ 0x18
+
+	)
+
+128 
+	#UARTx_MA_W_SPRTLR
+ 0x1C
+
+	)
+
+129 
+	#UARTx_MA_W_MDR1
+ 0x20
+
+	)
+
+130 
+	#UARTx_MA_W_MDR2
+ 0x24
+
+	)
+
+131 
+	#UARTx_MA_W_TXFLL
+ 0x28
+
+	)
+
+132 
+	#UARTx_MA_W_TXFLH
+ 0x2C
+
+	)
+
+133 
+	#UARTx_MA_W_RXFLL
+ 0x30
+
+	)
+
+134 
+	#UARTx_MA_W_RXFLH
+ 0x34
+
+	)
+
+135 
+	#UARTx_MA_W_SCR
+ 0x40
+
+	)
+
+136 
+	#UARTx_MA_W_SSR
+ 0x44
+
+	)
+
+137 
+	#UARTx_MA_W_SYSC
+ 0x54
+
+	)
+
+138 
+	#UARTx_MA_W_WER
+ 0x5C
+
+	)
+
+139 
+	#UARTx_MA_W_CFPS
+ 0x60
+
+	)
+
+140 
+	#UARTx_MA_W_RXFIFO_LVL
+ 0x64
+
+	)
+
+141 
+	#UARTx_MA_W_TXFIFO_LVL
+ 0x68
+
+	)
+
+142 
+	#UARTx_MA_W_IER2
+ 0x6C
+
+	)
+
+143 
+	#UARTx_MA_W_ISR2
+ 0x70
+
+	)
+
+144 
+	#UARTx_MA_W_FREQ_SEL
+ 0x74
+
+	)
+
+145 
+	#UARTx_MA_W_MDR3
+ 0x80
+
+	)
+
+146 
+	#UARTx_MA_W_TXDMA
+ 0x84
+
+	)
+
+149 
+	#UARTx_MB_R_DLL
+ 0x00
+
+	)
+
+150 
+	#UARTx_MB_R_DLH
+ 0x04
+
+	)
+
+151 
+	#UARTx_MB_R_EFR
+ 0x08
+
+	)
+
+152 
+	#UARTx_MB_R_LCR
+ 0x0C
+
+	)
+
+153 
+	#UARTx_MB_R_XON1ADDR2
+ 0x10
+
+	)
+
+154 
+	#UARTx_MB_R_XON2ADDR2
+ 0x14
+
+	)
+
+155 
+	#UARTx_MB_R_XOFF1TCR
+ 0x18
+
+	)
+
+156 
+	#UARTx_MB_R_XOFF2TLR
+ 0x1C
+
+	)
+
+157 
+	#UARTx_MB_R_MDR1
+ 0x20
+
+	)
+
+158 
+	#UARTx_MB_R_MDR2
+ 0x24
+
+	)
+
+159 
+	#UARTx_MB_R_SFLSR
+ 0x28
+
+	)
+
+160 
+	#UARTx_MB_R_RESUME
+ 0x2C
+
+	)
+
+161 
+	#UARTx_MB_R_SFREGL
+ 0x30
+
+	)
+
+162 
+	#UARTx_MB_R_SFREGH
+ 0x34
+
+	)
+
+163 
+	#UARTx_MB_R_UASR
+ 0x38
+
+	)
+
+164 
+	#UARTx_MB_R_SCR
+ 0x40
+
+	)
+
+165 
+	#UARTx_MB_R_SSR
+ 0x44
+
+	)
+
+166 
+	#UARTx_MB_R_MVR
+ 0x50
+
+	)
+
+167 
+	#UARTx_MB_R_SYSC
+ 0x54
+
+	)
+
+168 
+	#UARTx_MB_R_SYSS
+ 0x58
+
+	)
+
+169 
+	#UARTx_MB_R_WER
+ 0x5C
+
+	)
+
+170 
+	#UARTx_MB_R_CFPS
+ 0x60
+
+	)
+
+171 
+	#UARTx_MB_R_RXFIFO_LVL
+ 0x64
+
+	)
+
+172 
+	#UARTx_MB_R_TXFIFO_LVL
+ 0x68
+
+	)
+
+173 
+	#UARTx_MB_R_IER2
+ 0x6C
+
+	)
+
+174 
+	#UARTx_MB_R_ISR2
+ 0x70
+
+	)
+
+175 
+	#UARTx_MB_R_FREQ_SEL
+ 0x74
+
+	)
+
+176 
+	#UARTx_MB_R_MDR3
+ 0x80
+
+	)
+
+177 
+	#UARTx_MB_R_TXDMA
+ 0x84
+
+	)
+
+180 
+	#UARTx_MB_W_DLL
+ 0x00
+
+	)
+
+181 
+	#UARTx_MB_W_DLH
+ 0x04
+
+	)
+
+182 
+	#UARTx_MB_W_EFR
+ 0x08
+
+	)
+
+183 
+	#UARTx_MB_W_LCR
+ 0x0C
+
+	)
+
+184 
+	#UARTx_MB_W_XON1ADDR1
+ 0x10
+
+	)
+
+185 
+	#UARTx_MB_W_XON2ADDR2
+ 0x14
+
+	)
+
+186 
+	#UARTx_MB_W_XOFF1TCR
+ 0x18
+
+	)
+
+187 
+	#UARTx_MB_W_XOFF2TLR
+ 0x1C
+
+	)
+
+188 
+	#UARTx_MB_W_MDR1
+ 0x20
+
+	)
+
+189 
+	#UARTx_MB_W_MDR2
+ 0x24
+
+	)
+
+190 
+	#UARTx_MB_W_SFLSR
+ 0x28
+
+	)
+
+191 
+	#UARTx_MB_W_RESUME
+ 0x2C
+
+	)
+
+192 
+	#UARTx_MB_W_SFREGL
+ 0x30
+
+	)
+
+193 
+	#UARTx_MB_W_SFREGH
+ 0x34
+
+	)
+
+194 
+	#UARTx_MB_W_UASR
+ 0x38
+
+	)
+
+195 
+	#UARTx_MB_W_SCR
+ 0x40
+
+	)
+
+196 
+	#UARTx_MB_W_SSR
+ 0x44
+
+	)
+
+197 
+	#UARTx_MB_W_MVR
+ 0x50
+
+	)
+
+198 
+	#UARTx_MB_W_SYSC
+ 0x54
+
+	)
+
+199 
+	#UARTx_MB_W_SYSS
+ 0x58
+
+	)
+
+200 
+	#UARTx_MB_W_WER
+ 0x5C
+
+	)
+
+201 
+	#UARTx_MB_W_CFPS
+ 0x60
+
+	)
+
+202 
+	#UARTx_MB_W_RXFIFO_LVL
+ 0x64
+
+	)
+
+203 
+	#UARTx_MB_W_TXFIFO_LVL
+ 0x68
+
+	)
+
+204 
+	#UARTx_MB_W_IER2
+ 0x6C
+
+	)
+
+205 
+	#UARTx_MB_W_ISR2
+ 0x70
+
+	)
+
+206 
+	#UARTx_MB_W_FREQ_SEL
+ 0x74
+
+	)
+
+207 
+	#UARTx_MB_W_MDR3
+ 0x80
+
+	)
+
+208 
+	#UARTx_MB_W_TXDMA
+ 0x84
+
+	)
+
+214 
+	e_UART_t
+{
+
+215 
+	mUART0
+ = 0,
+
+216 
+	mUART1
+ = 1,
+
+217 
+	mUART2
+ = 2,
+
+218 
+	mUART3
+ = 3,
+
+219 
+	mUART4
+ = 4,
+
+220 
+	mUART5
+ = 5
+
+221 }
+	tUART_t
+;
+
+227 
+	e_FLOW_t
+{
+
+228 
+	mFLOW_OFF
+ = 0,
+
+229 
+	mFLOW_ON
+ = 1
+
+230 }
+	tFLOW_t
+;
+
+236 
+	e_PARITY_BIT_t
+{
+
+237 
+	mPARITY_NONE
+,
+
+238 
+	mPARITY_EVEN
+,
+
+239 
+	mPARITY_ODD
+
+
+240 }
+	tPARITY_BIT_t
+;
+
+246 
+	e_STOP_BIT_t
+{
+
+247 
+	mSTOP1
+,
+
+248 
+	mSTOP1_5
+,
+
+249 
+	mSTOP2
+
+
+250 }
+	tSTOP_BIT_t
+;
+
+263 
+u¬tIn™ModuË
+(
+UART_t
+ 
+u¬t
+, 
+baud¿‹
+, 
+STOP_BIT_t
+ 
+¡ÝB™
+, 
+PARITY_BIT_t
+ 
+·r™y
+, 
+FLOW_t
+ 
+æowCÚŒÞ
+);
+
+273 
+u¬tPutC
+(
+UART_t
+ 
+u¬t
+, 
+c
+);
+
+282 
+u¬tG‘C
+(
+UART_t
+ 
+u¬t
+);
+
+293 
+u¬tPutSŒšg
+(
+UART_t
+ 
+u¬t
+, *
+¡r
+, 
+Ëngth
+);
+
+303 
+u¬tG‘SŒšg
+(
+UART_t
+ 
+u¬t
+, *
+buf
+, 
+Ëngth
+);
+
+305 cÚ¡ 
+	gUART_ARRAY_BASE
+[] = {
+SOC_UART_0_REGS
+, 
+SOC_UART_1_REGS
+, 
+SOC_UART_2_REGS
+, 
+SOC_UART_3_REGS
+, 
+SOC_UART_4_REGS
+, 
+SOC_UART_5_REGS
+};
+
+	@src/clock_module.c
+
+19 
+	~"þock_moduË.h
+"
+
+20 
+	~"hw_ty³s.h
+"
+
+21 
+	~"soc_AM335x.h
+"
+
+24 
+boÞ
+ 
+	$ckmCheckV®idModuË
+(
+CKM_MODULE_REG
+ 
+off£t
+){
+
+25 if((
+off£t
+ > 
+CKM_PER_CLK_24MHZ_CLKSTCTRL
+)){
+
+26 (
+çl£
+);
+
+28 (
+Œue
+);
+
+29 
+	}
+}
+
+31 
+	$ckmS‘CLKModuËRegi¡”
+(
+CKM_MODULE
+ 
+ba£
+, 
+CKM_MODULE_REG
+ 
+off£t
+, 
+v®ue
+){
+
+32 if(
+	`ckmCheckV®idModuË
+(
+off£t
+)){
+
+33 
+addr_‹mp
+ = 
+ba£
+ + 
+off£t
+;
+
+34 
+	`HWREG
+(
+addr_‹mp
+è|ð
+v®ue
+;
+
+36 
+	}
+}
+
+38 
+	$ckmG‘CLKModuËRegi¡”
+(
+CKM_MODULE
+ 
+ba£
+, 
+CKM_MODULE_REG
+ 
+off£t
+){
+
+39 if(
+	`ckmCheckV®idModuË
+(
+off£t
+)){
+
+40 
+addr_‹mp
+ = 
+ba£
+ + 
+off£t
+;
+
+41 (
+	`HWREG
+(
+addr_‹mp
+));
+
+44 
+	}
+}
+
+	@src/control_module.c
+
+19 
+	~"cÚŒÞ_moduË.h
+"
+
+20 
+	~"soc_AM335x.h
+"
+
+21 
+	~"hw_ty³s.h
+"
+
+23 
+	$cmS‘CŒlModuË
+(
+CONTROL_MODULE
+ 
+off£t
+, 
+v®ue
+){
+
+24 
+	`HWREG
+(
+SOC_CONTROL_REGS
+ + 
+off£t
+è|ð
+v®ue
+;
+
+25 
+	}
+}
+
+27 
+	$cmG‘CŒlModuË
+(
+CONTROL_MODULE
+ 
+off£t
+){
+
+28 (
+	`HWREG
+(
+SOC_CONTROL_REGS
+ + 
+off£t
+));
+
+29 
+	}
+}
+
+	@src/gpio.c
+
+19 
+	~"gpio.h
+"
+
+26 cÚ¡ 
+CONTROL_MODULE
+ 
+	gGPIO_CTRL_MODULE_ARRAY
+[32][4] = {
+
+28 {
+CM_cÚf_mdio
+ ,
+CM_cÚf_gpmc_ad0
+ ,
+CM_cÚf_gpmc_c¢3
+ ,
+CM_cÚf_mii1_cÞ
+ },
+
+29 {
+CM_cÚf_mdc
+ ,
+CM_cÚf_gpmc_ad1
+ ,
+CM_cÚf_gpmc_þk
+ ,
+CM_cÚf_mii1_üs
+ },
+
+30 {
+CM_cÚf_¥i0_sþk
+ ,
+CM_cÚf_gpmc_ad2
+ ,
+CM_cÚf_gpmc_advn_®e
+ ,
+CM_cÚf_mii1_rx_”
+ },
+
+31 {
+CM_cÚf_¥i0_d0
+ ,
+CM_cÚf_gpmc_ad3
+ ,
+CM_cÚf_gpmc_Ûn_»n
+ ,
+CM_cÚf_mii1_tx_’
+ },
+
+32 {
+CM_cÚf_¥i0_d1
+ ,
+CM_cÚf_gpmc_ad4
+ ,
+CM_cÚf_gpmc_w’
+ ,
+CM_cÚf_mii1_rx_dv
+ },
+
+33 {
+CM_cÚf_¥i0_cs0
+ ,
+CM_cÚf_gpmc_ad5
+ ,
+CM_cÚf_gpmc_b’0_þe
+ ,
+CM_cÚf_i2c0_sda
+ },
+
+34 {
+CM_cÚf_¥i0_cs1
+ ,
+CM_cÚf_gpmc_ad6
+ ,
+CM_cÚf_lcd_d©a0
+ ,
+CM_cÚf_i2c0_sþ
+ },
+
+35 {
+CM_cÚf_eÿp0_š_pwm0_out
+ ,
+CM_cÚf_gpmc_ad7
+ ,
+CM_cÚf_lcd_d©a1
+ ,
+CM_cÚf_emu0
+ },
+
+36 {
+CM_cÚf_lcd_d©a12
+ ,
+CM_cÚf_u¬t0_ù¢
+ ,
+CM_cÚf_lcd_d©a2
+ ,
+CM_cÚf_emu1
+ },
+
+37 {
+CM_cÚf_lcd_d©a13
+ ,
+CM_cÚf_u¬t0_¹¢
+ ,
+CM_cÚf_lcd_d©a3
+ ,
+CM_cÚf_mii1_tx_þk
+ },
+
+38 {
+CM_cÚf_lcd_d©a14
+ ,
+CM_cÚf_u¬t0_rxd
+ ,
+CM_cÚf_lcd_d©a4
+ ,
+CM_cÚf_mii1_rx_þk
+ },
+
+39 {
+CM_cÚf_lcd_d©a15
+ ,
+CM_cÚf_u¬t0_txd
+ ,
+CM_cÚf_lcd_d©a5
+ ,-1 },
+
+40 {
+CM_cÚf_u¬t1_ù¢
+ ,
+CM_cÚf_gpmc_ad12
+ ,
+CM_cÚf_lcd_d©a6
+ ,-1 },
+
+41 {
+CM_cÚf_u¬t1_¹¢
+ ,
+CM_cÚf_gpmc_ad13
+ ,
+CM_cÚf_lcd_d©a7
+ ,
+CM_cÚf_usb1_drvvbus
+ },
+
+42 {
+CM_cÚf_u¬t1_rxd
+ ,
+CM_cÚf_gpmc_ad14
+ ,
+CM_cÚf_lcd_d©a8
+ ,
+CM_cÚf_mÿ¥0_aþkx
+ },
+
+43 {
+CM_cÚf_u¬t1_txd
+ ,
+CM_cÚf_gpmc_ad15
+ ,
+CM_cÚf_lcd_d©a9
+ ,
+CM_cÚf_mÿ¥0_fsx
+ },
+
+44 {
+CM_cÚf_mii1_txd3
+ ,
+CM_cÚf_gpmc_a0
+ ,
+CM_cÚf_lcd_d©a10
+ ,
+CM_cÚf_mÿ¥0_axr0
+ },
+
+45 {
+CM_cÚf_mii1_txd2
+ ,
+CM_cÚf_gpmc_a1
+ ,
+CM_cÚf_lcd_d©a11
+ ,
+CM_cÚf_mÿ¥0_ahþkr
+ },
+
+46 {
+CM_cÚf_usb0_drvvbus
+ ,
+CM_cÚf_gpmc_a2
+ ,
+CM_cÚf_mii1_rxd3
+ ,
+CM_cÚf_mÿ¥0_aþkr
+ },
+
+47 {
+CM_cÚf_xdma_ev’t_šŒ0
+ ,
+CM_cÚf_gpmc_a3
+ ,
+CM_cÚf_mii1_rxd2
+ ,
+CM_cÚf_mÿ¥0_f¤
+ },
+
+48 {
+CM_cÚf_xdma_ev’t_šŒ1
+ ,
+CM_cÚf_gpmc_a4
+ ,
+CM_cÚf_mii1_rxd1
+ ,
+CM_cÚf_mÿ¥0_axr1
+ },
+
+49 {
+CM_cÚf_mii1_txd1
+ ,
+CM_cÚf_gpmc_a5
+ ,
+CM_cÚf_mii1_rxd0
+ ,
+CM_cÚf_mÿ¥0_ahþkx
+ },
+
+50 {
+CM_cÚf_gpmc_ad8
+ ,
+CM_cÚf_gpmc_a6
+ ,
+CM_cÚf_lcd_vsync
+ ,-1 },
+
+51 {
+CM_cÚf_gpmc_ad9
+ ,
+CM_cÚf_gpmc_a7
+ ,
+CM_cÚf_lcd_hsync
+ ,-1 },
+
+52 {-1 ,
+CM_cÚf_gpmc_a8
+ ,
+CM_cÚf_lcd_pþk
+ ,-1 },
+
+53 {-1 ,
+CM_cÚf_gpmc_a9
+ ,
+CM_cÚf_lcd_ac_bŸs_’
+ ,-1 },
+
+54 {
+CM_cÚf_gpmc_ad10
+ ,
+CM_cÚf_gpmc_a10
+ ,
+CM_cÚf_mmc0_d©3
+ ,-1 },
+
+55 {
+CM_cÚf_gpmc_ad11
+ ,
+CM_cÚf_gpmc_a11
+ ,
+CM_cÚf_mmc0_d©2
+ ,-1 },
+
+56 {
+CM_cÚf_mii1_txd0
+ ,
+CM_cÚf_gpmc_b’1
+ ,
+CM_cÚf_mmc0_d©1
+ ,-1 },
+
+57 {
+CM_cÚf_rmii1_»f_þk
+ ,
+CM_cÚf_gpmc_c¢0
+ ,
+CM_cÚf_mmc0_d©0
+ ,-1 },
+
+58 {
+CM_cÚf_gpmc_wa™0
+ ,
+CM_cÚf_gpmc_c¢1
+ ,
+CM_cÚf_mmc0_þk
+ ,-1 },
+
+59 {
+CM_cÚf_gpmc_w²
+ ,
+CM_cÚf_gpmc_c¢2
+ ,
+CM_cÚf_mmc0_cmd
+ ,-1 },
+
+68 
+boÞ
+ 
+	$gpioCheckV®idPÜtPš
+(
+gpioPÜt
+ 
+pÜt
+, 
+ucPšNumb”
+ 
+pš
+){
+
+69 if((
+pÜt
+ < 
+GPIO0
+è|| (pÜˆ> 
+GPIO3
+)){
+
+71 (
+çl£
+);
+
+73 if((
+pš
+ < 0) || (pin > 31)){
+
+75 (
+çl£
+);
+
+77 (
+Œue
+);
+
+78 
+	}
+}
+
+86 
+boÞ
+ 
+	$gpioCheckV®idDœeùiÚ
+(
+pšDœeùiÚ
+ 
+dœ
+){
+
+87 if((
+dœ
+!=
+INPUT
+è&& (dœ!=
+OUTPUT
+)){
+
+89 (
+çl£
+);
+
+91 (
+Œue
+);
+
+92 
+	}
+}
+
+100 
+	$gpioIn™ModuË
+(
+gpioPÜt
+ 
+pÜt
+){
+
+101 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+, 0)){
+
+102 
+£‰šg
+ = (1<<18) | (0x2<<0);
+
+103 
+pÜt
+){
+
+104 
+GPIO0
+:
+
+107 
+GPIO1
+:
+
+108 
+	`ckmS‘CLKModuËRegi¡”
+(
+CKM_PER
+, 
+CKM_PER_GPIO1_CLKCTRL
+, 
+£‰šg
+);
+
+109 (
+	`ckmG‘CLKModuËRegi¡”
+(
+CKM_PER
+, 
+CKM_PER_GPIO1_CLKCTRL
+) & (0x3<<16)) != 0)
+
+111 
+GPIO2
+:
+
+112 
+	`ckmS‘CLKModuËRegi¡”
+(
+CKM_PER
+, 
+CKM_PER_GPIO2_CLKCTRL
+, 
+£‰šg
+);
+
+113 (
+	`ckmG‘CLKModuËRegi¡”
+(
+CKM_PER
+, 
+CKM_PER_GPIO2_CLKCTRL
+) & (0x3<<16)) != 0)
+
+115 
+GPIO3
+:
+
+122 
+	}
+}
+
+130 
+	$gpioIn™Pš
+(
+gpioPÜt
+ 
+pÜt
+, 
+ucPšNumb”
+ 
+pš
+){
+
+131 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+, 
+pš
+)){
+
+132 
+CONTROL_MODULE
+ 
+moduË
+ = 
+GPIO_CTRL_MODULE_ARRAY
+[
+pš
+][
+pÜt
+];
+
+133 
+	`·dS‘Mode
+(
+moduË
+, 
+MODE_7
+);
+
+135 
+	}
+}
+
+143 
+	$gpioS‘DœeùiÚ
+(
+gpioPÜt
+ 
+pÜt
+, 
+ucPšNumb”
+ 
+pš
+, 
+pšDœeùiÚ
+ 
+dœ
+){
+
+144 
+addr_‹mp
+, 
+v®_‹mp
+;
+
+146 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+,
+pš
+)){
+
+147 if(
+	`gpioCheckV®idDœeùiÚ
+(
+dœ
+)){
+
+148 
+pÜt
+) {
+
+149 
+GPIO0
+:
+
+151 
+GPIO1
+:
+
+153 
+addr_‹mp
+ = 
+SOC_GPIO_1_REGS
+ + 
+GPIO_OE
+;
+
+155 
+v®_‹mp
+ = 
+	`HWREG
+(
+addr_‹mp
+);
+
+157 
+GPIO2
+:
+
+159 
+addr_‹mp
+ = 
+SOC_GPIO_2_REGS
+ + 
+GPIO_OE
+;
+
+161 
+v®_‹mp
+ = 
+	`HWREG
+(
+addr_‹mp
+);
+
+163 
+GPIO3
+:
+
+169 
+v®_‹mp
+ &ð~(1<<
+pš
+);
+
+170 
+v®_‹mp
+ |ð(
+dœ
+<<
+pš
+);
+
+173 
+	`HWREG
+(
+addr_‹mp
+èð
+v®_‹mp
+;
+
+176 
+	}
+}
+
+184 
+	$gpioG‘DœeùiÚ
+(
+gpioPÜt
+ 
+pÜt
+, 
+ucPšNumb”
+ 
+pš
+){
+
+185 
+addr_‹mp
+, 
+v®_‹mp
+;
+
+187 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+,
+pš
+)){
+
+188 
+pÜt
+) {
+
+189 
+GPIO0
+:
+
+191 
+addr_‹mp
+ = 
+SOC_GPIO_0_REGS
+ + 
+GPIO_OE
+;
+
+192 
+v®_‹mp
+ = 
+	`HWREG
+(
+addr_‹mp
+);
+
+194 
+GPIO1
+:
+
+196 
+addr_‹mp
+ = 
+SOC_GPIO_1_REGS
+ + 
+GPIO_OE
+;
+
+197 
+v®_‹mp
+ = 
+	`HWREG
+(
+addr_‹mp
+);
+
+199 
+GPIO2
+:
+
+202 
+GPIO3
+:
+
+211 if(
+v®_‹mp
+ & (1<<
+pš
+)){
+
+212 (
+INPUT
+);
+
+214 (
+OUTPUT
+);
+
+219 
+	}
+}
+
+227 
+	$gpioS‘PšV®ue
+(
+gpioPÜt
+ 
+pÜt
+, 
+ucPšNumb”
+ 
+pš
+, 
+pšLev–
+ 
+v®ue
+){
+
+228 
+addr_‹mp
+, 
+v®_‹mp
+;
+
+230 if(
+v®ue
+ =ð
+HIGH
+){
+
+231 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+,
+pš
+)){
+
+232 
+pÜt
+) {
+
+233 
+GPIO0
+:
+
+235 
+GPIO1
+:
+
+237 
+addr_‹mp
+ = 
+SOC_GPIO_1_REGS
+ + 
+GPIO_SETDATAOUT
+;
+
+238 
+v®_‹mp
+ = 1<<
+pš
+;
+
+240 
+GPIO2
+:
+
+242 
+addr_‹mp
+ = 
+SOC_GPIO_2_REGS
+ + 
+GPIO_SETDATAOUT
+;
+
+243 
+v®_‹mp
+ = 1<<
+pš
+;
+
+245 
+GPIO3
+:
+
+250 
+	`HWREG
+(
+addr_‹mp
+è|ð
+v®_‹mp
+;
+
+253 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+,
+pš
+)){
+
+254 
+pÜt
+) {
+
+255 
+GPIO0
+:
+
+257 
+GPIO1
+:
+
+259 
+addr_‹mp
+ = 
+SOC_GPIO_1_REGS
+ + 
+GPIO_CLEARDATAOUT
+;
+
+260 
+v®_‹mp
+ = 1<<
+pš
+;
+
+262 
+GPIO2
+:
+
+264 
+addr_‹mp
+ = 
+SOC_GPIO_2_REGS
+ + 
+GPIO_CLEARDATAOUT
+;
+
+265 
+v®_‹mp
+ = 1<<
+pš
+;
+
+267 
+GPIO3
+:
+
+272 
+	`HWREG
+(
+addr_‹mp
+è&ð
+v®_‹mp
+;
+
+275 
+	}
+}
+
+283 
+	$gpioG‘PšV®ue
+(
+gpioPÜt
+ 
+pÜt
+, 
+ucPšNumb”
+ 
+pš
+){
+
+286 if(
+	`gpioCheckV®idPÜtPš
+(
+pÜt
+,
+pš
+)){
+
+287 
+pÜt
+) {
+
+288 
+GPIO0
+:
+
+290 
+GPIO1
+:
+
+292 
+GPIO2
+:
+
+294 
+GPIO3
+:
+
+308 
+	}
+}
+
+	@src/main.c
+
+19 
+	~"gpio.h
+"
+
+25 
+	#TIME
+ 2000000
+
+	)
+
+31 
+d–ay
+();
+
+32 
+ËdON
+(
+gpioMod
+ ,
+ucPšNumb”
+ );
+
+33 
+ËdOFF
+(
+gpioMod
+ ,
+ucPšNumb”
+ );
+
+41 
+	$maš
+(){
+
+42 
+couÁ
+;
+
+43 
+ucPšNumb”
+ 
+pš
+=21;
+
+44 
+pšDœeùiÚ
+ 
+dœ
+=
+OUTPUT
+;
+
+49 
+	`gpioIn™ModuË
+(
+GPIO1
+);
+
+54 
+	`gpioIn™Pš
+(
+GPIO1
+, );
+
+59 
+	`gpioS‘DœeùiÚ
+(
+GPIO1
+, 
+couÁ
+, 
+dœ
+);
+
+64 
+	`ËdOFF
+(
+GPIO1
+, 
+couÁ
+);
+
+66 
+Œue
+){
+
+67 
+Ý
+){
+
+68 
+SEQ1
+:
+
+69 
+	`ËdON
+(
+GPIO1
+, 
+pš
+);
+
+70 
+	`d–ay
+();
+
+71 
+	`ËdOFF
+(
+GPIO1
+, 
+pš
+);
+
+72 
+	`d–ay
+();
+
+73 
+Ý
+=
+SEQ2
+;
+
+75 
+SEQ2
+:
+
+76 
+	`ËdON
+(
+GPIO1
+, 
+pš
++1);
+
+77 
+	`d–ay
+();
+
+78 
+	`ËdOFF
+(
+GPIO1
+, 
+pš
++1);
+
+79 
+	`d–ay
+();
+
+80 
+Ý
+=
+SEQ3
+;
+
+82 
+SEQ3
+:
+
+83 
+	`ËdON
+(
+GPIO1
+, 
+pš
++2);
+
+84 
+	`d–ay
+();
+
+85 
+	`ËdOFF
+(
+GPIO1
+, 
+pš
++2);
+
+86 
+	`d–ay
+();
+
+87 
+Ý
+=
+SEQ4
+;
+
+89 
+SEQ4
+:
+
+90 
+	`ËdON
+(
+GPIO1
+, 
+pš
++3);
+
+91 
+	`d–ay
+();
+
+92 
+	`ËdOFF
+(
+GPIO1
+, 
+pš
++3);
+
+93 
+	`d–ay
+();
+
+94 
+Ý
+=
+SEQ5
+;
+
+96 
+SEQ5
+:
+
+97 
+couÁ
+=
+pš
+; count<25; count++)
+
+98 
+	`ËdON
+(
+GPIO1
+, 
+couÁ
+);
+
+99 
+	`d–ay
+();
+
+100 
+	`d–ay
+();
+
+101 
+couÁ
+=
+pš
+; count<25; count++)
+
+102 
+	`ËdOFF
+(
+GPIO1
+, 
+couÁ
+);
+
+103 
+	`d–ay
+();
+
+104 
+	`d–ay
+();
+
+105 
+Ý
+=
+SEQ1
+;
+
+113 
+	}
+}
+
+121 
+	$ËdON
+(
+gpioMod
+ 
+mod
+, 
+ucPšNumb”
+ 
+pš
+){
+
+122 
+	`gpioS‘PšV®ue
+(
+mod
+, 
+pš
+, 
+HIGH
+);
+
+123 
+	}
+}
+
+131 
+	$ËdOFF
+(
+gpioMod
+ 
+mod
+, 
+ucPšNumb”
+ 
+pš
+ ){
+
+132 
+	`gpioS‘PšV®ue
+(
+mod
+, 
+pš
+, 
+LOW
+);
+
+133 
+	}
+}
+
+140 
+	$d–ay
+(){
+
+141 vÞ©ž
+¿
+;
+
+142 
+¿
+ = 0;„¨< 
+TIME
+;„a ++);
+
+143 
+	}
+}
+
+	@src/pad.c
+
+19 
+	~"·d.h
+"
+
+20 
+	~"cÚŒÞ_moduË.h
+"
+
+28 
+	$·dS‘Mode
+(
+CONTROL_MODULE
+ 
+off£t
+, 
+pšmode_t
+ 
+mode
+){
+
+29 if((
+off£t
+ <ð
+CM_cÚf_usb1_drvvbus
+ ) && (off£ˆ>ð
+CM_cÚf_gpmc_ad0
+)){
+
+30 
+‹mp
+ = 
+	`cmG‘CŒlModuË
+(
+off£t
+);
+
+31 
+‹mp
+ &= ~(0b111);
+
+32 
+‹mp
+ |ð
+mode
+;
+
+33 
+	`cmS‘CŒlModuË
+(
+off£t
+, 
+‹mp
+);
+
+37 
+	}
+}
+
+45 
+pšmode_t
+ 
+	$·dG‘Mode
+(
+CONTROL_MODULE
+ 
+off£t
+){
+
+46 if((
+off£t
+ <ð
+CM_cÚf_usb1_drvvbus
+ ) && (off£ˆ>ð
+CM_cÚf_gpmc_ad0
+)){
+
+47 
+‹mp
+ = 
+	`cmG‘CŒlModuË
+(
+off£t
+);
+
+49  ((
+pšmode_t
+è
+‹mp
+);
+
+54 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+12
+176
+inc/clock_module.h
+inc/control_module.h
+inc/gpio.h
+inc/hw_types.h
+inc/pad.h
+inc/soc_AM335x.h
+inc/uart.h
+src/clock_module.c
+src/control_module.c
+src/gpio.c
+src/main.c
+src/pad.c
