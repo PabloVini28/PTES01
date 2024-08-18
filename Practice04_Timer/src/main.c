@@ -31,10 +31,9 @@
 		Init_pin_gpio(GPIO1, 23, OUTPUT);
 		Init_pin_gpio(GPIO1, 24, OUTPUT);
 
-		
+		timerSetup(TIMER2);
 
 		while(true){
-			timerSetup(TIMER2);
 			GpioSetPinValue(GPIO1, 21, HIGH);
 			GpioSetPinValue(GPIO1, 22, HIGH);
 			GpioSetPinValue(GPIO1, 23, HIGH);

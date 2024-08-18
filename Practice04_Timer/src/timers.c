@@ -133,13 +133,22 @@ void timerSetup(Timer timer){
 void delay(unsigned int value, Timer timer) {
     unsigned int aux = TIMER_OVERFLOW - (value * TIMER_1MS_COUNT); // número de ciclos
     
-    switch (timer) {
-    case TIMER2:
-        DMTimerWaitForWrite(0x2, TIMER2);
-        HWREG(SOC_DMTIMER_2_REGS + DMTIMER_TCRR) = aux;
-        timerEnable(TIMER2); // Inicia o timer
-        while(HWREG(SOC_DMTIMER_2_REGS + DMTIMER_TCRR) != TIMER_OVERFLOW); // Aguarda o overflow
-        timerDisable(TIMER2); // Para o timer
+    switch (timer){
+        case TIMER2:
+            while(value!= 0){
+            
+                DMTimerWaitForWrite(0x2,TIMER2);
+
+                HWREG(SOC_DMTIMER_2_REGS+DMTIMER_TCRR) = 0x0;
+
+                timerEnable(TIMER2);
+
+                while(HWREG(SOC_DMTIMER_2_REGS+DMTIMER_TCRR) < TIMER_1MS_COUNT);
+
+                /* Stop the timer */
+                timerDisable(TIMER2);
+                value--;
+            }
         break;
     case TIMER3:
         DMTimerWaitForWrite(0x2, TIMER3);
