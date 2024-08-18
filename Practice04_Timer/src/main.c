@@ -6,8 +6,6 @@
 	#include <stdio.h>
 	#define DELAY_USE_INTERRUPT			1
 
-	#define DELAY_MS(ms) for(unsigned int i = 0; i < (ms * 100000); i++)
-
 	void disableWdt(void){
 		HWREG(WDT_WSPR) = 0xAAAA;
 		while((HWREG(WDT_WWPS) & (1<<4)));
@@ -21,47 +19,32 @@
 		
 		disableWdt();
 		Init_module_gpio(GPIO1);
-		Init_module_gpio(GPIO2);
 
-		cmSetCtrlModule(CM_conf_gpmc_ad12,7);
-		cmSetCtrlModule(CM_conf_gpmc_ben1,7); 
-		cmSetCtrlModule(CM_conf_gpmc_a0,7); 
-		cmSetCtrlModule(CM_conf_gpmc_a1,7); 
-
-		cmSetCtrlModule(CM_conf_gpmc_clk,7);
-		cmSetCtrlModule(CM_conf_gpmc_advn_ale,7);
+		cmSetCtrlModule(CM_conf_gpmc_a5,7);
+		cmSetCtrlModule(CM_conf_gpmc_a6,7);
+		cmSetCtrlModule(CM_conf_gpmc_a7,7);
+		cmSetCtrlModule(CM_conf_gpmc_a8,7);
 
 		//leds externos
-		Init_pin_gpio(GPIO1, 12, OUTPUT);
-		Init_pin_gpio(GPIO1, 28, OUTPUT);
-		Init_pin_gpio(GPIO1, 16, OUTPUT);
-		Init_pin_gpio(GPIO1, 17, OUTPUT);
+		Init_pin_gpio(GPIO1, 21, OUTPUT);
+		Init_pin_gpio(GPIO1, 22, OUTPUT);
+		Init_pin_gpio(GPIO1, 23, OUTPUT);
+		Init_pin_gpio(GPIO1, 24, OUTPUT);
 
-		Init_pin_gpio(GPIO2, 1,INPUT);
-		Init_pin_gpio(GPIO2, 2,INPUT);
+		
 
-		while(1){
-			
-				// leds externos
-				if((GpioGetPinValue(GPIO2, 1) == 0) && (GpioGetPinValue(GPIO2, 2) == 0)){
-					GpioSetPinValue(GPIO1, 12, LOW);
-					GpioSetPinValue(GPIO1,28,LOW);
-					GpioSetPinValue(GPIO1, 16, LOW);
-					GpioSetPinValue(GPIO1, 17, LOW);
-				}
-
-				if((GpioGetPinValue(GPIO2, 1) == 1) && (GpioGetPinValue(GPIO2, 2) == 1)){
-					GpioSetPinValue(GPIO1, 12, HIGH);
-					GpioSetPinValue(GPIO1,28,HIGH);
-					GpioSetPinValue(GPIO1, 16, LOW);
-					GpioSetPinValue(GPIO1, 17, HIGH);
-				}
-				else if((GpioGetPinValue(GPIO2, 1) == 1) | (GpioGetPinValue(GPIO2, 2) == 1)){
-					GpioSetPinValue(GPIO1, 28, HIGH);
-					GpioSetPinValue(GPIO1, 16, HIGH);
-					GpioSetPinValue(GPIO1,17,LOW);
-					GpioSetPinValue(GPIO1,12,LOW);
-				}
+		while(true){
+			timerSetup(TIMER2);
+			GpioSetPinValue(GPIO1, 21, HIGH);
+			GpioSetPinValue(GPIO1, 22, HIGH);
+			GpioSetPinValue(GPIO1, 23, HIGH);
+			GpioSetPinValue(GPIO1, 24, HIGH);
+			delay(100,TIMER2);
+			GpioSetPinValue(GPIO1, 21, LOW);
+			GpioSetPinValue(GPIO1, 22, LOW);
+			GpioSetPinValue(GPIO1, 23, LOW);
+			GpioSetPinValue(GPIO1, 24, LOW);
+			delay(100,TIMER2);
 		}
 		return 0;
 	}
