@@ -40,7 +40,7 @@
  *If the input clock is changed to different source this value has to be updated 
  *accordingly.	
 */
-#define TIMER_1MS_COUNT                 		0x5DC0u
+#define TIMER_1MS_COUNT                 		0x960u
 #define TIMER_OVERFLOW                  		0xFFFFFFFFu
 
 int Interrupt_Setup(unsigned int inter);

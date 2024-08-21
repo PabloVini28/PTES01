@@ -131,7 +131,6 @@ void timerSetup(Timer timer){
 }
 
 void delay(unsigned int value, Timer timer) {
-    unsigned int aux = TIMER_OVERFLOW - (value * TIMER_1MS_COUNT); // número de ciclos
     
     switch (timer){
         case TIMER2:
@@ -151,39 +150,83 @@ void delay(unsigned int value, Timer timer) {
             }
         break;
     case TIMER3:
-        DMTimerWaitForWrite(0x2, TIMER3);
-        HWREG(SOC_DMTIMER_3_REGS + DMTIMER_TCRR) = aux;
-        timerEnable(TIMER3);
-        while(HWREG(SOC_DMTIMER_3_REGS + DMTIMER_TCRR) != TIMER_OVERFLOW);
-        timerDisable(TIMER3);
+        while(value!= 0){
+            
+                DMTimerWaitForWrite(0x2,TIMER3);
+
+                HWREG(SOC_DMTIMER_3_REGS+DMTIMER_TCRR) = 0x0;
+
+                timerEnable(TIMER3);
+
+                while(HWREG(SOC_DMTIMER_3_REGS+DMTIMER_TCRR) < TIMER_1MS_COUNT);
+
+                /* Stop the timer */
+                timerDisable(TIMER3);
+                value--;
+            }
         break;
     case TIMER4:
-        DMTimerWaitForWrite(0x2, TIMER4);
-        HWREG(SOC_DMTIMER_4_REGS + DMTIMER_TCRR) = aux;
-        timerEnable(TIMER4);
-        while(HWREG(SOC_DMTIMER_4_REGS + DMTIMER_TCRR) != TIMER_OVERFLOW);
-        timerDisable(TIMER4);
+        while(value!= 0){
+            
+                DMTimerWaitForWrite(0x2,TIMER4);
+
+                HWREG(SOC_DMTIMER_4_REGS+DMTIMER_TCRR) = 0x0;
+
+                timerEnable(TIMER4);
+
+                while(HWREG(SOC_DMTIMER_4_REGS+DMTIMER_TCRR) < TIMER_1MS_COUNT);
+
+                /* Stop the timer */
+                timerDisable(TIMER4);
+                value--;
+            }
         break;
     case TIMER5:
-        DMTimerWaitForWrite(0x2, TIMER5);
-        HWREG(SOC_DMTIMER_5_REGS + DMTIMER_TCRR) = aux;
-        timerEnable(TIMER5);
-        while(HWREG(SOC_DMTIMER_5_REGS + DMTIMER_TCRR) != TIMER_OVERFLOW);
-        timerDisable(TIMER5);
+        while(value!= 0){
+            
+                DMTimerWaitForWrite(0x2,TIMER5);
+
+                HWREG(SOC_DMTIMER_5_REGS+DMTIMER_TCRR) = 0x0;
+
+                timerEnable(TIMER5);
+
+                while(HWREG(SOC_DMTIMER_5_REGS+DMTIMER_TCRR) < TIMER_1MS_COUNT);
+
+                /* Stop the timer */
+                timerDisable(TIMER5);
+                value--;
+            }
         break;
     case TIMER6:
-        DMTimerWaitForWrite(0x2, TIMER6);
-        HWREG(SOC_DMTIMER_6_REGS + DMTIMER_TCRR) = aux;
-        timerEnable(TIMER6);
-        while(HWREG(SOC_DMTIMER_6_REGS + DMTIMER_TCRR) != TIMER_OVERFLOW);
-        timerDisable(TIMER6);
-        break;
+        while(value!= 0){
+            
+                DMTimerWaitForWrite(0x2,TIMER6);
+
+                HWREG(SOC_DMTIMER_6_REGS+DMTIMER_TCRR) = 0x0;
+
+                timerEnable(TIMER2);
+
+                while(HWREG(SOC_DMTIMER_6_REGS+DMTIMER_TCRR) < TIMER_1MS_COUNT);
+
+                /* Stop the timer */
+                timerDisable(TIMER6);
+                value--;
+            }
     case TIMER7:
-        DMTimerWaitForWrite(0x2, TIMER7);
-        HWREG(SOC_DMTIMER_7_REGS + DMTIMER_TCRR) = aux;
-        timerEnable(TIMER7);
-        while(HWREG(SOC_DMTIMER_7_REGS + DMTIMER_TCRR) != TIMER_OVERFLOW);
-        timerDisable(TIMER7);
+        while(value!= 0){
+            
+                DMTimerWaitForWrite(0x2,TIMER7);
+
+                HWREG(SOC_DMTIMER_7_REGS+DMTIMER_TCRR) = 0x0;
+
+                timerEnable(TIMER7);
+
+                while(HWREG(SOC_DMTIMER_7_REGS+DMTIMER_TCRR) < TIMER_1MS_COUNT);
+
+                /* Stop the timer */
+                timerDisable(TIMER7);
+                value--;
+            }
         break;
     default:
         break;
