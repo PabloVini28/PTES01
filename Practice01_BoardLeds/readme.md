@@ -8,4 +8,5 @@
   - For this practice, we need, majoritarity, the GPIO1 macros about the Base Address, Clock And Module Enable. After, we need to find the name of GPIO1_21,22,23 and 24 pin, to do that, take the gpio1_21 and search on the PTES01/Documents/DatasheetAM335x.pdf, you will find the name of pin, in this case is CM_conf_gpmc_a5, next to there is his offset.
   - Finally, we need to find the Address offset about the GPIO Output controls, search on the User Manual the GPIO_OE, GPIO_CLEARDATAOUT and GPIO_SETDATAOUT.
   - Conclusion, do the bitwise code using this practice as an example, you will blink the 4 on board leds in the binary sequence like 0 until 15.
+  - PS: WatchDog Enable.
   
