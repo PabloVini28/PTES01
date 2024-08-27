@@ -1,6 +1,5 @@
 #include "gpio.h"
 #include "clock_module.h"
-#define TOGGLE 0x01u
 
 int Init_module_gpio(gpioMod mod){
 
@@ -19,6 +18,8 @@ int Init_module_gpio(gpioMod mod){
     default:
         break;
     }
+
+    return 1;
 
 }
 
@@ -66,7 +67,7 @@ int Init_pin_gpio(gpioMod mod , unsigned char pino , Direction dir){
     default:
         break;
     }
-
+    return 1;
 }
 
 unsigned int Get_direction_pin_gpio(gpioMod mod , unsigned char pino){
@@ -202,47 +203,37 @@ int Pin_Interrup_Config(gpioMod  mod, ucPinNumber pino, GroupInterrup tipo){
     case GPIO0:
         if(tipo == type0){
             HWREG(SOC_GPIO_0_REGS+GPIO_IRQSTATUS_SET_0) |= (1<<pino);
-            HWREG(SOC_GPIO_0_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
             HWREG(SOC_GPIO_0_REGS+GPIO_RISINGDETECT) |= (1<<pino);
-            HWREG(SOC_GPIO_0_REGS+GPIO_LEVELDETECT0) |= (1<<pino);
         }else{
             HWREG(SOC_GPIO_0_REGS+GPIO_IRQSTATUS_SET_1) |= (1<<pino);
-            HWREG(SOC_GPIO_0_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
-            HWREG(SOC_GPIO_0_REGS+GPIO_FALLINGDETECT) |= (1<<pino);
-            HWREG(SOC_GPIO_0_REGS+GPIO_LEVELDETECT1) |= (1<<pino);
+            HWREG(SOC_GPIO_0_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }     
         break;
     case GPIO1:
         if(tipo == type0){
             HWREG(SOC_GPIO_1_REGS+GPIO_IRQSTATUS_SET_0) |= (1<<pino);
-            HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
             HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }else{
             HWREG(SOC_GPIO_1_REGS+GPIO_IRQSTATUS_SET_1) |= (1<<pino);
-            HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
-            HWREG(SOC_GPIO_1_REGS+GPIO_FALLINGDETECT) |= (1<<pino);
+            HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }     
         break;
     case GPIO2:
         if(tipo == type0){
             HWREG(SOC_GPIO_2_REGS+GPIO_IRQSTATUS_SET_0) |= (1<<pino);
-            HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
             HWREG(SOC_GPIO_2_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }else{
             HWREG(SOC_GPIO_2_REGS+GPIO_IRQSTATUS_SET_1) |= (1<<pino);
-            HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
-            HWREG(SOC_GPIO_2_REGS+GPIO_FALLINGDETECT) |= (1<<pino);
+            HWREG(SOC_GPIO_2_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }     
         break;
     case GPIO3:
         if(tipo == type0){
             HWREG(SOC_GPIO_3_REGS+GPIO_IRQSTATUS_SET_0) |= (1<<pino);
-            HWREG(SOC_GPIO_3_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
             HWREG(SOC_GPIO_3_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }else{
             HWREG(SOC_GPIO_3_REGS+GPIO_IRQSTATUS_SET_1) |= (1<<pino);
-            HWREG(SOC_GPIO_3_REGS+GPIO_DEBOUNCENABLE) |= (1<<pino);
-            HWREG(SOC_GPIO_3_REGS+GPIO_FALLINGDETECT) |= (1<<pino);
+            HWREG(SOC_GPIO_3_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }     
         break;        
     

@@ -1,4 +1,8 @@
 #include "timers.h"
+#include "gpio.h"
+#include "interruption.h"
+#include "uart.h"
+#include "menu.h"
 
 bool flag_timer;
 
@@ -267,6 +271,27 @@ void timerIrqHandler(Timer timer){
             break;
     }
 
+}
+
+void ISR_Handler(void) {
+    
+    unsigned int irq_number = HWREG(INTC_BASE+INTC_SIR_IRQ) & 0x7f;
+    if(irq_number == 98){
+        if(HWREG(SOC_GPIO_1_REGS+GPIO_IRQSTATUS_RAW_0)&(1<<16)){
+			gpioIsrHandler(GPIO1,0,16);
+            GpioSetPinValue(GPIO1,28,LOW);
+            chamaMenu();
+		}else if(HWREG(SOC_GPIO_1_REGS+GPIO_IRQSTATUS_RAW_0)&(1<<17)){
+            HWREG(SOC_GPIO_1_REGS+DMTIMER_IRQSTATUS) = 0x2;
+            gpioIsrHandler(GPIO1,0,17);
+            GpioSetPinValue(GPIO1,28,HIGH);
+            timerDisable(TIMER7);
+        }
+		
+	}
+    
+    HWREG(INTC_BASE+INTC_CONTROL) = 0x1; // habilita nova interrupção
+        
 }
 
 void disableWdt(void) {

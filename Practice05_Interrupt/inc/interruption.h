@@ -8,7 +8,7 @@
 
 /* Interrupt */
 #define INTC_BASE       						0x48200000
-#define INTC_SIR_IRQ    						0x40
+#define INTC_SIR_IRQ    						0x40   // 0100 0000
 #define INTC_CONTROL    						0x48
 #define INTC_ILR        						0x100
 #define MIR_CLEAR0                              0x88
