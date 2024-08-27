@@ -1,4 +1,8 @@
 #include "interruption.h"
+#include "gpio.h"   
+#include "uart.h"
+#include "menu.h"
+#include "timers.h"
 
 int Interrupt_Setup(unsigned int inter){
     if(inter < 0 || inter > 127){
