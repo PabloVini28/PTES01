@@ -8,8 +8,8 @@ BIN=bin/
 
 all: app
 
-app: start.o main.o gpio.o uart.o pad.o control_module.o clock_module.o timers.o interruption.o menu.o
-	$(CHAIN)-ld $(OBJ)start.o $(OBJ)main.o $(OBJ)gpio.o $(OBJ)uart.o $(OBJ)pad.o $(OBJ)control_module.o $(OBJ)clock_module.o $(OBJ)timers.o $(OBJ)interruption.o $(OBJ)menu.o -T $(SRC)memmap.ld -o $(OBJ)main.elf 
+app: start.o main.o gpio.o uart.o pad.o control_module.o clock_module.o timers.o interruption.o menu.o marmota.o
+	$(CHAIN)-ld $(OBJ)start.o $(OBJ)main.o $(OBJ)gpio.o $(OBJ)uart.o $(OBJ)pad.o $(OBJ)control_module.o $(OBJ)clock_module.o $(OBJ)timers.o $(OBJ)interruption.o $(OBJ)menu.o $(OBJ)marmota.o  -T $(SRC)memmap.ld -o $(OBJ)main.elf 
 	$(CHAIN)-objcopy $(OBJ)main.elf $(BIN)spl.boot -O binary
 	cp $(BIN)spl.boot /tftpboot/app.bin
 
@@ -42,6 +42,9 @@ interruption.o: $(SRC)interruption.c
 
 menu.o: $(SRC)menu.c
 	$(CHAIN)-gcc $(CFLAGS) $(IPATH) -c $(SRC)menu.c -o $(OBJ)menu.o	
+
+marmota.o: $(SRC)marmota.c
+	$(CHAIN)-gcc $(CFLAGS) $(IPATH) -c $(SRC)marmota.c -o $(OBJ)marmota.o		
 
 copy:
 	cp $(BIN)spl.boot /tftpboot/app.bin

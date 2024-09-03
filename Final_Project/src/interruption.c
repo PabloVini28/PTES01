@@ -1,8 +1,5 @@
 #include "interruption.h"
-#include "gpio.h"   
-#include "uart.h"
-#include "menu.h"
-#include "timers.h"
+#include "marmota.h"
 
 int Interrupt_Setup(unsigned int inter){
     if(inter < 0 || inter > 127){
@@ -28,4 +25,31 @@ int Interrupt_Setup(unsigned int inter){
         break;
     }
     return true;
+}
+
+void ISR_Handler(void) {
+    putCh(UART0,'e');
+    unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
+
+    if (irq_number == 98) {
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
+        putCh(UART0,'s');
+        MarmotaVerde();
+    }
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
+        MarmotaVermelha();
+    }
+    if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 18)){
+        reset();
+    }
+    if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 19)){
+        start();
+    }
+    }
+    if (irq_number == 95) {
+        putCh(UART0,'a');
+        timerIrqHandler(TIMER7);
+    }
+
+    HWREG(INTC_BASE + INTC_CONTROL) = 0x1; // habilita nova interrupção
 }
