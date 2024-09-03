@@ -1,0 +1,751 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CKM_AUTOIDLE_DPLL_CORE	inc/clock_module.h	/^   CKM_AUTOIDLE_DPLL_CORE        = 0x58,$/;"	e	enum:_CKM_MODULE_REG
+CKM_AUTOIDLE_DPLL_DDR	inc/clock_module.h	/^   CKM_AUTOIDLE_DPLL_DDR         = 0x30,$/;"	e	enum:_CKM_MODULE_REG
+CKM_AUTOIDLE_DPLL_DISP	inc/clock_module.h	/^   CKM_AUTOIDLE_DPLL_DISP        = 0x44,$/;"	e	enum:_CKM_MODULE_REG
+CKM_AUTOIDLE_DPLL_MPU	inc/clock_module.h	/^   CKM_AUTOIDLE_DPLL_MPU         = 0x1C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_AUTOIDLE_DPLL_PER	inc/clock_module.h	/^   CKM_AUTOIDLE_DPLL_PER         = 0x6C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CEFUSE	inc/clock_module.h	/^   CKM_CEFUSE  = SOC_CM_CEFUSE_REGS$/;"	e	enum:_CKM_MODULE
+CKM_CLKDCOLDO_DPLL_PER	inc/clock_module.h	/^   CKM_CLKDCOLDO_DPLL_PER        = 0x7C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKMODE_DPLL_CORE	inc/clock_module.h	/^   CKM_CLKMODE_DPLL_CORE         = 0x90,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKMODE_DPLL_DDR	inc/clock_module.h	/^   CKM_CLKMODE_DPLL_DDR          = 0x94,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKMODE_DPLL_DISP	inc/clock_module.h	/^   CKM_CLKMODE_DPLL_DISP         = 0x98,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKMODE_DPLL_MPU	inc/clock_module.h	/^   CKM_CLKMODE_DPLL_MPU          = 0x88,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKMODE_DPLL_PER	inc/clock_module.h	/^   CKM_CLKMODE_DPLL_PER          = 0x8C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKSEL_DPLL_CORE	inc/clock_module.h	/^   CKM_CLKSEL_DPLL_CORE          = 0x68,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKSEL_DPLL_DDR	inc/clock_module.h	/^   CKM_CLKSEL_DPLL_DDR           = 0x40,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKSEL_DPLL_DISP	inc/clock_module.h	/^   CKM_CLKSEL_DPLL_DISP          = 0x54,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKSEL_DPLL_MPU	inc/clock_module.h	/^   CKM_CLKSEL_DPLL_MPU           = 0x2C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_CLKSEL_DPLL_PERIPH	inc/clock_module.h	/^   CKM_CLKSEL_DPLL_PERIPH        = 0x9C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DEVICE	inc/clock_module.h	/^   CKM_DEVICE  = SOC_CM_DEVICE_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_DIV_M2_DPLL_DDR	inc/clock_module.h	/^   CKM_DIV_M2_DPLL_DDR           = 0xA0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DIV_M2_DPLL_DISP	inc/clock_module.h	/^   CKM_DIV_M2_DPLL_DISP          = 0xA4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DIV_M2_DPLL_MPU	inc/clock_module.h	/^   CKM_DIV_M2_DPLL_MPU           = 0xA8,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DIV_M2_DPLL_PER	inc/clock_module.h	/^   CKM_DIV_M2_DPLL_PER           = 0xAC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DIV_M4_DPLL_CORE	inc/clock_module.h	/^   CKM_DIV_M4_DPLL_CORE          = 0x80,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DIV_M5_DPLL_CORE	inc/clock_module.h	/^   CKM_DIV_M5_DPLL_CORE          = 0x84,$/;"	e	enum:_CKM_MODULE_REG
+CKM_DIV_M6_DPLL_CORE	inc/clock_module.h	/^   CKM_DIV_M6_DPLL_CORE          = 0xD8$/;"	e	enum:_CKM_MODULE_REG
+CKM_DPLL	inc/clock_module.h	/^   CKM_DPLL    = SOC_CM_DPLL_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_GFX	inc/clock_module.h	/^   CKM_GFX     = SOC_CM_GFX_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_IDLEST_DPLL_CORE	inc/clock_module.h	/^   CKM_IDLEST_DPLL_CORE          = 0x5C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_IDLEST_DPLL_DDR	inc/clock_module.h	/^   CKM_IDLEST_DPLL_DDR           = 0x34,$/;"	e	enum:_CKM_MODULE_REG
+CKM_IDLEST_DPLL_DISP	inc/clock_module.h	/^   CKM_IDLEST_DPLL_DISP          = 0x48,$/;"	e	enum:_CKM_MODULE_REG
+CKM_IDLEST_DPLL_MPU	inc/clock_module.h	/^   CKM_IDLEST_DPLL_MPU           = 0x20,$/;"	e	enum:_CKM_MODULE_REG
+CKM_IDLEST_DPLL_PER	inc/clock_module.h	/^   CKM_IDLEST_DPLL_PER           = 0x70,$/;"	e	enum:_CKM_MODULE_REG
+CKM_L3_AON_CLKSTCTRL	inc/clock_module.h	/^   CKM_L3_AON_CLKSTCTRL          = 0x18,$/;"	e	enum:_CKM_MODULE_REG
+CKM_L4_WKUP_AON_CLKSTCTRL	inc/clock_module.h	/^   CKM_L4_WKUP_AON_CLKSTCTRL     = 0xCC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_MODULE	inc/clock_module.h	/^}CKM_MODULE;$/;"	t	typeref:enum:_CKM_MODULE
+CKM_MODULE_REG	inc/clock_module.h	/^}CKM_MODULE_REG;$/;"	t	typeref:enum:_CKM_MODULE_REG
+CKM_MPU	inc/clock_module.h	/^   CKM_MPU     = SOC_CM_MPU_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_PER	inc/clock_module.h	/^   CKM_PER     = SOC_CM_PER_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_PER_CLKDIV32K_CLKCTRL	inc/clock_module.h	/^   CKM_PER_CLKDIV32K_CLKCTRL   = 0x14C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_CLK_24MHZ_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_CLK_24MHZ_CLKSTCTRL = 0x150,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_CPGMAC0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_CPGMAC0_CLKCTRL     = 0x014,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_CPSW_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_CPSW_CLKSTCTRL      = 0x144,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_DCAN0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_DCAN0_CLKCTRL       = 0x0C0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_DCAN1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_DCAN1_CLKCTRL       = 0x0C4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_ELM_CLKCTRL	inc/clock_module.h	/^   CKM_PER_ELM_CLKCTRL         = 0x040,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_EMIF_CLKCTRL	inc/clock_module.h	/^   CKM_PER_EMIF_CLKCTRL        = 0x028,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_EMIF_FW_CLKCTRL	inc/clock_module.h	/^   CKM_PER_EMIF_FW_CLKCTRL     = 0x0D0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_EPWMSS0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_EPWMSS0_CLKCTRL     = 0x0D4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_EPWMSS1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_EPWMSS1_CLKCTRL     = 0x0CC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_EPWMSS2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_EPWMSS2_CLKCTRL     = 0x0D8,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_GPIO1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_GPIO1_CLKCTRL       = 0x0AC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_GPIO2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_GPIO2_CLKCTRL       = 0x0B0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_GPIO3_CLKCTRL	inc/clock_module.h	/^   CKM_PER_GPIO3_CLKCTRL       = 0x0B4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_GPMC_CLKCTRL	inc/clock_module.h	/^   CKM_PER_GPMC_CLKCTRL        = 0x030,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_I2C1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_I2C1_CLKCTRL        = 0x048,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_I2C2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_I2C2_CLKCTRL        = 0x044,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_IEEE5000_CLKCTRL	inc/clock_module.h	/^   CKM_PER_IEEE5000_CLKCTRL    = 0x0E4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L3S_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_L3S_CLKSTCTRL       = 0x004,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L3_CLKCTRL	inc/clock_module.h	/^   CKM_PER_L3_CLKCTRL          = 0x0E0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L3_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_L3_CLKSTCTRL        = 0x00C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L3_INSTR_CLKCTRL	inc/clock_module.h	/^   CKM_PER_L3_INSTR_CLKCTRL    = 0x0DC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L4FW_CLKCTRL	inc/clock_module.h	/^   CKM_PER_L4FW_CLKCTRL        = 0x064,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L4FW_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_L4FW_CLKSTCTRL      = 0x008,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L4HS_CLKCTRL	inc/clock_module.h	/^   CKM_PER_L4HS_CLKCTRL        = 0x120,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L4HS_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_L4HS_CLKSTCTRL      = 0x11C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L4LS_CLKCTRL	inc/clock_module.h	/^   CKM_PER_L4LS_CLKCTRL        = 0x060,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_L4LS_CLKSTCTRL	inc/clock_module.h	/^	 CKM_PER_L4LS_CLKSTCTRL      = 0x000,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_LCDC_CLKCTRL	inc/clock_module.h	/^   CKM_PER_LCDC_CLKCTRL        = 0x018,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_LCDC_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_LCDC_CLKSTCTRL      = 0x148,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_MAILBOX0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_MAILBOX0_CLKCTRL    = 0x110,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_MCASP0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_MCASP0_CLKCTRL      = 0x034,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_MCASP1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_MCASP1_CLKCTRL      = 0x068,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_MMC0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_MMC0_CLKCTRL        = 0x03C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_MMC1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_MMC1_CLKCTRL        = 0x0F4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_MMC2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_MMC2_CLKCTRL        = 0x0F8,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_OCMCRAM_CLKCTRL	inc/clock_module.h	/^   CKM_PER_OCMCRAM_CLKCTRL     = 0x02C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_OCPWP_CLKCTRL	inc/clock_module.h	/^   CKM_PER_OCPWP_CLKCTRL       = 0x130,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_OCPWP_L3_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_OCPWP_L3_CLKSTCTRL  = 0x12C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_PRU_ICSS_CLKCTRL	inc/clock_module.h	/^   CKM_PER_PRU_ICSS_CLKCTRL    = 0x0E8,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_PRU_ICSS_CLKSTCTRL	inc/clock_module.h	/^   CKM_PER_PRU_ICSS_CLKSTCTRL  = 0x140,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_SPI0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_SPI0_CLKCTRL        = 0x04C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_SPI1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_SPI1_CLKCTRL        = 0x050,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_SPINLOCK_CLKCTRL	inc/clock_module.h	/^   CKM_PER_SPINLOCK_CLKCTRL    = 0x10C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TIMER2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TIMER2_CLKCTRL      = 0x080,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TIMER3_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TIMER3_CLKCTRL      = 0x084,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TIMER4_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TIMER4_CLKCTRL      = 0x088,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TIMER5_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TIMER5_CLKCTRL      = 0x0EC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TIMER6_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TIMER6_CLKCTRL      = 0x0F0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TIMER7_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TIMER7_CLKCTRL      = 0x07C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TPCC_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TPCC_CLKCTRL        = 0x0BC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TPTC0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TPTC0_CLKCTRL       = 0x024,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TPTC1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TPTC1_CLKCTRL       = 0x0FC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_TPTC2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_TPTC2_CLKCTRL       = 0x100,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_UART1_CLKCTRL	inc/clock_module.h	/^   CKM_PER_UART1_CLKCTRL       = 0x06C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_UART2_CLKCTRL	inc/clock_module.h	/^   CKM_PER_UART2_CLKCTRL       = 0x070,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_UART3_CLKCTRL	inc/clock_module.h	/^   CKM_PER_UART3_CLKCTRL       = 0x074,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_UART4_CLKCTRL	inc/clock_module.h	/^   CKM_PER_UART4_CLKCTRL       = 0x078,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_UART5_CLKCTRL	inc/clock_module.h	/^   CKM_PER_UART5_CLKCTRL       = 0x038,$/;"	e	enum:_CKM_MODULE_REG
+CKM_PER_USB0_CLKCTRL	inc/clock_module.h	/^   CKM_PER_USB0_CLKCTRL        = 0x01C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_RTC	inc/clock_module.h	/^   CKM_RTC     = SOC_CM_RTC_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_SSC_DELTAMSTEP_DPLL_CORE	inc/clock_module.h	/^   CKM_SSC_DELTAMSTEP_DPLL_CORE  = 0x60,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_DELTAMSTEP_DPLL_DDR	inc/clock_module.h	/^   CKM_SSC_DELTAMSTEP_DPLL_DDR   = 0x38,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_DELTAMSTEP_DPLL_DISP	inc/clock_module.h	/^   CKM_SSC_DELTAMSTEP_DPLL_DISP  = 0x4C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_DELTAMSTEP_DPLL_MPU	inc/clock_module.h	/^   CKM_SSC_DELTAMSTEP_DPLL_MPU   = 0x24,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_DELTAMSTEP_DPLL_PER	inc/clock_module.h	/^   CKM_SSC_DELTAMSTEP_DPLL_PER   = 0x74,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_MODFREQDIV_DPLL_CORE	inc/clock_module.h	/^   CKM_SSC_MODFREQDIV_DPLL_CORE  = 0x64,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_MODFREQDIV_DPLL_DDR	inc/clock_module.h	/^   CKM_SSC_MODFREQDIV_DPLL_DDR   = 0x3C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_MODFREQDIV_DPLL_DISP	inc/clock_module.h	/^   CKM_SSC_MODFREQDIV_DPLL_DISP  = 0x50,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_MODFREQDIV_DPLL_MPU	inc/clock_module.h	/^   CKM_SSC_MODFREQDIV_DPLL_MPU   = 0x28,$/;"	e	enum:_CKM_MODULE_REG
+CKM_SSC_MODFREQDIV_DPLL_PER	inc/clock_module.h	/^   CKM_SSC_MODFREQDIV_DPLL_PER   = 0x78,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP	inc/clock_module.h	/^   CKM_WKUP    = SOC_CM_WKUP_REGS,$/;"	e	enum:_CKM_MODULE
+CKM_WKUP_ADC_TSC_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_ADC_TSC_CLKCTRL      = 0xBC,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_CLKSTCTRL	inc/clock_module.h	/^   CKM_WKUP_CLKSTCTRL            = 0x00,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_CONTROL_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_CONTROL_CLKCTRL      = 0x04,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_DEBUGSS_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_DEBUGSS_CLKCTRL      = 0x14,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_GPIO0_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_GPIO0_CLKCTRL        = 0x08,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_I2C0_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_I2C0_CLKCTRL         = 0xB8,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_L4WKUP_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_L4WKUP_CLKCTRL       = 0x0C,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_SMARTREFLEX0_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_SMARTREFLEX0_CLKCTRL = 0xC0,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_SMARTREFLEX1_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_SMARTREFLEX1_CLKCTRL = 0xC8,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_TIMER0_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_TIMER0_CLKCTRL       = 0x10,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_TIMER1_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_TIMER1_CLKCTRL       = 0xC4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_UART0_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_UART0_CLKCTRL        = 0xB4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_WDT1_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_WDT1_CLKCTRL         = 0xD4,$/;"	e	enum:_CKM_MODULE_REG
+CKM_WKUP_WKUP_M3_CLKCTRL	inc/clock_module.h	/^   CKM_WKUP_WKUP_M3_CLKCTRL      = 0xB0,$/;"	e	enum:_CKM_MODULE_REG
+CM_adc_evt_capt	inc/control_module.h	/^   CM_adc_evt_capt               = 0x0FD8,$/;"	e	enum:__anon3
+CM_bandgap_ctrl	inc/control_module.h	/^   CM_bandgap_ctrl               = 0x0448,$/;"	e	enum:__anon3
+CM_bandgap_trim	inc/control_module.h	/^   CM_bandgap_trim               = 0x044C,$/;"	e	enum:__anon3
+CM_bb_scale	inc/control_module.h	/^   CM_bb_scale                   = 0x07D0,$/;"	e	enum:__anon3
+CM_clk32kdivratio_ctrl	inc/control_module.h	/^   CM_clk32kdivratio_ctrl        = 0x0444,$/;"	e	enum:__anon3
+CM_conf_ecap0_in_pwm0_out	inc/control_module.h	/^   CM_conf_ecap0_in_pwm0_out     = 0x0964,$/;"	e	enum:__anon3
+CM_conf_emu0	inc/control_module.h	/^   CM_conf_emu0                  = 0x09E4,$/;"	e	enum:__anon3
+CM_conf_emu1	inc/control_module.h	/^   CM_conf_emu1                  = 0x09E8,$/;"	e	enum:__anon3
+CM_conf_ext_wakeup	inc/control_module.h	/^   CM_conf_ext_wakeup            = 0x0A00,$/;"	e	enum:__anon3
+CM_conf_gpmc_a0	inc/control_module.h	/^   CM_conf_gpmc_a0               = 0x0840,$/;"	e	enum:__anon3
+CM_conf_gpmc_a1	inc/control_module.h	/^   CM_conf_gpmc_a1               = 0x0844,$/;"	e	enum:__anon3
+CM_conf_gpmc_a10	inc/control_module.h	/^   CM_conf_gpmc_a10              = 0x0868,$/;"	e	enum:__anon3
+CM_conf_gpmc_a11	inc/control_module.h	/^   CM_conf_gpmc_a11              = 0x086C,$/;"	e	enum:__anon3
+CM_conf_gpmc_a2	inc/control_module.h	/^   CM_conf_gpmc_a2               = 0x0848,$/;"	e	enum:__anon3
+CM_conf_gpmc_a3	inc/control_module.h	/^   CM_conf_gpmc_a3               = 0x084C,$/;"	e	enum:__anon3
+CM_conf_gpmc_a4	inc/control_module.h	/^   CM_conf_gpmc_a4               = 0x0850,$/;"	e	enum:__anon3
+CM_conf_gpmc_a5	inc/control_module.h	/^   CM_conf_gpmc_a5               = 0x0854,$/;"	e	enum:__anon3
+CM_conf_gpmc_a6	inc/control_module.h	/^   CM_conf_gpmc_a6               = 0x0858,$/;"	e	enum:__anon3
+CM_conf_gpmc_a7	inc/control_module.h	/^   CM_conf_gpmc_a7               = 0x085C,$/;"	e	enum:__anon3
+CM_conf_gpmc_a8	inc/control_module.h	/^   CM_conf_gpmc_a8               = 0x0860,$/;"	e	enum:__anon3
+CM_conf_gpmc_a9	inc/control_module.h	/^   CM_conf_gpmc_a9               = 0x0864,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad0	inc/control_module.h	/^   CM_conf_gpmc_ad0              = 0x0800,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad1	inc/control_module.h	/^   CM_conf_gpmc_ad1              = 0x0804,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad10	inc/control_module.h	/^   CM_conf_gpmc_ad10             = 0x0828,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad11	inc/control_module.h	/^   CM_conf_gpmc_ad11             = 0x082C,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad12	inc/control_module.h	/^   CM_conf_gpmc_ad12             = 0x0830,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad13	inc/control_module.h	/^   CM_conf_gpmc_ad13             = 0x0834,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad14	inc/control_module.h	/^   CM_conf_gpmc_ad14             = 0x0838,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad15	inc/control_module.h	/^   CM_conf_gpmc_ad15             = 0x083C,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad2	inc/control_module.h	/^   CM_conf_gpmc_ad2              = 0x0808,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad3	inc/control_module.h	/^   CM_conf_gpmc_ad3              = 0x080C,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad4	inc/control_module.h	/^   CM_conf_gpmc_ad4              = 0x0810,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad5	inc/control_module.h	/^   CM_conf_gpmc_ad5              = 0x0814,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad6	inc/control_module.h	/^   CM_conf_gpmc_ad6              = 0x0818,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad7	inc/control_module.h	/^   CM_conf_gpmc_ad7              = 0x081C,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad8	inc/control_module.h	/^   CM_conf_gpmc_ad8              = 0x0820,$/;"	e	enum:__anon3
+CM_conf_gpmc_ad9	inc/control_module.h	/^   CM_conf_gpmc_ad9              = 0x0824,$/;"	e	enum:__anon3
+CM_conf_gpmc_advn_ale	inc/control_module.h	/^   CM_conf_gpmc_advn_ale         = 0x0890,$/;"	e	enum:__anon3
+CM_conf_gpmc_ben0_cle	inc/control_module.h	/^   CM_conf_gpmc_ben0_cle         = 0x089C,$/;"	e	enum:__anon3
+CM_conf_gpmc_ben1	inc/control_module.h	/^   CM_conf_gpmc_ben1             = 0x0878,$/;"	e	enum:__anon3
+CM_conf_gpmc_clk	inc/control_module.h	/^   CM_conf_gpmc_clk              = 0x088C,$/;"	e	enum:__anon3
+CM_conf_gpmc_csn0	inc/control_module.h	/^   CM_conf_gpmc_csn0             = 0x087C,$/;"	e	enum:__anon3
+CM_conf_gpmc_csn1	inc/control_module.h	/^   CM_conf_gpmc_csn1             = 0x0880,$/;"	e	enum:__anon3
+CM_conf_gpmc_csn2	inc/control_module.h	/^   CM_conf_gpmc_csn2             = 0x0884,$/;"	e	enum:__anon3
+CM_conf_gpmc_csn3	inc/control_module.h	/^   CM_conf_gpmc_csn3             = 0x0888,$/;"	e	enum:__anon3
+CM_conf_gpmc_oen_ren	inc/control_module.h	/^   CM_conf_gpmc_oen_ren          = 0x0894,$/;"	e	enum:__anon3
+CM_conf_gpmc_wait0	inc/control_module.h	/^   CM_conf_gpmc_wait0            = 0x0870,$/;"	e	enum:__anon3
+CM_conf_gpmc_wen	inc/control_module.h	/^   CM_conf_gpmc_wen              = 0x0898,$/;"	e	enum:__anon3
+CM_conf_gpmc_wpn	inc/control_module.h	/^   CM_conf_gpmc_wpn              = 0x0874,$/;"	e	enum:__anon3
+CM_conf_i2c0_scl	inc/control_module.h	/^   CM_conf_i2c0_scl              = 0x098C,$/;"	e	enum:__anon3
+CM_conf_i2c0_sda	inc/control_module.h	/^   CM_conf_i2c0_sda              = 0x0988,$/;"	e	enum:__anon3
+CM_conf_lcd_ac_bias_en	inc/control_module.h	/^   CM_conf_lcd_ac_bias_en        = 0x08EC,$/;"	e	enum:__anon3
+CM_conf_lcd_data0	inc/control_module.h	/^   CM_conf_lcd_data0             = 0x08A0,$/;"	e	enum:__anon3
+CM_conf_lcd_data1	inc/control_module.h	/^   CM_conf_lcd_data1             = 0x08A4,$/;"	e	enum:__anon3
+CM_conf_lcd_data10	inc/control_module.h	/^   CM_conf_lcd_data10            = 0x08C8,$/;"	e	enum:__anon3
+CM_conf_lcd_data11	inc/control_module.h	/^   CM_conf_lcd_data11            = 0x08CC,$/;"	e	enum:__anon3
+CM_conf_lcd_data12	inc/control_module.h	/^   CM_conf_lcd_data12            = 0x08D0,$/;"	e	enum:__anon3
+CM_conf_lcd_data13	inc/control_module.h	/^   CM_conf_lcd_data13            = 0x08D4,$/;"	e	enum:__anon3
+CM_conf_lcd_data14	inc/control_module.h	/^   CM_conf_lcd_data14            = 0x08D8,$/;"	e	enum:__anon3
+CM_conf_lcd_data15	inc/control_module.h	/^   CM_conf_lcd_data15            = 0x08DC,$/;"	e	enum:__anon3
+CM_conf_lcd_data2	inc/control_module.h	/^   CM_conf_lcd_data2             = 0x08A8,$/;"	e	enum:__anon3
+CM_conf_lcd_data3	inc/control_module.h	/^   CM_conf_lcd_data3             = 0x08AC,$/;"	e	enum:__anon3
+CM_conf_lcd_data4	inc/control_module.h	/^   CM_conf_lcd_data4             = 0x08B0,$/;"	e	enum:__anon3
+CM_conf_lcd_data5	inc/control_module.h	/^   CM_conf_lcd_data5             = 0x08B4,$/;"	e	enum:__anon3
+CM_conf_lcd_data6	inc/control_module.h	/^   CM_conf_lcd_data6             = 0x08B8,$/;"	e	enum:__anon3
+CM_conf_lcd_data7	inc/control_module.h	/^   CM_conf_lcd_data7             = 0x08BC,$/;"	e	enum:__anon3
+CM_conf_lcd_data8	inc/control_module.h	/^   CM_conf_lcd_data8             = 0x08C0,$/;"	e	enum:__anon3
+CM_conf_lcd_data9	inc/control_module.h	/^   CM_conf_lcd_data9             = 0x08C4,$/;"	e	enum:__anon3
+CM_conf_lcd_hsync	inc/control_module.h	/^   CM_conf_lcd_hsync             = 0x08E4,$/;"	e	enum:__anon3
+CM_conf_lcd_pclk	inc/control_module.h	/^   CM_conf_lcd_pclk              = 0x08E8,$/;"	e	enum:__anon3
+CM_conf_lcd_vsync	inc/control_module.h	/^   CM_conf_lcd_vsync             = 0x08E0,$/;"	e	enum:__anon3
+CM_conf_mcasp0_aclkr	inc/control_module.h	/^   CM_conf_mcasp0_aclkr          = 0x09A0,$/;"	e	enum:__anon3
+CM_conf_mcasp0_aclkx	inc/control_module.h	/^   CM_conf_mcasp0_aclkx          = 0x0990,$/;"	e	enum:__anon3
+CM_conf_mcasp0_ahclkr	inc/control_module.h	/^   CM_conf_mcasp0_ahclkr         = 0x099C,$/;"	e	enum:__anon3
+CM_conf_mcasp0_ahclkx	inc/control_module.h	/^   CM_conf_mcasp0_ahclkx         = 0x09AC,$/;"	e	enum:__anon3
+CM_conf_mcasp0_axr0	inc/control_module.h	/^   CM_conf_mcasp0_axr0           = 0x0998,$/;"	e	enum:__anon3
+CM_conf_mcasp0_axr1	inc/control_module.h	/^   CM_conf_mcasp0_axr1           = 0x09A8,$/;"	e	enum:__anon3
+CM_conf_mcasp0_fsr	inc/control_module.h	/^   CM_conf_mcasp0_fsr            = 0x09A4,$/;"	e	enum:__anon3
+CM_conf_mcasp0_fsx	inc/control_module.h	/^   CM_conf_mcasp0_fsx            = 0x0994,$/;"	e	enum:__anon3
+CM_conf_mdc	inc/control_module.h	/^   CM_conf_mdc                   = 0x094C,$/;"	e	enum:__anon3
+CM_conf_mdio	inc/control_module.h	/^   CM_conf_mdio                  = 0x0948,$/;"	e	enum:__anon3
+CM_conf_mii1_col	inc/control_module.h	/^   CM_conf_mii1_col              = 0x0908,$/;"	e	enum:__anon3
+CM_conf_mii1_crs	inc/control_module.h	/^   CM_conf_mii1_crs              = 0x090C,$/;"	e	enum:__anon3
+CM_conf_mii1_rx_clk	inc/control_module.h	/^   CM_conf_mii1_rx_clk           = 0x0930,$/;"	e	enum:__anon3
+CM_conf_mii1_rx_dv	inc/control_module.h	/^   CM_conf_mii1_rx_dv            = 0x0918,$/;"	e	enum:__anon3
+CM_conf_mii1_rx_er	inc/control_module.h	/^   CM_conf_mii1_rx_er            = 0x0910,$/;"	e	enum:__anon3
+CM_conf_mii1_rxd0	inc/control_module.h	/^   CM_conf_mii1_rxd0             = 0x0940,$/;"	e	enum:__anon3
+CM_conf_mii1_rxd1	inc/control_module.h	/^   CM_conf_mii1_rxd1             = 0x093C,$/;"	e	enum:__anon3
+CM_conf_mii1_rxd2	inc/control_module.h	/^   CM_conf_mii1_rxd2             = 0x0938,$/;"	e	enum:__anon3
+CM_conf_mii1_rxd3	inc/control_module.h	/^   CM_conf_mii1_rxd3             = 0x0934,$/;"	e	enum:__anon3
+CM_conf_mii1_tx_clk	inc/control_module.h	/^   CM_conf_mii1_tx_clk           = 0x092C,$/;"	e	enum:__anon3
+CM_conf_mii1_tx_en	inc/control_module.h	/^   CM_conf_mii1_tx_en            = 0x0914,$/;"	e	enum:__anon3
+CM_conf_mii1_txd0	inc/control_module.h	/^   CM_conf_mii1_txd0             = 0x0928,$/;"	e	enum:__anon3
+CM_conf_mii1_txd1	inc/control_module.h	/^   CM_conf_mii1_txd1             = 0x0924,$/;"	e	enum:__anon3
+CM_conf_mii1_txd2	inc/control_module.h	/^   CM_conf_mii1_txd2             = 0x0920,$/;"	e	enum:__anon3
+CM_conf_mii1_txd3	inc/control_module.h	/^   CM_conf_mii1_txd3             = 0x091C,$/;"	e	enum:__anon3
+CM_conf_mmc0_clk	inc/control_module.h	/^   CM_conf_mmc0_clk              = 0x0900,$/;"	e	enum:__anon3
+CM_conf_mmc0_cmd	inc/control_module.h	/^   CM_conf_mmc0_cmd              = 0x0904,$/;"	e	enum:__anon3
+CM_conf_mmc0_dat0	inc/control_module.h	/^   CM_conf_mmc0_dat0             = 0x08FC,$/;"	e	enum:__anon3
+CM_conf_mmc0_dat1	inc/control_module.h	/^   CM_conf_mmc0_dat1             = 0x08F8,$/;"	e	enum:__anon3
+CM_conf_mmc0_dat2	inc/control_module.h	/^   CM_conf_mmc0_dat2             = 0x08F4,$/;"	e	enum:__anon3
+CM_conf_mmc0_dat3	inc/control_module.h	/^   CM_conf_mmc0_dat3             = 0x08F0,$/;"	e	enum:__anon3
+CM_conf_nnmi	inc/control_module.h	/^   CM_conf_nnmi                  = 0x09C0,$/;"	e	enum:__anon3
+CM_conf_pmic_power_en	inc/control_module.h	/^   CM_conf_pmic_power_en         = 0x09FC,$/;"	e	enum:__anon3
+CM_conf_rmii1_ref_clk	inc/control_module.h	/^   CM_conf_rmii1_ref_clk         = 0x0944,$/;"	e	enum:__anon3
+CM_conf_rtc_kaldo_enn	inc/control_module.h	/^   CM_conf_rtc_kaldo_enn         = 0x0A04,$/;"	e	enum:__anon3
+CM_conf_rtc_pwronrstn	inc/control_module.h	/^   CM_conf_rtc_pwronrstn         = 0x09F8,$/;"	e	enum:__anon3
+CM_conf_spi0_cs0	inc/control_module.h	/^   CM_conf_spi0_cs0              = 0x095C,$/;"	e	enum:__anon3
+CM_conf_spi0_cs1	inc/control_module.h	/^   CM_conf_spi0_cs1              = 0x0960,$/;"	e	enum:__anon3
+CM_conf_spi0_d0	inc/control_module.h	/^   CM_conf_spi0_d0               = 0x0954,$/;"	e	enum:__anon3
+CM_conf_spi0_d1	inc/control_module.h	/^   CM_conf_spi0_d1               = 0x0958,$/;"	e	enum:__anon3
+CM_conf_spi0_sclk	inc/control_module.h	/^   CM_conf_spi0_sclk             = 0x0950,$/;"	e	enum:__anon3
+CM_conf_tck	inc/control_module.h	/^   CM_conf_tck                   = 0x09DC,$/;"	e	enum:__anon3
+CM_conf_tdi	inc/control_module.h	/^   CM_conf_tdi                   = 0x09D4,$/;"	e	enum:__anon3
+CM_conf_tdo	inc/control_module.h	/^   CM_conf_tdo                   = 0x09D8,$/;"	e	enum:__anon3
+CM_conf_tms	inc/control_module.h	/^   CM_conf_tms                   = 0x09D0,$/;"	e	enum:__anon3
+CM_conf_trstn	inc/control_module.h	/^   CM_conf_trstn                 = 0x09E0,$/;"	e	enum:__anon3
+CM_conf_uart0_ctsn	inc/control_module.h	/^   CM_conf_uart0_ctsn            = 0x0968,$/;"	e	enum:__anon3
+CM_conf_uart0_rtsn	inc/control_module.h	/^   CM_conf_uart0_rtsn            = 0x096C,$/;"	e	enum:__anon3
+CM_conf_uart0_rxd	inc/control_module.h	/^   CM_conf_uart0_rxd             = 0x0970,$/;"	e	enum:__anon3
+CM_conf_uart0_txd	inc/control_module.h	/^   CM_conf_uart0_txd             = 0x0974,$/;"	e	enum:__anon3
+CM_conf_uart1_ctsn	inc/control_module.h	/^   CM_conf_uart1_ctsn            = 0x0978,$/;"	e	enum:__anon3
+CM_conf_uart1_rtsn	inc/control_module.h	/^   CM_conf_uart1_rtsn            = 0x097C,$/;"	e	enum:__anon3
+CM_conf_uart1_rxd	inc/control_module.h	/^   CM_conf_uart1_rxd             = 0x0980,$/;"	e	enum:__anon3
+CM_conf_uart1_txd	inc/control_module.h	/^   CM_conf_uart1_txd             = 0x0984,$/;"	e	enum:__anon3
+CM_conf_usb0_drvvbus	inc/control_module.h	/^   CM_conf_usb0_drvvbus          = 0x0A1C,$/;"	e	enum:__anon3
+CM_conf_usb1_drvvbus	inc/control_module.h	/^   CM_conf_usb1_drvvbus          = 0x0A34,$/;"	e	enum:__anon3
+CM_conf_warmrstn	inc/control_module.h	/^   CM_conf_warmrstn              = 0x09B8,$/;"	e	enum:__anon3
+CM_conf_xdma_event_intr0	inc/control_module.h	/^   CM_conf_xdma_event_intr0      = 0x09B0,$/;"	e	enum:__anon3
+CM_conf_xdma_event_intr1	inc/control_module.h	/^   CM_conf_xdma_event_intr1      = 0x09B4,$/;"	e	enum:__anon3
+CM_control_emif_sdram_config	inc/control_module.h	/^   CM_control_emif_sdram_config  = 0x0110,$/;"	e	enum:__anon3
+CM_control_hwinfo	inc/control_module.h	/^   CM_control_hwinfo             = 0x0004,$/;"	e	enum:__anon3
+CM_control_revision	inc/control_module.h	/^   CM_control_revision           = 0x0000,$/;"	e	enum:__anon3
+CM_control_status	inc/control_module.h	/^   CM_control_status             = 0x0040,$/;"	e	enum:__anon3
+CM_control_sysconfig	inc/control_module.h	/^   CM_control_sysconfig          = 0x0010,$/;"	e	enum:__anon3
+CM_core_sldo_ctrl	inc/control_module.h	/^   CM_core_sldo_ctrl             = 0x0428,$/;"	e	enum:__anon3
+CM_cortex_vbbldo_ctrl	inc/control_module.h	/^   CM_cortex_vbbldo_ctrl         = 0x041C,$/;"	e	enum:__anon3
+CM_cqdetect_status	inc/control_module.h	/^   CM_cqdetect_status            = 0x0E00,$/;"	e	enum:__anon3
+CM_dcan_raminit	inc/control_module.h	/^   CM_dcan_raminit               = 0x0644,$/;"	e	enum:__anon3
+CM_ddr_cke_ctrl	inc/control_module.h	/^   CM_ddr_cke_ctrl               = 0x131C,$/;"	e	enum:__anon3
+CM_ddr_cmd0_ioctrl	inc/control_module.h	/^   CM_ddr_cmd0_ioctrl            = 0x1404,$/;"	e	enum:__anon3
+CM_ddr_cmd1_ioctrl	inc/control_module.h	/^   CM_ddr_cmd1_ioctrl            = 0x1408,$/;"	e	enum:__anon3
+CM_ddr_cmd2_ioctrl	inc/control_module.h	/^   CM_ddr_cmd2_ioctrl            = 0x140C,$/;"	e	enum:__anon3
+CM_ddr_data0_ioctrl	inc/control_module.h	/^   CM_ddr_data0_ioctrl           = 0x1440,$/;"	e	enum:__anon3
+CM_ddr_data1_ioctrl	inc/control_module.h	/^   CM_ddr_data1_ioctrl           = 0x1444$/;"	e	enum:__anon3
+CM_ddr_io_ctrl	inc/control_module.h	/^   CM_ddr_io_ctrl                = 0x0E04,$/;"	e	enum:__anon3
+CM_deepsleep_ctrl	inc/control_module.h	/^   CM_deepsleep_ctrl             = 0x0470,$/;"	e	enum:__anon3
+CM_dev_feature	inc/control_module.h	/^   CM_dev_feature                = 0x0604,$/;"	e	enum:__anon3
+CM_device_id	inc/control_module.h	/^   CM_device_id                  = 0x0600,$/;"	e	enum:__anon3
+CM_dpll_pwr_sw_ctrl	inc/control_module.h	/^   CM_dpll_pwr_sw_ctrl           = 0x1318,$/;"	e	enum:__anon3
+CM_dpll_pwr_sw_status	inc/control_module.h	/^   CM_dpll_pwr_sw_status         = 0x050C,$/;"	e	enum:__anon3
+CM_ecap_evt_capt	inc/control_module.h	/^   CM_ecap_evt_capt              = 0x0FD4,$/;"	e	enum:__anon3
+CM_efuse_sma	inc/control_module.h	/^   CM_efuse_sma                  = 0x07FC,$/;"	e	enum:__anon3
+CM_gmii_sel	inc/control_module.h	/^   CM_gmii_sel                   = 0x0650,$/;"	e	enum:__anon3
+CM_hw_event_sel_grp1	inc/control_module.h	/^   CM_hw_event_sel_grp1          = 0x0690,$/;"	e	enum:__anon3
+CM_hw_event_sel_grp2	inc/control_module.h	/^   CM_hw_event_sel_grp2          = 0x0694,$/;"	e	enum:__anon3
+CM_hw_event_sel_grp3	inc/control_module.h	/^   CM_hw_event_sel_grp3          = 0x0698,$/;"	e	enum:__anon3
+CM_hw_event_sel_grp4	inc/control_module.h	/^   CM_hw_event_sel_grp4          = 0x069C,$/;"	e	enum:__anon3
+CM_init_priority_0	inc/control_module.h	/^   CM_init_priority_0            = 0x0608,$/;"	e	enum:__anon3
+CM_init_priority_1	inc/control_module.h	/^   CM_init_priority_1            = 0x060C,$/;"	e	enum:__anon3
+CM_ipc_msg_reg0	inc/control_module.h	/^   CM_ipc_msg_reg0               = 0x1328,$/;"	e	enum:__anon3
+CM_ipc_msg_reg1	inc/control_module.h	/^   CM_ipc_msg_reg1               = 0x132C,$/;"	e	enum:__anon3
+CM_ipc_msg_reg2	inc/control_module.h	/^   CM_ipc_msg_reg2               = 0x1330,$/;"	e	enum:__anon3
+CM_ipc_msg_reg3	inc/control_module.h	/^   CM_ipc_msg_reg3               = 0x1334,$/;"	e	enum:__anon3
+CM_ipc_msg_reg4	inc/control_module.h	/^   CM_ipc_msg_reg4               = 0x1338,$/;"	e	enum:__anon3
+CM_ipc_msg_reg5	inc/control_module.h	/^   CM_ipc_msg_reg5               = 0x133C,$/;"	e	enum:__anon3
+CM_ipc_msg_reg6	inc/control_module.h	/^   CM_ipc_msg_reg6               = 0x1340,$/;"	e	enum:__anon3
+CM_ipc_msg_reg7	inc/control_module.h	/^   CM_ipc_msg_reg7               = 0x1344,$/;"	e	enum:__anon3
+CM_m3_txev_eoi	inc/control_module.h	/^   CM_m3_txev_eoi                = 0x1324,$/;"	e	enum:__anon3
+CM_mac_id0_hi	inc/control_module.h	/^   CM_mac_id0_hi                 = 0x0634,$/;"	e	enum:__anon3
+CM_mac_id0_lo	inc/control_module.h	/^   CM_mac_id0_lo                 = 0x0630,$/;"	e	enum:__anon3
+CM_mac_id1_hi	inc/control_module.h	/^   CM_mac_id1_hi                 = 0x063C,$/;"	e	enum:__anon3
+CM_mac_id1_lo	inc/control_module.h	/^   CM_mac_id1_lo                 = 0x0638,$/;"	e	enum:__anon3
+CM_mmu_cfg	inc/control_module.h	/^   CM_mmu_cfg                    = 0x0610,$/;"	e	enum:__anon3
+CM_mosc_ctrl	inc/control_module.h	/^   CM_mosc_ctrl                  = 0x0468,$/;"	e	enum:__anon3
+CM_mpu_sldo_ctrl	inc/control_module.h	/^   CM_mpu_sldo_ctrl              = 0x042C,$/;"	e	enum:__anon3
+CM_mpuss_hw_dbg_info	inc/control_module.h	/^   CM_mpuss_hw_dbg_info          = 0x06A8,$/;"	e	enum:__anon3
+CM_mpuss_hw_debug_sel	inc/control_module.h	/^   CM_mpuss_hw_debug_sel         = 0x06A4,$/;"	e	enum:__anon3
+CM_mreqprio_0	inc/control_module.h	/^   CM_mreqprio_0                 = 0x0670,$/;"	e	enum:__anon3
+CM_mreqprio_1	inc/control_module.h	/^   CM_mreqprio_1                 = 0x0674,$/;"	e	enum:__anon3
+CM_pll_clkinpulow_ctrl	inc/control_module.h	/^   CM_pll_clkinpulow_ctrl        = 0x0458,$/;"	e	enum:__anon3
+CM_pwmss_ctrl	inc/control_module.h	/^   CM_pwmss_ctrl                 = 0x0664,$/;"	e	enum:__anon3
+CM_reset_iso	inc/control_module.h	/^   CM_reset_iso                  = 0x1000,$/;"	e	enum:__anon3
+CM_sma2	inc/control_module.h	/^   CM_sma2                       = 0x1320,$/;"	e	enum:__anon3
+CM_smrt_ctrl	inc/control_module.h	/^   CM_smrt_ctrl                  = 0x06A0,$/;"	e	enum:__anon3
+CM_timer_evt_capt	inc/control_module.h	/^   CM_timer_evt_capt             = 0x0FD0,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_0_3	inc/control_module.h	/^   CM_tpcc_evt_mux_0_3           = 0x0F90,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_12_15	inc/control_module.h	/^   CM_tpcc_evt_mux_12_15         = 0x0F9C,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_16_19	inc/control_module.h	/^   CM_tpcc_evt_mux_16_19         = 0x0FA0,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_20_23	inc/control_module.h	/^   CM_tpcc_evt_mux_20_23         = 0x0FA4,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_24_27	inc/control_module.h	/^   CM_tpcc_evt_mux_24_27         = 0x0FA8,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_28_31	inc/control_module.h	/^   CM_tpcc_evt_mux_28_31         = 0x0FAC,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_32_35	inc/control_module.h	/^   CM_tpcc_evt_mux_32_35         = 0x0FB0,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_36_39	inc/control_module.h	/^   CM_tpcc_evt_mux_36_39         = 0x0FB4,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_40_43	inc/control_module.h	/^   CM_tpcc_evt_mux_40_43         = 0x0FB8,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_44_47	inc/control_module.h	/^   CM_tpcc_evt_mux_44_47         = 0x0FBC,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_48_51	inc/control_module.h	/^   CM_tpcc_evt_mux_48_51         = 0x0FC0,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_4_7	inc/control_module.h	/^   CM_tpcc_evt_mux_4_7           = 0x0F94,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_52_55	inc/control_module.h	/^   CM_tpcc_evt_mux_52_55         = 0x0FC4,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_56_59	inc/control_module.h	/^   CM_tpcc_evt_mux_56_59         = 0x0FC8,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_60_63	inc/control_module.h	/^   CM_tpcc_evt_mux_60_63         = 0x0FCC,$/;"	e	enum:__anon3
+CM_tpcc_evt_mux_8_11	inc/control_module.h	/^   CM_tpcc_evt_mux_8_11          = 0x0F98,$/;"	e	enum:__anon3
+CM_tptc_cfg	inc/control_module.h	/^   CM_tptc_cfg                   = 0x0614,$/;"	e	enum:__anon3
+CM_usb_ctrl0	inc/control_module.h	/^   CM_usb_ctrl0                  = 0x0620,$/;"	e	enum:__anon3
+CM_usb_ctrl1	inc/control_module.h	/^   CM_usb_ctrl1                  = 0x0628,$/;"	e	enum:__anon3
+CM_usb_sts0	inc/control_module.h	/^   CM_usb_sts0                   = 0x0624,$/;"	e	enum:__anon3
+CM_usb_sts1	inc/control_module.h	/^   CM_usb_sts1                   = 0x062C,$/;"	e	enum:__anon3
+CM_usb_vid_pid	inc/control_module.h	/^   CM_usb_vid_pid                = 0x07F4,$/;"	e	enum:__anon3
+CM_usb_wkup_ctrl	inc/control_module.h	/^   CM_usb_wkup_ctrl              = 0x0648,$/;"	e	enum:__anon3
+CM_vdd_core_opp_050	inc/control_module.h	/^   CM_vdd_core_opp_050           = 0x07B8,$/;"	e	enum:__anon3
+CM_vdd_core_opp_100	inc/control_module.h	/^   CM_vdd_core_opp_100           = 0x07BC,$/;"	e	enum:__anon3
+CM_vdd_mpu_opp_050	inc/control_module.h	/^   CM_vdd_mpu_opp_050            = 0x0770,$/;"	e	enum:__anon3
+CM_vdd_mpu_opp_100	inc/control_module.h	/^   CM_vdd_mpu_opp_100            = 0x0774,$/;"	e	enum:__anon3
+CM_vdd_mpu_opp_120	inc/control_module.h	/^   CM_vdd_mpu_opp_120            = 0x0778,$/;"	e	enum:__anon3
+CM_vdd_mpu_opp_turbo	inc/control_module.h	/^   CM_vdd_mpu_opp_turbo          = 0x077C,$/;"	e	enum:__anon3
+CM_vref_ctrl	inc/control_module.h	/^   CM_vref_ctrl                  = 0x0E14,$/;"	e	enum:__anon3
+CM_vtp_ctrl	inc/control_module.h	/^   CM_vtp_ctrl                   = 0x0E0C,$/;"	e	enum:__anon3
+CONTROL_MODULE	inc/control_module.h	/^}CONTROL_MODULE;$/;"	t	typeref:enum:__anon3
+FALSE	inc/hw_types.h	83;"	d
+FLOW_OFF	inc/uart.h	/^   FLOW_OFF = 0,$/;"	e	enum:_FLOW_t
+FLOW_ON	inc/uart.h	/^   FLOW_ON = 1$/;"	e	enum:_FLOW_t
+FLOW_t	inc/uart.h	/^}FLOW_t;$/;"	t	typeref:enum:_FLOW_t
+GPIO0	inc/gpio.h	/^	GPIO0,$/;"	e	enum:_gpioPort
+GPIO1	inc/gpio.h	/^	GPIO1,$/;"	e	enum:_gpioPort
+GPIO2	inc/gpio.h	/^	GPIO2,$/;"	e	enum:_gpioPort
+GPIO3	inc/gpio.h	/^	GPIO3$/;"	e	enum:_gpioPort
+GPIO_CLEARDATAOUT	inc/gpio.h	52;"	d
+GPIO_CTRL	inc/gpio.h	42;"	d
+GPIO_CTRL_MODULE_ARRAY	src/gpio.c	/^static const CONTROL_MODULE GPIO_CTRL_MODULE_ARRAY[32][4] = {$/;"	v	file:
+GPIO_DATAIN	inc/gpio.h	44;"	d
+GPIO_DATAOUT	inc/gpio.h	45;"	d
+GPIO_DEBOUNCENABLE	inc/gpio.h	50;"	d
+GPIO_DEBOUNCINGTIME	inc/gpio.h	51;"	d
+GPIO_EOI	inc/gpio.h	30;"	d
+GPIO_FALLINGDETECT	inc/gpio.h	49;"	d
+GPIO_H_	inc/gpio.h	2;"	d
+GPIO_IRQSTATUS_0	inc/gpio.h	33;"	d
+GPIO_IRQSTATUS_1	inc/gpio.h	34;"	d
+GPIO_IRQSTATUS_CLR_0	inc/gpio.h	37;"	d
+GPIO_IRQSTATUS_CLR_1	inc/gpio.h	38;"	d
+GPIO_IRQSTATUS_RAW_0	inc/gpio.h	31;"	d
+GPIO_IRQSTATUS_RAW_1	inc/gpio.h	32;"	d
+GPIO_IRQSTATUS_SET_0	inc/gpio.h	35;"	d
+GPIO_IRQSTATUS_SET_1	inc/gpio.h	36;"	d
+GPIO_IRQWAKEN_0	inc/gpio.h	39;"	d
+GPIO_IRQWAKEN_1	inc/gpio.h	40;"	d
+GPIO_LEVELDETECT0	inc/gpio.h	46;"	d
+GPIO_LEVELDETECT1	inc/gpio.h	47;"	d
+GPIO_OE	inc/gpio.h	43;"	d
+GPIO_REVISION	inc/gpio.h	28;"	d
+GPIO_RISINGDETECT	inc/gpio.h	48;"	d
+GPIO_SETDATAOUT	inc/gpio.h	53;"	d
+GPIO_SYSCONFIG	inc/gpio.h	29;"	d
+GPIO_SYSSTATUS	inc/gpio.h	41;"	d
+HIGH	inc/gpio.h	/^	HIGH$/;"	e	enum:_pinLevel
+HWREG	inc/hw_types.h	66;"	d
+HWREGB	inc/hw_types.h	70;"	d
+HWREGBITB	inc/hw_types.h	78;"	d
+HWREGBITH	inc/hw_types.h	75;"	d
+HWREGBITW	inc/hw_types.h	72;"	d
+HWREGH	inc/hw_types.h	68;"	d
+INPUT	inc/gpio.h	/^	INPUT$/;"	e	enum:_pinDirection
+LOW	inc/gpio.h	/^	LOW,$/;"	e	enum:_pinLevel
+MODE_0	inc/pad.h	/^   MODE_0 = 0,$/;"	e	enum:__anon2
+MODE_1	inc/pad.h	/^   MODE_1 = 1,$/;"	e	enum:__anon2
+MODE_2	inc/pad.h	/^   MODE_2 = 2,$/;"	e	enum:__anon2
+MODE_3	inc/pad.h	/^   MODE_3 = 3,$/;"	e	enum:__anon2
+MODE_4	inc/pad.h	/^   MODE_4 = 4,$/;"	e	enum:__anon2
+MODE_5	inc/pad.h	/^   MODE_5 = 5,$/;"	e	enum:__anon2
+MODE_6	inc/pad.h	/^   MODE_6 = 6,$/;"	e	enum:__anon2
+MODE_7	inc/pad.h	/^   MODE_7 = 7$/;"	e	enum:__anon2
+NULL	inc/hw_types.h	58;"	d
+OUTPUT	inc/gpio.h	/^	OUTPUT,$/;"	e	enum:_pinDirection
+PARITY_BIT_t	inc/uart.h	/^}PARITY_BIT_t;$/;"	t	typeref:enum:_PARITY_BIT_t
+PARITY_EVEN	inc/uart.h	/^   PARITY_EVEN,$/;"	e	enum:_PARITY_BIT_t
+PARITY_NONE	inc/uart.h	/^   PARITY_NONE,$/;"	e	enum:_PARITY_BIT_t
+PARITY_ODD	inc/uart.h	/^   PARITY_ODD$/;"	e	enum:_PARITY_BIT_t
+SOC_ADC_TSC_0_REGS	inc/soc_AM335x.h	175;"	d
+SOC_AINTC_REGS	inc/soc_AM335x.h	55;"	d
+SOC_CACHELINE_SIZE_MAX	inc/soc_AM335x.h	52;"	d
+SOC_CM_CEFUSE_REGS	inc/soc_AM335x.h	145;"	d
+SOC_CM_DEVICE_REGS	inc/soc_AM335x.h	142;"	d
+SOC_CM_DPLL_REGS	inc/soc_AM335x.h	140;"	d
+SOC_CM_GFX_REGS	inc/soc_AM335x.h	144;"	d
+SOC_CM_MPU_REGS	inc/soc_AM335x.h	141;"	d
+SOC_CM_PER_REGS	inc/soc_AM335x.h	138;"	d
+SOC_CM_RTC_REGS	inc/soc_AM335x.h	143;"	d
+SOC_CM_WKUP_REGS	inc/soc_AM335x.h	139;"	d
+SOC_CONTROL_REGS	inc/soc_AM335x.h	156;"	d
+SOC_CPSW_ALE_REGS	inc/soc_AM335x.h	113;"	d
+SOC_CPSW_CPDMA_REGS	inc/soc_AM335x.h	112;"	d
+SOC_CPSW_CPPI_RAM_REGS	inc/soc_AM335x.h	120;"	d
+SOC_CPSW_MDIO_REGS	inc/soc_AM335x.h	110;"	d
+SOC_CPSW_PORT_0_REGS	inc/soc_AM335x.h	115;"	d
+SOC_CPSW_PORT_1_REGS	inc/soc_AM335x.h	116;"	d
+SOC_CPSW_PORT_2_REGS	inc/soc_AM335x.h	118;"	d
+SOC_CPSW_SLIVER_1_REGS	inc/soc_AM335x.h	117;"	d
+SOC_CPSW_SLIVER_2_REGS	inc/soc_AM335x.h	119;"	d
+SOC_CPSW_SS_REGS	inc/soc_AM335x.h	109;"	d
+SOC_CPSW_STAT_REGS	inc/soc_AM335x.h	114;"	d
+SOC_CPSW_WR_REGS	inc/soc_AM335x.h	111;"	d
+SOC_DCAN_0_REGS	inc/soc_AM335x.h	163;"	d
+SOC_DCAN_1_REGS	inc/soc_AM335x.h	164;"	d
+SOC_DMTIMER_0_REGS	inc/soc_AM335x.h	79;"	d
+SOC_DMTIMER_1_REGS	inc/soc_AM335x.h	80;"	d
+SOC_DMTIMER_2_REGS	inc/soc_AM335x.h	81;"	d
+SOC_DMTIMER_3_REGS	inc/soc_AM335x.h	82;"	d
+SOC_DMTIMER_4_REGS	inc/soc_AM335x.h	83;"	d
+SOC_DMTIMER_5_REGS	inc/soc_AM335x.h	84;"	d
+SOC_DMTIMER_6_REGS	inc/soc_AM335x.h	85;"	d
+SOC_DMTIMER_7_REGS	inc/soc_AM335x.h	86;"	d
+SOC_ECAP_0_REGS	inc/soc_AM335x.h	187;"	d
+SOC_ECAP_1_REGS	inc/soc_AM335x.h	188;"	d
+SOC_ECAP_2_REGS	inc/soc_AM335x.h	189;"	d
+SOC_ECAP_REGS	inc/soc_AM335x.h	183;"	d
+SOC_EDMA30CC_0_REGS	inc/soc_AM335x.h	160;"	d
+SOC_ELM_0_REGS	inc/soc_AM335x.h	97;"	d
+SOC_EMIF_0_REGS	inc/soc_AM335x.h	131;"	d
+SOC_EPWM_0_REGS	inc/soc_AM335x.h	195;"	d
+SOC_EPWM_1_REGS	inc/soc_AM335x.h	196;"	d
+SOC_EPWM_2_REGS	inc/soc_AM335x.h	197;"	d
+SOC_EPWM_MODULE_FREQ	inc/soc_AM335x.h	200;"	d
+SOC_EPWM_REGS	inc/soc_AM335x.h	185;"	d
+SOC_EQEP_0_REGS	inc/soc_AM335x.h	191;"	d
+SOC_EQEP_1_REGS	inc/soc_AM335x.h	192;"	d
+SOC_EQEP_2_REGS	inc/soc_AM335x.h	193;"	d
+SOC_EQEP_REGS	inc/soc_AM335x.h	184;"	d
+SOC_GPIO_0_REGS	inc/soc_AM335x.h	73;"	d
+SOC_GPIO_1_REGS	inc/soc_AM335x.h	74;"	d
+SOC_GPIO_2_REGS	inc/soc_AM335x.h	75;"	d
+SOC_GPIO_3_REGS	inc/soc_AM335x.h	76;"	d
+SOC_GPMC_0_REGS	inc/soc_AM335x.h	94;"	d
+SOC_I2C_0_REGS	inc/soc_AM335x.h	100;"	d
+SOC_I2C_1_REGS	inc/soc_AM335x.h	101;"	d
+SOC_I2C_2_REGS	inc/soc_AM335x.h	102;"	d
+SOC_LCDC_0_REGS	inc/soc_AM335x.h	173;"	d
+SOC_MCASP_0_CTRL_REGS	inc/soc_AM335x.h	123;"	d
+SOC_MCASP_0_DATA_REGS	inc/soc_AM335x.h	125;"	d
+SOC_MCASP_0_FIFO_REGS	inc/soc_AM335x.h	124;"	d
+SOC_MCASP_1_CTRL_REGS	inc/soc_AM335x.h	126;"	d
+SOC_MCASP_1_DATA_REGS	inc/soc_AM335x.h	128;"	d
+SOC_MCASP_1_FIFO_REGS	inc/soc_AM335x.h	127;"	d
+SOC_MMCHS_0_REGS	inc/soc_AM335x.h	89;"	d
+SOC_MMCHS_1_REGS	inc/soc_AM335x.h	90;"	d
+SOC_MMCHS_2_REGS	inc/soc_AM335x.h	91;"	d
+SOC_OCP_SOCKET_RAM_REGS	inc/soc_AM335x.h	146;"	d
+SOC_PRCM_REGS	inc/soc_AM335x.h	137;"	d
+SOC_PRM_CEFUSE_REGS	inc/soc_AM335x.h	153;"	d
+SOC_PRM_DEVICE_REGS	inc/soc_AM335x.h	150;"	d
+SOC_PRM_GFX_REGS	inc/soc_AM335x.h	152;"	d
+SOC_PRM_MPU_REGS	inc/soc_AM335x.h	149;"	d
+SOC_PRM_PER_REGS	inc/soc_AM335x.h	147;"	d
+SOC_PRM_RTC_REGS	inc/soc_AM335x.h	151;"	d
+SOC_PRM_WKUP_REGS	inc/soc_AM335x.h	148;"	d
+SOC_PWMSS0_REGS	inc/soc_AM335x.h	179;"	d
+SOC_PWMSS1_REGS	inc/soc_AM335x.h	180;"	d
+SOC_PWMSS2_REGS	inc/soc_AM335x.h	181;"	d
+SOC_RTC_0_REGS	inc/soc_AM335x.h	134;"	d
+SOC_SPI_0_REGS	inc/soc_AM335x.h	69;"	d
+SOC_SPI_1_REGS	inc/soc_AM335x.h	70;"	d
+SOC_UART_0_REGS	inc/soc_AM335x.h	58;"	d
+SOC_UART_1_REGS	inc/soc_AM335x.h	59;"	d
+SOC_UART_2_REGS	inc/soc_AM335x.h	60;"	d
+SOC_UART_3_REGS	inc/soc_AM335x.h	61;"	d
+SOC_UART_4_REGS	inc/soc_AM335x.h	62;"	d
+SOC_UART_5_REGS	inc/soc_AM335x.h	63;"	d
+SOC_USB_0_BASE	inc/soc_AM335x.h	66;"	d
+SOC_USB_1_BASE	inc/soc_AM335x.h	67;"	d
+SOC_WDT_0_REGS	inc/soc_AM335x.h	105;"	d
+SOC_WDT_1_REGS	inc/soc_AM335x.h	106;"	d
+STOP1	inc/uart.h	/^   STOP1,$/;"	e	enum:_STOP_BIT_t
+STOP1_5	inc/uart.h	/^   STOP1_5,$/;"	e	enum:_STOP_BIT_t
+STOP2	inc/uart.h	/^   STOP2$/;"	e	enum:_STOP_BIT_t
+STOP_BIT_t	inc/uart.h	/^}STOP_BIT_t;$/;"	t	typeref:enum:_STOP_BIT_t
+TIME	src/main.c	25;"	d	file:
+TPCC_MUX	inc/soc_AM335x.h	170;"	d
+TRUE	inc/hw_types.h	82;"	d
+UART0	inc/uart.h	/^   UART0 = 0,$/;"	e	enum:_UART_t
+UART1	inc/uart.h	/^   UART1 = 1,$/;"	e	enum:_UART_t
+UART2	inc/uart.h	/^   UART2 = 2,$/;"	e	enum:_UART_t
+UART3	inc/uart.h	/^   UART3 = 3,$/;"	e	enum:_UART_t
+UART4	inc/uart.h	/^   UART4 = 4,$/;"	e	enum:_UART_t
+UART5	inc/uart.h	/^   UART5 = 5$/;"	e	enum:_UART_t
+UART_ARRAY_BASE	inc/uart.h	/^static const unsigned int UART_ARRAY_BASE[] = {SOC_UART_0_REGS, SOC_UART_1_REGS, SOC_UART_2_REGS, SOC_UART_3_REGS, SOC_UART_4_REGS, SOC_UART_5_REGS};$/;"	v
+UART_H_	inc/uart.h	2;"	d
+UART_t	inc/uart.h	/^}UART_t;$/;"	t	typeref:enum:_UART_t
+UARTx_MA_R_	inc/uart.h	108;"	d
+UARTx_MA_R_CFPS	inc/uart.h	113;"	d
+UARTx_MA_R_DLH	inc/uart.h	92;"	d
+UARTx_MA_R_DLL	inc/uart.h	91;"	d
+UARTx_MA_R_FREQ_SEL	inc/uart.h	118;"	d
+UARTx_MA_R_IER2	inc/uart.h	116;"	d
+UARTx_MA_R_IIR	inc/uart.h	93;"	d
+UARTx_MA_R_ISR2	inc/uart.h	117;"	d
+UARTx_MA_R_LCR	inc/uart.h	94;"	d
+UARTx_MA_R_LSR	inc/uart.h	96;"	d
+UARTx_MA_R_MCR	inc/uart.h	95;"	d
+UARTx_MA_R_MDR1	inc/uart.h	99;"	d
+UARTx_MA_R_MDR2	inc/uart.h	100;"	d
+UARTx_MA_R_MDR3	inc/uart.h	119;"	d
+UARTx_MA_R_MSRTCR	inc/uart.h	97;"	d
+UARTx_MA_R_MVR	inc/uart.h	109;"	d
+UARTx_MA_R_RESUME	inc/uart.h	102;"	d
+UARTx_MA_R_RXFIFO_LVL	inc/uart.h	114;"	d
+UARTx_MA_R_SCR	inc/uart.h	106;"	d
+UARTx_MA_R_SFLR	inc/uart.h	101;"	d
+UARTx_MA_R_SFREGH	inc/uart.h	104;"	d
+UARTx_MA_R_SFREGL	inc/uart.h	103;"	d
+UARTx_MA_R_SPRTLR	inc/uart.h	98;"	d
+UARTx_MA_R_SSR	inc/uart.h	107;"	d
+UARTx_MA_R_SYSC	inc/uart.h	110;"	d
+UARTx_MA_R_SYSS	inc/uart.h	111;"	d
+UARTx_MA_R_TXDMA	inc/uart.h	120;"	d
+UARTx_MA_R_TXFIFO_LVL	inc/uart.h	115;"	d
+UARTx_MA_R_UASR	inc/uart.h	105;"	d
+UARTx_MA_R_WER	inc/uart.h	112;"	d
+UARTx_MA_W_CFPS	inc/uart.h	139;"	d
+UARTx_MA_W_DLH	inc/uart.h	123;"	d
+UARTx_MA_W_DLL	inc/uart.h	122;"	d
+UARTx_MA_W_FCR	inc/uart.h	124;"	d
+UARTx_MA_W_FREQ_SEL	inc/uart.h	144;"	d
+UARTx_MA_W_IER2	inc/uart.h	142;"	d
+UARTx_MA_W_ISR2	inc/uart.h	143;"	d
+UARTx_MA_W_LCR	inc/uart.h	125;"	d
+UARTx_MA_W_MCR	inc/uart.h	126;"	d
+UARTx_MA_W_MDR1	inc/uart.h	129;"	d
+UARTx_MA_W_MDR2	inc/uart.h	130;"	d
+UARTx_MA_W_MDR3	inc/uart.h	145;"	d
+UARTx_MA_W_RXFIFO_LVL	inc/uart.h	140;"	d
+UARTx_MA_W_RXFLH	inc/uart.h	134;"	d
+UARTx_MA_W_RXFLL	inc/uart.h	133;"	d
+UARTx_MA_W_SCR	inc/uart.h	135;"	d
+UARTx_MA_W_SPRTLR	inc/uart.h	128;"	d
+UARTx_MA_W_SSR	inc/uart.h	136;"	d
+UARTx_MA_W_SYSC	inc/uart.h	137;"	d
+UARTx_MA_W_TCR	inc/uart.h	127;"	d
+UARTx_MA_W_TXDMA	inc/uart.h	146;"	d
+UARTx_MA_W_TXFIFO_LVL	inc/uart.h	141;"	d
+UARTx_MA_W_TXFLH	inc/uart.h	132;"	d
+UARTx_MA_W_TXFLL	inc/uart.h	131;"	d
+UARTx_MA_W_WER	inc/uart.h	138;"	d
+UARTx_MB_R_CFPS	inc/uart.h	170;"	d
+UARTx_MB_R_DLH	inc/uart.h	150;"	d
+UARTx_MB_R_DLL	inc/uart.h	149;"	d
+UARTx_MB_R_EFR	inc/uart.h	151;"	d
+UARTx_MB_R_FREQ_SEL	inc/uart.h	175;"	d
+UARTx_MB_R_IER2	inc/uart.h	173;"	d
+UARTx_MB_R_ISR2	inc/uart.h	174;"	d
+UARTx_MB_R_LCR	inc/uart.h	152;"	d
+UARTx_MB_R_MDR1	inc/uart.h	157;"	d
+UARTx_MB_R_MDR2	inc/uart.h	158;"	d
+UARTx_MB_R_MDR3	inc/uart.h	176;"	d
+UARTx_MB_R_MVR	inc/uart.h	166;"	d
+UARTx_MB_R_RESUME	inc/uart.h	160;"	d
+UARTx_MB_R_RXFIFO_LVL	inc/uart.h	171;"	d
+UARTx_MB_R_SCR	inc/uart.h	164;"	d
+UARTx_MB_R_SFLSR	inc/uart.h	159;"	d
+UARTx_MB_R_SFREGH	inc/uart.h	162;"	d
+UARTx_MB_R_SFREGL	inc/uart.h	161;"	d
+UARTx_MB_R_SSR	inc/uart.h	165;"	d
+UARTx_MB_R_SYSC	inc/uart.h	167;"	d
+UARTx_MB_R_SYSS	inc/uart.h	168;"	d
+UARTx_MB_R_TXDMA	inc/uart.h	177;"	d
+UARTx_MB_R_TXFIFO_LVL	inc/uart.h	172;"	d
+UARTx_MB_R_UASR	inc/uart.h	163;"	d
+UARTx_MB_R_WER	inc/uart.h	169;"	d
+UARTx_MB_R_XOFF1TCR	inc/uart.h	155;"	d
+UARTx_MB_R_XOFF2TLR	inc/uart.h	156;"	d
+UARTx_MB_R_XON1ADDR2	inc/uart.h	153;"	d
+UARTx_MB_R_XON2ADDR2	inc/uart.h	154;"	d
+UARTx_MB_W_CFPS	inc/uart.h	201;"	d
+UARTx_MB_W_DLH	inc/uart.h	181;"	d
+UARTx_MB_W_DLL	inc/uart.h	180;"	d
+UARTx_MB_W_EFR	inc/uart.h	182;"	d
+UARTx_MB_W_FREQ_SEL	inc/uart.h	206;"	d
+UARTx_MB_W_IER2	inc/uart.h	204;"	d
+UARTx_MB_W_ISR2	inc/uart.h	205;"	d
+UARTx_MB_W_LCR	inc/uart.h	183;"	d
+UARTx_MB_W_MDR1	inc/uart.h	188;"	d
+UARTx_MB_W_MDR2	inc/uart.h	189;"	d
+UARTx_MB_W_MDR3	inc/uart.h	207;"	d
+UARTx_MB_W_MVR	inc/uart.h	197;"	d
+UARTx_MB_W_RESUME	inc/uart.h	191;"	d
+UARTx_MB_W_RXFIFO_LVL	inc/uart.h	202;"	d
+UARTx_MB_W_SCR	inc/uart.h	195;"	d
+UARTx_MB_W_SFLSR	inc/uart.h	190;"	d
+UARTx_MB_W_SFREGH	inc/uart.h	193;"	d
+UARTx_MB_W_SFREGL	inc/uart.h	192;"	d
+UARTx_MB_W_SSR	inc/uart.h	196;"	d
+UARTx_MB_W_SYSC	inc/uart.h	198;"	d
+UARTx_MB_W_SYSS	inc/uart.h	199;"	d
+UARTx_MB_W_TXDMA	inc/uart.h	208;"	d
+UARTx_MB_W_TXFIFO_LVL	inc/uart.h	203;"	d
+UARTx_MB_W_UASR	inc/uart.h	194;"	d
+UARTx_MB_W_WER	inc/uart.h	200;"	d
+UARTx_MB_W_XOFF1TCR	inc/uart.h	186;"	d
+UARTx_MB_W_XOFF2TLR	inc/uart.h	187;"	d
+UARTx_MB_W_XON1ADDR1	inc/uart.h	184;"	d
+UARTx_MB_W_XON2ADDR2	inc/uart.h	185;"	d
+UARTx_OP_R_ACREG	inc/uart.h	44;"	d
+UARTx_OP_R_BLR	inc/uart.h	43;"	d
+UARTx_OP_R_CFPS	inc/uart.h	52;"	d
+UARTx_OP_R_EBLR	inc/uart.h	47;"	d
+UARTx_OP_R_FREQ_SEL	inc/uart.h	57;"	d
+UARTx_OP_R_IER	inc/uart.h	30;"	d
+UARTx_OP_R_IER2	inc/uart.h	55;"	d
+UARTx_OP_R_IIR	inc/uart.h	31;"	d
+UARTx_OP_R_ISR2	inc/uart.h	56;"	d
+UARTx_OP_R_LCR	inc/uart.h	32;"	d
+UARTx_OP_R_LSR	inc/uart.h	34;"	d
+UARTx_OP_R_MCR	inc/uart.h	33;"	d
+UARTx_OP_R_MDR1	inc/uart.h	37;"	d
+UARTx_OP_R_MDR2	inc/uart.h	38;"	d
+UARTx_OP_R_MDR3	inc/uart.h	58;"	d
+UARTx_OP_R_MSRTCR	inc/uart.h	35;"	d
+UARTx_OP_R_MVR	inc/uart.h	48;"	d
+UARTx_OP_R_RESUME	inc/uart.h	40;"	d
+UARTx_OP_R_RHR	inc/uart.h	29;"	d
+UARTx_OP_R_RXFIFO_LVL	inc/uart.h	53;"	d
+UARTx_OP_R_SCR	inc/uart.h	45;"	d
+UARTx_OP_R_SFLSR	inc/uart.h	39;"	d
+UARTx_OP_R_SFREGH	inc/uart.h	42;"	d
+UARTx_OP_R_SFREGL	inc/uart.h	41;"	d
+UARTx_OP_R_SPRTLR	inc/uart.h	36;"	d
+UARTx_OP_R_SSR	inc/uart.h	46;"	d
+UARTx_OP_R_SYSC	inc/uart.h	49;"	d
+UARTx_OP_R_SYSS	inc/uart.h	50;"	d
+UARTx_OP_R_TXDMA	inc/uart.h	59;"	d
+UARTx_OP_R_TXFIFO_LVL	inc/uart.h	54;"	d
+UARTx_OP_R_WER	inc/uart.h	51;"	d
+UARTx_OP_W_ACREG	inc/uart.h	75;"	d
+UARTx_OP_W_BLR	inc/uart.h	74;"	d
+UARTx_OP_W_CFPS	inc/uart.h	81;"	d
+UARTx_OP_W_EBLR	inc/uart.h	78;"	d
+UARTx_OP_W_FCR	inc/uart.h	63;"	d
+UARTx_OP_W_FREQ_SEL	inc/uart.h	86;"	d
+UARTx_OP_W_IER	inc/uart.h	62;"	d
+UARTx_OP_W_IER2	inc/uart.h	84;"	d
+UARTx_OP_W_ISR2	inc/uart.h	85;"	d
+UARTx_OP_W_LCR	inc/uart.h	64;"	d
+UARTx_OP_W_MCR	inc/uart.h	65;"	d
+UARTx_OP_W_MDR1	inc/uart.h	68;"	d
+UARTx_OP_W_MDR2	inc/uart.h	69;"	d
+UARTx_OP_W_MDR3	inc/uart.h	87;"	d
+UARTx_OP_W_RXFIFO_LVL	inc/uart.h	82;"	d
+UARTx_OP_W_RXFLH	inc/uart.h	73;"	d
+UARTx_OP_W_RXFLL	inc/uart.h	72;"	d
+UARTx_OP_W_SCR	inc/uart.h	76;"	d
+UARTx_OP_W_SPRTLR	inc/uart.h	67;"	d
+UARTx_OP_W_SSR	inc/uart.h	77;"	d
+UARTx_OP_W_SYSC	inc/uart.h	79;"	d
+UARTx_OP_W_TCR	inc/uart.h	66;"	d
+UARTx_OP_W_THR	inc/uart.h	61;"	d
+UARTx_OP_W_TXDMA	inc/uart.h	88;"	d
+UARTx_OP_W_TXFIFO_LVL	inc/uart.h	83;"	d
+UARTx_OP_W_TXFLH	inc/uart.h	71;"	d
+UARTx_OP_W_TXFLL	inc/uart.h	70;"	d
+UARTx_OP_W_WER	inc/uart.h	80;"	d
+_CKM_MODULE	inc/clock_module.h	/^typedef enum _CKM_MODULE{$/;"	g
+_CKM_MODULE_REG	inc/clock_module.h	/^typedef enum _CKM_MODULE_REG{$/;"	g
+_FLOW_t	inc/uart.h	/^typedef enum _FLOW_t{$/;"	g
+_HW_TYPES_H_	inc/hw_types.h	43;"	d
+_PARITY_BIT_t	inc/uart.h	/^typedef enum _PARITY_BIT_t{$/;"	g
+_SOC_AM33XX_H_	inc/soc_AM335x.h	45;"	d
+_STOP_BIT_t	inc/uart.h	/^typedef enum _STOP_BIT_t{$/;"	g
+_UART_t	inc/uart.h	/^typedef enum _UART_t{$/;"	g
+__CLOCK_MODULE_H	inc/clock_module.h	2;"	d
+__CONTROL_MODULE_H	inc/control_module.h	2;"	d
+__PAD_H	inc/pad.h	2;"	d
+_gpioPort	inc/gpio.h	/^typedef enum _gpioPort{$/;"	g
+_pinDirection	inc/gpio.h	/^typedef enum _pinDirection{$/;"	g
+_pinLevel	inc/gpio.h	/^typedef enum _pinLevel{$/;"	g
+bool	inc/hw_types.h	/^}bool;$/;"	t	typeref:enum:__anon1
+ckmCheckValidModule	src/clock_module.c	/^static bool ckmCheckValidModule(CKM_MODULE_REG offset){$/;"	f	file:	signature:(CKM_MODULE_REG offset)
+ckmGetCLKModuleRegister	inc/clock_module.h	/^unsigned int ckmGetCLKModuleRegister(CKM_MODULE base, CKM_MODULE_REG offset);$/;"	p	signature:(CKM_MODULE base, CKM_MODULE_REG offset)
+ckmGetCLKModuleRegister	src/clock_module.c	/^unsigned int ckmGetCLKModuleRegister(CKM_MODULE base, CKM_MODULE_REG offset){$/;"	f	signature:(CKM_MODULE base, CKM_MODULE_REG offset)
+ckmSetCLKModuleRegister	inc/clock_module.h	/^void ckmSetCLKModuleRegister(CKM_MODULE base, CKM_MODULE_REG offset, unsigned int value);$/;"	p	signature:(CKM_MODULE base, CKM_MODULE_REG offset, unsigned int value)
+ckmSetCLKModuleRegister	src/clock_module.c	/^void ckmSetCLKModuleRegister(CKM_MODULE base, CKM_MODULE_REG offset, unsigned int value){$/;"	f	signature:(CKM_MODULE base, CKM_MODULE_REG offset, unsigned int value)
+cmGetCtrlModule	inc/control_module.h	/^unsigned int cmGetCtrlModule(CONTROL_MODULE offset);$/;"	p	signature:(CONTROL_MODULE offset)
+cmGetCtrlModule	src/control_module.c	/^unsigned int cmGetCtrlModule(CONTROL_MODULE offset){$/;"	f	signature:(CONTROL_MODULE offset)
+cmSetCtrlModule	inc/control_module.h	/^void cmSetCtrlModule(CONTROL_MODULE offset, unsigned int value);$/;"	p	signature:(CONTROL_MODULE offset, unsigned int value)
+cmSetCtrlModule	src/control_module.c	/^void cmSetCtrlModule(CONTROL_MODULE offset, unsigned int value){$/;"	f	signature:(CONTROL_MODULE offset, unsigned int value)
+delay	src/main.c	/^static void delay();$/;"	p	file:
+delay	src/main.c	/^static void delay(){$/;"	f	file:
+false	inc/hw_types.h	/^   false = 0$/;"	e	enum:__anon1
+gpioCheckValidDirection	src/gpio.c	/^static bool gpioCheckValidDirection(pinDirection dir){$/;"	f	file:	signature:(pinDirection dir)
+gpioCheckValidPortPin	src/gpio.c	/^static bool gpioCheckValidPortPin(gpioPort port, ucPinNumber pin){$/;"	f	file:	signature:(gpioPort port, ucPinNumber pin)
+gpioGetDirection	inc/gpio.h	/^int  gpioGetDirection(ucPinNumber ,ucPinNumber );$/;"	p	signature:(ucPinNumber ,ucPinNumber )
+gpioGetDirection	src/gpio.c	/^int gpioGetDirection(gpioPort port, ucPinNumber pin){$/;"	f	signature:(gpioPort port, ucPinNumber pin)
+gpioGetPinValue	inc/gpio.h	/^unsigned int gpioGetPinValue(gpioPort ,ucPinNumber );$/;"	p	signature:(gpioPort ,ucPinNumber )
+gpioGetPinValue	src/gpio.c	/^unsigned int gpioGetPinValue(gpioPort port, ucPinNumber pin){$/;"	f	signature:(gpioPort port, ucPinNumber pin)
+gpioInitModule	inc/gpio.h	/^void gpioInitModule(gpioPort );$/;"	p	signature:(gpioPort )
+gpioInitModule	src/gpio.c	/^void gpioInitModule(gpioPort port){$/;"	f	signature:(gpioPort port)
+gpioInitPin	inc/gpio.h	/^void gpioInitPin(gpioPort ,ucPinNumber );$/;"	p	signature:(gpioPort ,ucPinNumber )
+gpioInitPin	src/gpio.c	/^void gpioInitPin(gpioPort port, ucPinNumber pin){$/;"	f	signature:(gpioPort port, ucPinNumber pin)
+gpioPort	inc/gpio.h	/^}gpioPort;				\/* ----------  end of enum gpioPort  ---------- *\/$/;"	t	typeref:enum:_gpioPort
+gpioSetDirection	inc/gpio.h	/^void gpioSetDirection(gpioPort ,ucPinNumber ,pinDirection );	$/;"	p	signature:(gpioPort ,ucPinNumber ,pinDirection )
+gpioSetDirection	src/gpio.c	/^void gpioSetDirection(gpioPort port, ucPinNumber pin, pinDirection dir){$/;"	f	signature:(gpioPort port, ucPinNumber pin, pinDirection dir)
+gpioSetPinValue	inc/gpio.h	/^void gpioSetPinValue(gpioPort ,ucPinNumber ,pinLevel );$/;"	p	signature:(gpioPort ,ucPinNumber ,pinLevel )
+gpioSetPinValue	src/gpio.c	/^void gpioSetPinValue(gpioPort port, ucPinNumber pin, pinLevel value){$/;"	f	signature:(gpioPort port, ucPinNumber pin, pinLevel value)
+ledOFF	src/main.c	/^void ledOFF(gpioMod ,ucPinNumber );$/;"	p	file:
+ledOFF	src/main.c	/^void ledOFF(gpioMod mod,  ucPinNumber pin ){$/;"	f	signature:(gpioMod mod, ucPinNumber pin )
+ledON	src/main.c	/^void ledON(gpioMod  ,ucPinNumber );$/;"	p	file:
+ledON	src/main.c	/^void ledON(gpioMod mod, ucPinNumber pin){$/;"	f	signature:(gpioMod mod, ucPinNumber pin)
+main	src/main.c	/^int main(void){$/;"	f	signature:(void)
+padGetMode	inc/pad.h	/^pinmode_t padGetMode(CONTROL_MODULE offset);$/;"	p	signature:(CONTROL_MODULE offset)
+padGetMode	src/pad.c	/^pinmode_t padGetMode(CONTROL_MODULE offset){$/;"	f	signature:(CONTROL_MODULE offset)
+padSetMode	inc/pad.h	/^void padSetMode(CONTROL_MODULE offset, pinmode_t mode);$/;"	p	signature:(CONTROL_MODULE offset, pinmode_t mode)
+padSetMode	src/pad.c	/^void padSetMode(CONTROL_MODULE offset, pinmode_t mode){$/;"	f	signature:(CONTROL_MODULE offset, pinmode_t mode)
+pinDirection	inc/gpio.h	/^}pinDirection;				\/* ----------  end of enum pinDirection  ---------- *\/$/;"	t	typeref:enum:_pinDirection
+pinLevel	inc/gpio.h	/^}pinLevel;				\/* ----------  end of enum pinLevel  ---------- *\/$/;"	t	typeref:enum:_pinLevel
+pinmode_t	inc/pad.h	/^}pinmode_t;$/;"	t	typeref:enum:__anon2
+tBoolean	inc/hw_types.h	/^typedef unsigned char tBoolean;$/;"	t
+true	inc/hw_types.h	/^   true = 1,$/;"	e	enum:__anon1
+uartGetC	inc/uart.h	/^char uartGetC(UART_t uart);$/;"	p	signature:(UART_t uart)
+uartGetString	inc/uart.h	/^int uartGetString(UART_t uart, char *buf, unsigned int length);$/;"	p	signature:(UART_t uart, char *buf, unsigned int length)
+uartInitModule	inc/uart.h	/^void uartInitModule(UART_t uart, unsigned int baudrate, STOP_BIT_t stopBit, PARITY_BIT_t parity, FLOW_t flowControl);$/;"	p	signature:(UART_t uart, unsigned int baudrate, STOP_BIT_t stopBit, PARITY_BIT_t parity, FLOW_t flowControl)
+uartPutC	inc/uart.h	/^void uartPutC(UART_t uart, char c);$/;"	p	signature:(UART_t uart, char c)
+uartPutString	inc/uart.h	/^int uartPutString(UART_t uart, char *str, unsigned int length);$/;"	p	signature:(UART_t uart, char *str, unsigned int length)
+ucPinNumber	inc/gpio.h	/^typedef unsigned char ucPinNumber;$/;"	t
