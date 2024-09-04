@@ -28,26 +28,28 @@ int Interrupt_Setup(unsigned int inter){
 }
 
 void ISR_Handler(void) {
-    putCh(UART0,'e');
+    
     unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
 
     if (irq_number == 98) {
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
-        putCh(UART0,'s');
+        gpioIsrHandler(GPIO1,type0,16);
         MarmotaVerde();
     }
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
+        gpioIsrHandler(GPIO1,type0,17);
         MarmotaVermelha();
     }
     if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 18)){
+        gpioIsrHandler(GPIO1,type0,18);
         reset();
     }
-    if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 19)){
+    if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 19)){  
+        gpioIsrHandler(GPIO1,type0,19);
         start();
     }
     }
     if (irq_number == 95) {
-        putCh(UART0,'a');
         timerIrqHandler(TIMER7);
     }
 

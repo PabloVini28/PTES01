@@ -10,7 +10,7 @@
 
 void start();
 void reset();
-bool verificaStart();
+unsigned int verificaStart();
 void MarmotaVerde();
 void MarmotaVermelha();
 

@@ -27,10 +27,7 @@ int main() {
     Init_pin_gpio(GPIO1,18,INPUT);
     Init_pin_gpio(GPIO1,19,INPUT);
 
-    Debounce(GPIO1, 16);
-    Debounce(GPIO1, 17);
-    Debounce(GPIO1, 18);
-    Debounce(GPIO1, 19);
+    Debounce(GPIO1);
 
     timerSetup(TIMER7);
 
@@ -44,7 +41,12 @@ int main() {
 
     while(true) {
     
-    PiscaLed01(); 
+        while(verificaStart()==1){
+            PiscaLed01();
+            PiscaLed02();
+            PiscaLed03();
+            PiscaLed04();
+        }
     
     }
     return 0;
