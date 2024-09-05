@@ -10,9 +10,14 @@
 
 void start();
 void reset();
+void str(unsigned int num);
 unsigned int verificaStart();
 void MarmotaVerde();
 void MarmotaVermelha();
+void MarmotaAmarela();
+void MarmotaAzul();
+void imprimirPontuacao();
+
 
 
 #endif

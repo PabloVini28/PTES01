@@ -3,6 +3,7 @@
 #include "interruption.h"
 
 bool flag_timer;
+extern unsigned int flag_reset;
 #define DELAY_USE_INTERRUPT 1
 
 void DMTimerWaitForWrite(unsigned int value,Timer timer){
@@ -136,6 +137,7 @@ void timerSetup(Timer timer){
 }
 
 void delay(unsigned int value, Timer timer) {
+if(flag_reset == 1) return;
 #ifdef DELAY_USE_INTERRUPT 
     unsigned int aux = TIMER_OVERFLOW - (value*TIMER_1MS_COUNT);
 
@@ -187,6 +189,7 @@ void delay(unsigned int value, Timer timer) {
         HWREG(SOC_DMTIMER_6_REGS+DMTIMER_IRQENABLE_CLR) = 0x2;
         break;
     case TIMER7:
+        
         DMTimerWaitForWrite(0x2,TIMER7);
         HWREG(SOC_DMTIMER_7_REGS+DMTIMER_TCRR) = aux;
         flag_timer = false;

@@ -32,6 +32,14 @@ void ISR_Handler(void) {
     unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
 
     if (irq_number == 98) {
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
+        gpioIsrHandler(GPIO1,type0,14);
+        MarmotaAzul();
+    }
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
+        gpioIsrHandler(GPIO1,type0,15);
+        MarmotaAmarela();
+    }
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
         gpioIsrHandler(GPIO1,type0,16);
         MarmotaVerde();
