@@ -6,13 +6,6 @@ extern unsigned int flag_iniciar;
 unsigned int flag_reset = 0;
 
 void str(unsigned int num){
-    /*char resultado[3];
-    resultado[0] = num/10;
-    resultado[1] = num%10;
-    resultado[0] += '0';
-    resultado[1] += '0';
-    putString(UART0,resultado,3);
-    */
    putCh(UART0,(numero_pontos/10)+'0');
    putCh(UART0,numero_pontos%10 + '0');
 }
@@ -37,7 +30,6 @@ void reset(){
     chamaMenuReset();
     flag_iniciar = 0;
     flag_reset = 1;
-    imprimirPontuacao();
 }
 
 void imprimirPontuacao() {
@@ -83,4 +75,10 @@ void MarmotaAzul(){
         matouMarmotaAzul();
         numero_pontos++;
     }
+}
+
+void acionaBuzzer(){
+    GpioSetPinValue(GPIO3, 21, HIGH);
+    for(int i = 0; i < 100000000; i++);
+    GpioSetPinValue(GPIO3, 21, LOW);
 }

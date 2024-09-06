@@ -7,6 +7,5 @@ void matouMarmotaVerde();
 void matouMarmotaVermelha();
 void matouMarmotaAmarela();
 void matouMarmotaAzul();
-void mostraPontuacao();
 
 #endif

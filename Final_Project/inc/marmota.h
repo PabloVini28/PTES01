@@ -17,6 +17,7 @@ void MarmotaVermelha();
 void MarmotaAmarela();
 void MarmotaAzul();
 void imprimirPontuacao();
+void acionaBuzzer();
 
 
 

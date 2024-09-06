@@ -16,6 +16,7 @@ void chamaMenuReset(){
     putString(UART0, "\n\r\n\r",8);
     putString(UART0, "---------------------------------------------------\n\r", 55);
     putString(UART0, "-               Reset Ativado                     -\n\r", 55);
+    putString(UART0, "-     Pressione Start para uma nova rodada        -\n\r", 55);
     putString(UART0, "-               Pontuação = 0                     -\n\r", 55);
     putString(UART0, "---------------------------------------------------\n\r", 55);
     putString(UART0, "\n\r\n\r",8);
@@ -57,10 +58,3 @@ void matouMarmotaAmarela(){
     putString(UART0, "\n\r\n\r",8);
 }
 
-void mostraPontuacao(){
-    putString(UART0, "\n\r\n\r",8);
-    putString(UART0, "---------------------------------------------------\n\r", 55);
-    putString(UART0, "-               Pontuação Atual                   -\n\r", 55);
-    putString(UART0, "---------------------------------------------------\n\r", 55);
-    putString(UART0, "\n\r\n\r",8);
-}
