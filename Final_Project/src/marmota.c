@@ -4,6 +4,7 @@
 extern unsigned int numero_pontos;
 extern unsigned int flag_iniciar;
 unsigned int flag_reset = 0;
+extern unsigned int flag_reset_acionado;
 
 void str(unsigned int num){
    putCh(UART0,(numero_pontos/10)+'0');
@@ -22,20 +23,34 @@ void start(){
 }
 
 void reset(){
-    HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<18);
-    Pin_Interrup_Config(GPIO1,19,type0);
-    numero_pontos = 0;
-    GpioSetPinValue(GPIO1, 28, LOW);
-    GpioSetPinValue(GPIO1, 12, LOW);
-    chamaMenuReset();
-    flag_iniciar = 0;
-    flag_reset = 1;
+
+    if(flag_reset_acionado == 0){
+        HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<18);
+        Pin_Interrup_Config(GPIO1,19,type0);
+        numero_pontos = 0;
+        GpioSetPinValue(GPIO1, 28, LOW);
+        GpioSetPinValue(GPIO1, 12, LOW);
+        //chamaMenuReset();
+        flag_iniciar = 0;
+        flag_reset = 1;
+        flag_reset_acionado = 1;
+    }
 }
 
 void imprimirPontuacao() {
-    putString(UART0, "Pontuação =", 15);
-    str(numero_pontos);
-    putString(UART0, "\n\r\n\r", 5);
+    
+    if(numero_pontos == 16){
+        PontuacaoMaxima();
+        acionaBuzzer();
+        chamaMenuReset();
+    }
+    else{
+        putString(UART0, "Pontuação =", 15);
+        str(numero_pontos);
+        putString(UART0, "\n\r\n\r", 5);
+        chamaMenuReset();
+    }
+    reset();
 }
 
 unsigned int verificaStart(){
@@ -61,10 +76,10 @@ void MarmotaVermelha(){
     
 }
 
-void MarmotaAmarela(){
+void MarmotaBranca(){
     if(GpioGetPinValue(GPIO2,1) == HIGH){
         GpioSetPinValue(GPIO2,1,LOW);
-        matouMarmotaAmarela();
+        matouMarmotaBranca();
         numero_pontos++;
     }
 }
@@ -78,7 +93,7 @@ void MarmotaAzul(){
 }
 
 void acionaBuzzer(){
-    GpioSetPinValue(GPIO3, 21, HIGH);
+    GpioSetPinValue(GPIO1, 13, HIGH);
     for(int i = 0; i < 100000000; i++);
-    GpioSetPinValue(GPIO3, 21, LOW);
+    GpioSetPinValue(GPIO1, 13, LOW);
 }

@@ -14,10 +14,11 @@ void str(unsigned int num);
 unsigned int verificaStart();
 void MarmotaVerde();
 void MarmotaVermelha();
-void MarmotaAmarela();
+void MarmotaBranca();
 void MarmotaAzul();
 void imprimirPontuacao();
 void acionaBuzzer();
+void PontuacaoMaxima();
 
 
 

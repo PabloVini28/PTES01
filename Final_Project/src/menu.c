@@ -49,11 +49,21 @@ void matouMarmotaAzul(){
     putString(UART0, "\n\r\n\r",8);
 }
 
-void matouMarmotaAmarela(){
+void matouMarmotaBranca(){
     putString(UART0, "\n\r\n\r",8);
     putString(UART0, "---------------------------------------------------\n\r", 55);
-    putString(UART0, "-               Marmota Amarela                   -\n\r", 55);
+    putString(UART0, "-               Marmota Branca                   -\n\r", 55);
     putString(UART0, "-               Pontuação += 1                    -\n\r", 55);
+    putString(UART0, "---------------------------------------------------\n\r", 55);
+    putString(UART0, "\n\r\n\r",8);
+}
+
+void PontuacaoMaxima(){
+    putString(UART0, "\n\r\n\r",8);
+    putString(UART0, "---------------------------------------------------\n\r", 55);
+    putString(UART0, "-                 Parabéns!                       -\n\r", 55);
+    putString(UART0, "-               Pontuação = 16                    -\n\r", 55);
+    putString(UART0, "-         Você é o mestre da Marmota!             -\n\r", 55);
     putString(UART0, "---------------------------------------------------\n\r", 55);
     putString(UART0, "\n\r\n\r",8);
 }

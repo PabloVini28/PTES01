@@ -7,6 +7,7 @@ void PiscaLed04();
 
 unsigned int numero_pontos = 0;
 unsigned int flag_iniciar;
+unsigned int flag_reset_acionado = 0;
 
 int main() {
 
@@ -14,13 +15,12 @@ int main() {
 
     Init_module_gpio(GPIO1);
     Init_module_gpio(GPIO2);
-    Init_module_gpio(GPIO3);
 
     cmSetCtrlModule(CM_conf_gpmc_ben1, 7); // led
     cmSetCtrlModule(CM_conf_gpmc_ad12, 7); // led
     cmSetCtrlModule(CM_conf_gpmc_clk,7); // led
     cmSetCtrlModule(CM_conf_gpmc_advn_ale,7) ; // led
-    cmSetCtrlModule(CM_conf_mcasp0_ahclkx,7); // buzzer
+    cmSetCtrlModule(CM_conf_gpmc_ad13,7); // buzzer
 
     cmSetCtrlModule(CM_conf_gpmc_a1, 7); // botão
     cmSetCtrlModule(CM_conf_gpmc_a0, 7); // botão
@@ -33,14 +33,14 @@ int main() {
     Init_pin_gpio(GPIO1,12, OUTPUT); //p8 ; 12
     Init_pin_gpio(GPIO2,1,OUTPUT); //p8 ; 18
     Init_pin_gpio(GPIO2,2,OUTPUT); // p8 ; 7
-    Init_pin_gpio(GPIO3,21,OUTPUT); // p8 ; 24
+    Init_pin_gpio(GPIO1,13,OUTPUT); // p8 ; 
 
-    Init_pin_gpio(GPIO1,14,INPUT); //p8 ; 16
-    Init_pin_gpio(GPIO1,15,INPUT); //p8 ; 15
-    Init_pin_gpio(GPIO1,16,INPUT); //p9 ; 15
-    Init_pin_gpio(GPIO1,17, INPUT); //p9 ; 23
-    Init_pin_gpio(GPIO1,18,INPUT); //p9 ; 14
-    Init_pin_gpio(GPIO1,19,INPUT); //p9 ; 16
+    Init_pin_gpio(GPIO1,14,INPUT); //p8 ; 16  azul
+    Init_pin_gpio(GPIO1,15,INPUT); //p8 ; 15 branca = amarela
+    Init_pin_gpio(GPIO1,16,INPUT); //p9 ; 15 verde
+    Init_pin_gpio(GPIO1,17, INPUT); //p9 ; 23  marmota vermelha
+    Init_pin_gpio(GPIO1,18,INPUT); //p9 ; 14  reset
+    Init_pin_gpio(GPIO1,19,INPUT); //p9 ; 16 start
 
     Debounce(GPIO1);
 
@@ -49,34 +49,25 @@ int main() {
     Interrupt_Setup(98);
     Interrupt_Setup(95);
 
-    Pin_Interrup_Config(GPIO1, 14,type0);
+    Pin_Interrup_Config(GPIO1,14,type0);
     Pin_Interrup_Config(GPIO1,15,type0);
-    Pin_Interrup_Config(GPIO1, 16,type0);
-    Pin_Interrup_Config(GPIO1, 17,type0); // tipo A = type0 B = type1
-    Pin_Interrup_Config(GPIO1, 19,type0);
+    Pin_Interrup_Config(GPIO1,16,type0);
+    Pin_Interrup_Config(GPIO1,17,type0); // tipo A = type0 B = type1
+    Pin_Interrup_Config(GPIO1,19,type0);
     flag_iniciar = 0;
     while(true) {
-    
         if(verificaStart()){
+            flag_reset_acionado = 0;
             PiscaLed01();
             PiscaLed02();
             PiscaLed03();
             PiscaLed04();
             imprimirPontuacao();
-            if(numero_pontos == 4){
-                reset();
-                acionaBuzzer();
-            }
-            else{
-                reset();
-            }
-
-        }
-    
+        }  
+            
     }
     return 0;
 }
-
 
 void PiscaLed01(){
 

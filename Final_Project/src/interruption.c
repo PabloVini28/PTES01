@@ -1,6 +1,8 @@
 #include "interruption.h"
 #include "marmota.h"
 
+extern unsigned int numero_pontos;
+
 int Interrupt_Setup(unsigned int inter){
     if(inter < 0 || inter > 127){
         return false;
@@ -32,22 +34,40 @@ void ISR_Handler(void) {
     unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
 
     if (irq_number == 98) {
+    bool penaliza = true;  // Variável para determinar se a pontuação será penalizada
+
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
-        gpioIsrHandler(GPIO1,type0,14);
+        gpioIsrHandler(GPIO1, type0, 14);
         MarmotaAzul();
+        penaliza = false;  // Botão correto, não penalizar
     }
+
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
-        gpioIsrHandler(GPIO1,type0,15);
-        MarmotaAmarela();
+        gpioIsrHandler(GPIO1, type0, 15);
+        MarmotaBranca();
+        penaliza = false;  // Botão correto, não penalizar
     }
+
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
-        gpioIsrHandler(GPIO1,type0,16);
+        gpioIsrHandler(GPIO1, type0, 16);
         MarmotaVerde();
+        penaliza = false;  // Botão correto, não penalizar
     }
+
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
-        gpioIsrHandler(GPIO1,type0,17);
+        gpioIsrHandler(GPIO1, type0, 17);
         MarmotaVermelha();
+        penaliza = false;  // Botão correto, não penalizar
     }
+
+    // Penaliza caso nenhum botão tenha sido pressionado corretamente
+    if (penaliza) {
+        if (numero_pontos > 0) {
+            putCh(UART0, 'X');  // 'X' representando uma penalização
+            numero_pontos--;
+        }
+    }
+    
     if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 18)){
         gpioIsrHandler(GPIO1,type0,18);
         reset();

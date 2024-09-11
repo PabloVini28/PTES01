@@ -5,7 +5,7 @@ void chamaMenuPrincipal();
 void chamaMenuReset();
 void matouMarmotaVerde();
 void matouMarmotaVermelha();
-void matouMarmotaAmarela();
+void matouMarmotaBranca();
 void matouMarmotaAzul();
 
 #endif
