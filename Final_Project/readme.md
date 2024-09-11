@@ -1,4 +1,4 @@
-# SÓ FÉ, SÓ FÉ, SÓ FÉ 🙏🏻
+# Projeto Final da Disciplina de TPSE I - 
 
 ## Developers :👥
 
