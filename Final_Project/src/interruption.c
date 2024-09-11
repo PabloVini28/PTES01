@@ -39,31 +39,29 @@ void ISR_Handler(void) {
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
         gpioIsrHandler(GPIO1, type0, 14);
         MarmotaAzul();
-        penaliza = false;  // Botão correto, não penalizar
+        penaliza = false;  
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
         gpioIsrHandler(GPIO1, type0, 15);
         MarmotaBranca();
-        penaliza = false;  // Botão correto, não penalizar
+        penaliza = false;  
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
         gpioIsrHandler(GPIO1, type0, 16);
         MarmotaVerde();
-        penaliza = false;  // Botão correto, não penalizar
+        penaliza = false;  
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
         gpioIsrHandler(GPIO1, type0, 17);
         MarmotaVermelha();
-        penaliza = false;  // Botão correto, não penalizar
+        penaliza = false;  
     }
 
-    // Penaliza caso nenhum botão tenha sido pressionado corretamente
     if (penaliza) {
         if (numero_pontos > 0) {
-            putCh(UART0, 'X');  // 'X' representando uma penalização
             numero_pontos--;
         }
     }

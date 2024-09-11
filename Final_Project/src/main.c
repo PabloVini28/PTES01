@@ -55,6 +55,7 @@ int main() {
     Pin_Interrup_Config(GPIO1,17,type0); // tipo A = type0 B = type1
     Pin_Interrup_Config(GPIO1,19,type0);
     flag_iniciar = 0;
+    
     while(true) {
         if(verificaStart()){
             flag_reset_acionado = 0;
@@ -93,17 +94,17 @@ void PiscaLed01(){
 void PiscaLed02(){
     
     delay(800, TIMER7);
-    GpioSetPinValue(GPIO1, 28, HIGH);
+    GpioSetPinValue(GPIO2, 1, HIGH);
     delay(800, TIMER7);
-    GpioSetPinValue(GPIO1, 28, LOW);
+    GpioSetPinValue(GPIO2, 1, LOW);
     delay(800, TIMER7);
     GpioSetPinValue(GPIO1, 12, HIGH);
     delay(800, TIMER7);
     GpioSetPinValue(GPIO1, 12, LOW);
     delay(800,TIMER7);
-    GpioSetPinValue(GPIO2,1,HIGH);
+    GpioSetPinValue(GPIO1,28,HIGH);
     delay(800,TIMER7);
-    GpioSetPinValue(GPIO2,1,LOW);
+    GpioSetPinValue(GPIO1,28,LOW);
     delay(800,TIMER7);
     GpioSetPinValue(GPIO2,2,HIGH);
     delay(800,TIMER7);
@@ -114,41 +115,41 @@ void PiscaLed02(){
 void PiscaLed03(){
         
     delay(600, TIMER7);
-    GpioSetPinValue(GPIO1, 28, HIGH);
-    delay(600, TIMER7);
-    GpioSetPinValue(GPIO1, 28, LOW);
-    delay(600, TIMER7);
     GpioSetPinValue(GPIO1, 12, HIGH);
     delay(600, TIMER7);
     GpioSetPinValue(GPIO1, 12, LOW);
+    delay(600, TIMER7);
+    GpioSetPinValue(GPIO2, 2, HIGH);
+    delay(600, TIMER7);
+    GpioSetPinValue(GPIO2, 2, LOW);
     delay(600, TIMER7);
     GpioSetPinValue(GPIO2,1,HIGH);
     delay(600,TIMER7);
     GpioSetPinValue(GPIO2,1,LOW);
     delay(600,TIMER7);
-    GpioSetPinValue(GPIO2,2,HIGH);
+    GpioSetPinValue(GPIO1,28,HIGH);
     delay(600,TIMER7);
-    GpioSetPinValue(GPIO2,2,LOW);
+    GpioSetPinValue(GPIO1,28,LOW);
     delay(600,TIMER7);
 }
 
 void PiscaLed04(){
                 
     delay(400, TIMER7);
-    GpioSetPinValue(GPIO1, 28, HIGH); 
+    GpioSetPinValue(GPIO2, 2, HIGH); 
     delay(400, TIMER7);
-    GpioSetPinValue(GPIO1, 28, LOW);
+    GpioSetPinValue(GPIO2, 2, LOW);
     delay(400, TIMER7);
     GpioSetPinValue(GPIO1, 12, HIGH);
     delay(400, TIMER7);
     GpioSetPinValue(GPIO1, 12, LOW);
     delay(400, TIMER7);
+    GpioSetPinValue(GPIO1,28,HIGH);
+    delay(400,TIMER7);
+    GpioSetPinValue(GPIO1,28,LOW);
+    delay(400,TIMER7);
     GpioSetPinValue(GPIO2,1,HIGH);
     delay(400,TIMER7);
     GpioSetPinValue(GPIO2,1,LOW);
-    delay(400,TIMER7);
-    GpioSetPinValue(GPIO2,2,HIGH);
-    delay(400,TIMER7);
-    GpioSetPinValue(GPIO2,2,LOW);
     delay(400,TIMER7);
 }
