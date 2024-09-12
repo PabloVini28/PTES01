@@ -7,5 +7,6 @@ void matouMarmotaVerde();
 void matouMarmotaVermelha();
 void matouMarmotaBranca();
 void matouMarmotaAzul();
+void PerdePonto();
 
 #endif

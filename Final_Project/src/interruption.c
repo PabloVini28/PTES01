@@ -2,6 +2,7 @@
 #include "marmota.h"
 
 extern unsigned int numero_pontos;
+unsigned int penaliza = 1;  // Variável para determinar se a pontuação será penalizada
 
 int Interrupt_Setup(unsigned int inter){
     if(inter < 0 || inter > 127){
@@ -34,35 +35,49 @@ void ISR_Handler(void) {
     unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
 
     if (irq_number == 98) {
-    bool penaliza = true;  // Variável para determinar se a pontuação será penalizada
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
-        gpioIsrHandler(GPIO1, type0, 14);
-        MarmotaAzul();
-        penaliza = false;  
+        if(GpioGetPinValue(GPIO2,2)==HIGH){
+            gpioIsrHandler(GPIO1, type0, 14);
+            MarmotaAzul();
+        }
+        else{
+            numero_pontos--;
+            PerdePonto();
+        }
+        
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
-        gpioIsrHandler(GPIO1, type0, 15);
-        MarmotaBranca();
-        penaliza = false;  
+        if(GpioGetPinValue(GPIO2,1)==HIGH){
+            gpioIsrHandler(GPIO1, type0, 15);
+            MarmotaBranca();
+        }
+        else{
+            numero_pontos--;
+            PerdePonto();
+        }
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
-        gpioIsrHandler(GPIO1, type0, 16);
-        MarmotaVerde();
-        penaliza = false;  
+        if(GpioGetPinValue(GPIO1,12)==HIGH){
+            gpioIsrHandler(GPIO1, type0, 16);
+            MarmotaVermelha();
+        }
+        else{
+            numero_pontos--;
+            PerdePonto();
+        }
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
-        gpioIsrHandler(GPIO1, type0, 17);
-        MarmotaVermelha();
-        penaliza = false;  
-    }
-
-    if (penaliza) {
-        if (numero_pontos > 0) {
+        if(GpioGetPinValue(GPIO1,28)==HIGH){
+            gpioIsrHandler(GPIO1, type0,17);
+            MarmotaVerde();
+        }
+        else{
             numero_pontos--;
+            PerdePonto();
         }
     }
     

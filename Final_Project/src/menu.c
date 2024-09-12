@@ -68,3 +68,12 @@ void PontuacaoMaxima(){
     putString(UART0, "\n\r\n\r",8);
 }
 
+void PerdePonto(){
+    putString(UART0, "\n\r\n\r",8);
+    putString(UART0, "---------------------------------------------------\n\r", 55);
+    putString(UART0, "-                 Que pena!                       -\n\r", 55);
+    putString(UART0, "-               Pontuação -= 1                    -\n\r", 55);
+    putString(UART0, "---------------------------------------------------\n\r", 55);
+    putString(UART0, "\n\r\n\r",8);
+}
+
