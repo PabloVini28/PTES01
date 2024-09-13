@@ -33,7 +33,7 @@ int Interrupt_Setup(unsigned int inter){
 void ISR_Handler(void) {
     
     unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
-
+    putString(UART0, "Interrupção: ", 14);
     if (irq_number == 98) {
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
@@ -90,7 +90,12 @@ void ISR_Handler(void) {
         }
         interrups = 0;
         timerIrqHandler(TIMER7);
-        
+        Pin_Interrup_Config(GPIO1,14,type0);
+        Pin_Interrup_Config(GPIO1,15,type0);
+        Pin_Interrup_Config(GPIO1,16,type0);
+        Pin_Interrup_Config(GPIO1,17,type0);
+        Pin_Interrup_Config(GPIO1,18,type0);
+        Pin_Interrup_Config(GPIO1,19,type0);
         
     }
 
