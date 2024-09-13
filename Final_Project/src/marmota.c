@@ -1,7 +1,7 @@
 #include "marmota.h"
 #include "uart.h"
 
-extern unsigned int numero_pontos;
+
 extern unsigned int flag_iniciar;
 unsigned int flag_reset = 0;
 extern unsigned int flag_reset_acionado;
@@ -96,4 +96,11 @@ void acionaBuzzer(){
     GpioSetPinValue(GPIO1, 13, HIGH);
     for(int i = 0; i < 100000000; i++);
     GpioSetPinValue(GPIO1, 13, LOW);
+}
+
+void decrementa_ponto(){
+    if (numero_pontos > 0)
+    {
+        numero_pontos--;
+    }    
 }

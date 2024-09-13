@@ -258,6 +258,10 @@ void Debounce(gpioMod mod){
         break;
     case GPIO1:
         HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) &= (0x3f<<14); // 0011 1111
+        HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<16);
+        HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<17);
+        HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<18);
+        HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<19);
         break;   
     case GPIO2:
         HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<16);

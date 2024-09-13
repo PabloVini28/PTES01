@@ -40,7 +40,7 @@ int main() {
     Init_pin_gpio(GPIO1,16,INPUT); //p9 ; 15 verde
     Init_pin_gpio(GPIO1,17, INPUT); //p9 ; 23  marmota vermelha
     Init_pin_gpio(GPIO1,18,INPUT); //p9 ; 14  reset
-    //Init_pin_gpio(GPIO1,19,INPUT); //p9 ; 16 start
+    Init_pin_gpio(GPIO1,19,INPUT); //p9 ; 16 start
 
     Debounce(GPIO1);
 
@@ -72,7 +72,7 @@ int main() {
 
 void PiscaLed01(){
 
-    delay(1000, TIMER7);
+    
     GpioSetPinValue(GPIO1, 28, HIGH);
     delay(1000, TIMER7);
     GpioSetPinValue(GPIO1, 28, LOW);

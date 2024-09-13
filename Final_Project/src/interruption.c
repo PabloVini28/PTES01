@@ -1,9 +1,9 @@
 #include "interruption.h"
 #include "marmota.h"
+#include "menu.h"
 
-extern unsigned int numero_pontos;
 unsigned int penaliza = 1;  // Variável para determinar se a pontuação será penalizada
-
+unsigned int interrups = 0; // Variável para determinar se as interrupções
 int Interrupt_Setup(unsigned int inter){
     if(inter < 0 || inter > 127){
         return false;
@@ -38,47 +38,40 @@ void ISR_Handler(void) {
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
         if(GpioGetPinValue(GPIO2,2)==HIGH){
-            gpioIsrHandler(GPIO1, type0, 14);
             MarmotaAzul();
+            interrups++;
         }
-        else{
-            numero_pontos--;
-            PerdePonto();
-        }
+        gpioIsrHandler(GPIO1, type0, 14);
         
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
         if(GpioGetPinValue(GPIO2,1)==HIGH){
-            gpioIsrHandler(GPIO1, type0, 15);
             MarmotaBranca();
+            interrups++;
         }
-        else{
-            numero_pontos--;
-            PerdePonto();
-        }
+        gpioIsrHandler(GPIO1, type0, 15);
+        
     }
-
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
-        if(GpioGetPinValue(GPIO1,12)==HIGH){
-            gpioIsrHandler(GPIO1, type0, 16);
-            MarmotaVermelha();
+        
+        if(GpioGetPinValue(GPIO1,28)==HIGH){
+            putCh(UART0,'b');
+            MarmotaVerde();
+            interrups++;
         }
-        else{
-            numero_pontos--;
-            PerdePonto();
-        }
+        putCh(UART0,'a');
+        gpioIsrHandler(GPIO1, type0, 16);
+        
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
-        if(GpioGetPinValue(GPIO1,28)==HIGH){
-            gpioIsrHandler(GPIO1, type0,17);
-            MarmotaVerde();
+        if(GpioGetPinValue(GPIO1,12)==HIGH){
+            MarmotaVermelha();
+            interrups++;
         }
-        else{
-            numero_pontos--;
-            PerdePonto();
-        }
+        gpioIsrHandler(GPIO1, type0,17);
+        
     }
     
     if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 18)){
@@ -91,7 +84,14 @@ void ISR_Handler(void) {
     }
     }
     if (irq_number == 95) {
+        if(interrups > 1){
+            decrementa_ponto();
+            penalizacao();
+        }
+        interrups = 0;
         timerIrqHandler(TIMER7);
+        
+        
     }
 
     HWREG(INTC_BASE + INTC_CONTROL) = 0x1; // habilita nova interrupção
