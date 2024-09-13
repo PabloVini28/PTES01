@@ -212,11 +212,11 @@ int Pin_Interrup_Config(gpioMod  mod, ucPinNumber pino, GroupInterrup tipo){
     case GPIO1:
         if(tipo == type0){
             HWREG(SOC_GPIO_1_REGS+GPIO_IRQSTATUS_SET_0) |= (1<<pino);
-            HWREG(SOC_GPIO_1_REGS+GPIO_FALLINGDETECT) |= (1<<pino);
+            HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) |= (1<<pino);
 
         }else{
             HWREG(SOC_GPIO_1_REGS+GPIO_IRQSTATUS_SET_1) |= (1<<pino);
-            HWREG(SOC_GPIO_1_REGS+GPIO_FALLINGDETECT) |= (1<<pino);
+            HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) |= (1<<pino);
         }     
         break;
     case GPIO2:
@@ -274,5 +274,30 @@ void Debounce(gpioMod mod){
     default:
         break;
     }
+}
+
+void disableAzul(){
+    HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<14);
+    Pin_Interrup_Config(GPIO1,15,type0);
+    Pin_Interrup_Config(GPIO1,16,type0);
+    Pin_Interrup_Config(GPIO1,17,type0);
+}
+void disableBranca(){
+    HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<15);
+    Pin_Interrup_Config(GPIO1,14,type0);
+    Pin_Interrup_Config(GPIO1,16,type0);
+    Pin_Interrup_Config(GPIO1,17,type0);
+}
+void disableVerde(){
+    HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<16);
+    Pin_Interrup_Config(GPIO1,14,type0);
+    Pin_Interrup_Config(GPIO1,15,type0);
+    Pin_Interrup_Config(GPIO1,17,type0);
+}
+void disableVermelha(){
+    HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<17);
+    Pin_Interrup_Config(GPIO1,14,type0);
+    Pin_Interrup_Config(GPIO1,15,type0);
+    Pin_Interrup_Config(GPIO1,16,type0);
 }
 

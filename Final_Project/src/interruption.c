@@ -3,7 +3,7 @@
 #include "menu.h"
 
 unsigned int penaliza = 1;  // Variável para determinar se a pontuação será penalizada
-unsigned int interrups = 0; // Variável para determinar se as interrupções
+unsigned int interrups; // Variável para determinar se as interrupções
 int Interrupt_Setup(unsigned int inter){
     if(inter < 0 || inter > 127){
         return false;
@@ -31,46 +31,48 @@ int Interrupt_Setup(unsigned int inter){
 }
 
 void ISR_Handler(void) {
-    
     unsigned int irq_number = HWREG(INTC_BASE + INTC_SIR_IRQ) & 0x7f;
-    putString(UART0, "Interrupção: ", 14);
     if (irq_number == 98) {
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
+        
         if(GpioGetPinValue(GPIO2,2)==HIGH){
             MarmotaAzul();
-            interrups++;
         }
+        disableAzul();
         gpioIsrHandler(GPIO1, type0, 14);
-        
+        interrups++;   
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
+        
         if(GpioGetPinValue(GPIO2,1)==HIGH){
             MarmotaBranca();
-            interrups++;
         }
+        disableBranca();
         gpioIsrHandler(GPIO1, type0, 15);
+        interrups++;
         
     }
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
         
         if(GpioGetPinValue(GPIO1,28)==HIGH){
-            putCh(UART0,'b');
             MarmotaVerde();
-            interrups++;
         }
-        putCh(UART0,'a');
+        disableVerde();
         gpioIsrHandler(GPIO1, type0, 16);
+        interrups++;
         
     }
 
     if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
+        
         if(GpioGetPinValue(GPIO1,12)==HIGH){
             MarmotaVermelha();
-            interrups++;
         }
+        disableVermelha();
         gpioIsrHandler(GPIO1, type0,17);
+        interrups++;
         
     }
     
@@ -94,8 +96,6 @@ void ISR_Handler(void) {
         Pin_Interrup_Config(GPIO1,15,type0);
         Pin_Interrup_Config(GPIO1,16,type0);
         Pin_Interrup_Config(GPIO1,17,type0);
-        Pin_Interrup_Config(GPIO1,18,type0);
-        Pin_Interrup_Config(GPIO1,19,type0);
         
     }
 

@@ -72,7 +72,7 @@ int main() {
 
 void PiscaLed01(){
 
-    
+    delay(1000,TIMER7);
     GpioSetPinValue(GPIO1, 28, HIGH);
     delay(1000, TIMER7);
     GpioSetPinValue(GPIO1, 28, LOW);

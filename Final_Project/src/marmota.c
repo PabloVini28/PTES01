@@ -4,6 +4,7 @@
 
 extern unsigned int flag_iniciar;
 unsigned int flag_reset = 0;
+extern unsigned int interrups;
 extern unsigned int flag_reset_acionado;
 
 void str(unsigned int num){
@@ -20,6 +21,7 @@ void start(){
     chamaMenuPrincipal();
     flag_iniciar = 1;
     flag_reset = 0;
+    interrups = 0;
 }
 
 void reset(){
@@ -34,6 +36,7 @@ void reset(){
         flag_iniciar = 0;
         flag_reset = 1;
         flag_reset_acionado = 1;
+        interrups = 0;
     }
 }
 
@@ -59,57 +62,39 @@ unsigned int verificaStart(){
 
 void MarmotaVerde(){
    
-    if(GpioGetPinValue(GPIO1,28) == HIGH){
-        HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<16);
-        Pin_Interrup_Config(GPIO1,14,type0);
-        Pin_Interrup_Config(GPIO1,15,type0);
-        Pin_Interrup_Config(GPIO1,17,type0);
+    //if(GpioGetPinValue(GPIO1,28) == HIGH){
         
             GpioSetPinValue(GPIO1,28,LOW);
             matouMarmotaVerde();
             numero_pontos++;
-    }
+    //}
     
 }
 
 void MarmotaVermelha(){
-        if(GpioGetPinValue(GPIO1,12) == HIGH){
-            HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<17);
-            Pin_Interrup_Config(GPIO1,14,type0);
-            Pin_Interrup_Config(GPIO1,15,type0);
-            Pin_Interrup_Config(GPIO1,16,type0);
+        //if(GpioGetPinValue(GPIO1,12) == HIGH){
 
             GpioSetPinValue(GPIO1,12,LOW);
             matouMarmotaVermelha();
             numero_pontos++;
-        }
+        //}
     
 }
 
 void MarmotaBranca(){
-    if(GpioGetPinValue(GPIO2,1) == HIGH){
-        HWREG(SOC_GPIO_1_REGS+GPIO_FALLINGDETECT) &= ~(1<<15);
-        Pin_Interrup_Config(GPIO1,14,type0);
-        Pin_Interrup_Config(GPIO1,16,type0);
-        Pin_Interrup_Config(GPIO1,17,type0);
-        Pin_Interrup_Config(GPIO1,18,type0);
-        Pin_Interrup_Config(GPIO1,19,type0);
+    //if(GpioGetPinValue(GPIO2,1) == HIGH){
         GpioSetPinValue(GPIO2,1,LOW);
         matouMarmotaBranca();
         numero_pontos++;
-    }
+    //}
 }
 
 void MarmotaAzul(){
-    if(GpioGetPinValue(GPIO2,2) == HIGH){
-        HWREG(SOC_GPIO_2_REGS+GPIO_RISINGDETECT) &= ~(1<<14);
-        Pin_Interrup_Config(GPIO1,15,type0);
-        Pin_Interrup_Config(GPIO1,16,type0);
-        Pin_Interrup_Config(GPIO1,17,type0);
+    //if(GpioGetPinValue(GPIO2,2) == HIGH){
         GpioSetPinValue(GPIO2,2,LOW);
         matouMarmotaAzul();
         numero_pontos++;
-    }
+    //}
 }
 
 void acionaBuzzer(){

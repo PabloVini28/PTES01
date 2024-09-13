@@ -120,6 +120,10 @@ unsigned int GpioGetPinValue(gpioMod , ucPinNumber);
 int gpioIsrHandler(gpioMod , GroupInterrup , ucPinNumber);
 int Pin_Interrup_Config(gpioMod , ucPinNumber , GroupInterrup);
 void Debounce(gpioMod);
+void disableAzul();
+void disableBranca();
+void disableVerde();
+void disableVermelha();
 
 /*-----------------------------------------------------------------------------
  *  Function prototype
