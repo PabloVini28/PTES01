@@ -8,7 +8,7 @@
 - Handling **GPIOs** (both input and output) for controlling and reading digital signals
 - Configuring and utilizing **Timers** for creating delays, time tracking, and event scheduling
 - Implementing **UART** communication for serial data transfer between devices
-- Managing **interrupts** to handle asynchronous events efficiently in real-time applications
+- Managing **Interrupts** to handle asynchronous events efficiently in real-time applications
 
     
 ## Board used during the course :🧑‍💻
