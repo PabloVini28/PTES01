@@ -42,8 +42,6 @@ int main() {
     Init_pin_gpio(GPIO1,18,INPUT); //p9 ; 14  reset
     Init_pin_gpio(GPIO1,19,INPUT); //p9 ; 16 start
 
-    //Debounce(GPIO1);
-
     timerSetup(TIMER7);
 
     Interrupt_Setup(98);

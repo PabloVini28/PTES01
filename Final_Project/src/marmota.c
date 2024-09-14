@@ -4,7 +4,7 @@
 
 extern unsigned int flag_iniciar;
 unsigned int flag_reset = 0;
-extern unsigned int interrups;
+extern unsigned int interrupts;
 extern unsigned int flag_reset_acionado;
 
 void str(unsigned int num){
@@ -21,7 +21,7 @@ void start(){
     chamaMenuPrincipal();
     flag_iniciar = 1;
     flag_reset = 0;
-    interrups = 0;
+    interrupts = 0;
 }
 
 void reset(){
@@ -36,7 +36,7 @@ void reset(){
         flag_iniciar = 0;
         flag_reset = 1;
         flag_reset_acionado = 1;
-        interrups = 0;
+        interrupts = 0;
     }
 }
 

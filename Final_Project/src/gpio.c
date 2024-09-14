@@ -1,5 +1,8 @@
 #include "gpio.h"
 #include "clock_module.h"
+#include "interruption.h"
+#include "marmota.h"
+unsigned int interrupts; 
 
 int Init_module_gpio(gpioMod mod){
 
@@ -246,35 +249,6 @@ int Pin_Interrup_Config(gpioMod  mod, ucPinNumber pino, GroupInterrup tipo){
     
 }
 
-void Debounce(gpioMod mod){
- 
-    switch (mod)
-    {
-    case GPIO0:
-        HWREG(SOC_GPIO_0_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<16);
-        HWREG(SOC_GPIO_0_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<17);
-        HWREG(SOC_GPIO_0_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<18);
-        HWREG(SOC_GPIO_0_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<19);
-        break;
-    case GPIO1:
-        HWREG(SOC_GPIO_1_REGS+GPIO_DEBOUNCENABLE) &= (0x3f<<14); // 0011 1111
-        break;   
-    case GPIO2:
-        HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<16);
-        HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<17);
-        HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<18);
-        HWREG(SOC_GPIO_2_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<19);
-        break;
-    case GPIO3:
-        HWREG(SOC_GPIO_3_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<16);
-        HWREG(SOC_GPIO_3_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<17);
-        HWREG(SOC_GPIO_3_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<18);
-        HWREG(SOC_GPIO_3_REGS+GPIO_DEBOUNCENABLE) &= (0xf<<19);
-        break;    
-    default:
-        break;
-    }
-}
 
 void disableAzul(){
     HWREG(SOC_GPIO_1_REGS+GPIO_RISINGDETECT) &= ~(1<<14);
@@ -301,3 +275,55 @@ void disableVermelha(){
     Pin_Interrup_Config(GPIO1,16,type0);
 }
 
+void gpioHandler(){
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 14)) {
+        
+        if(GpioGetPinValue(GPIO2,2)==HIGH){
+            MarmotaAzul();
+        }
+        disableAzul();
+        gpioIsrHandler(GPIO1, type0, 14);
+        interrupts++;   
+    }
+
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 15)) {
+        
+        if(GpioGetPinValue(GPIO2,1)==HIGH){
+            MarmotaBranca();
+        }
+        disableBranca();
+        gpioIsrHandler(GPIO1, type0, 15);
+        interrupts++;
+        
+    }
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 16)) {
+        
+        if(GpioGetPinValue(GPIO1,28)==HIGH){
+            MarmotaVerde();
+        }
+        disableVerde();
+        gpioIsrHandler(GPIO1, type0, 16);
+        interrupts++;
+        
+    }
+
+    if (HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 17)) {
+        
+        if(GpioGetPinValue(GPIO1,12)==HIGH){
+            MarmotaVermelha();
+        }
+        disableVermelha();
+        gpioIsrHandler(GPIO1, type0,17);
+        interrupts++;
+        
+    }
+    
+    if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 18)){
+        gpioIsrHandler(GPIO1,type0,18);
+        reset();
+    }
+    if(HWREG(SOC_GPIO_1_REGS + GPIO_IRQSTATUS_RAW_0) & (1 << 19)){  
+        gpioIsrHandler(GPIO1,type0,19);
+        start();
+    }
+}

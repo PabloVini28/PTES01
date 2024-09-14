@@ -124,6 +124,7 @@ void disableAzul();
 void disableBranca();
 void disableVerde();
 void disableVermelha();
+void gpioHandler();
 
 /*-----------------------------------------------------------------------------
  *  Function prototype

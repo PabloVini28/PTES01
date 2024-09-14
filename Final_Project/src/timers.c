@@ -1,9 +1,12 @@
 #include "timers.h"
 #include "gpio.h"
+#include "menu.h"
+#include "marmota.h"
 #include "interruption.h"
 
 bool flag_timer;
 extern unsigned int flag_reset;
+extern unsigned int interrupts;
 #define DELAY_USE_INTERRUPT 1
 
 void DMTimerWaitForWrite(unsigned int value,Timer timer){
@@ -377,4 +380,17 @@ void disableWdt(void) {
 
     HWREG(WDT_WSPR) = 0x5555;
     while((HWREG(WDT_WWPS) & (1<<4)));
+}
+
+void timerHandler(){
+    if(interrupts > 1){
+            decrementa_ponto();
+            penalizacao();
+        }
+        interrupts = 0;
+        timerIrqHandler(TIMER7);
+        Pin_Interrup_Config(GPIO1,14,type0);
+        Pin_Interrup_Config(GPIO1,15,type0);
+        Pin_Interrup_Config(GPIO1,16,type0);
+        Pin_Interrup_Config(GPIO1,17,type0);
 }
