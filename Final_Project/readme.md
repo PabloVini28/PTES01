@@ -6,7 +6,7 @@
   - ### David Silva Fernandes de Oliveira [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sfoDavid)
 
 ## Setup Components 💡
-For our final project, we developed a mini-game called "Jogo da Marmota" (similar to Whack-a-Mole) as a bare-metal application. We used various electronic components, such as LEDs, buttons, protoboard, one active buzzer and jumpers. The embedded system was implemented on a BeagleBone Black board, and the project was enclosed in a small pressed wood box.
+For our final project, we developed a mini-game called "Jogo da Marmota" as a bare-metal application. We used various electronic components, such as LEDs, buttons, protoboard, one active buzzer and jumpers. The embedded system was implemented on a BeagleBone Black board, and the project was enclosed in a small pressed wood box.
 
 ## Setup Configurations ⚙️
 
