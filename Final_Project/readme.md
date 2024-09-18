@@ -1,6 +1,6 @@
 # Embbeded Systems I Final Project - 
 
-## Developers :👥
+## Developers 👥
 
   - ### Pablo Vinícios da S.Araújo [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PabloVini28)
   - ### David Silva Fernandes de Oliveira [![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sfoDavid)
@@ -20,16 +20,26 @@ For our final project, we developed a mini-game called "Jogo da Marmota" (simila
   - Press the start button to begin the game.
 - During gameplay, four random sequences will cause the LEDs to blink. If you press the correct button in sequence, the buzzer will sound for one second.
 
-Rules:
+## Rules 📋
 
    - If you press more than one button at a time, you will lose one point.
    - The maximum score is 16 points.
    - The minimum score is 0 points.
    - You can reset the game at any time.
 
-Note:
+## Note 📌
 
   - GPIO input interrupts are disabled in real-time during the game.
+    
+## Components 🔋
+| Item               | Quantity  | Unit Price | Total Price |
+|--------------------|-----------|------------|-------------|
+| LEDs               | 4 units   | R$ 1.00    | R$ 4.00     |
+| Buttons            | 6 units   | R$ 4.50    | R$ 27.00    |
+| Buzzer             | 1 unit    | R$ 5.00    | R$ 5.00     |
+| Protoboard         | 1 unit    | R$ 16.00   | R$ 16.00    |
+| Prototype Box      | 1 unit    | R$ 9.30    | R$ 9.30     |
+| Jumpers            |           |            |             |
 
 ## Board used during the project :🧑‍💻
 
