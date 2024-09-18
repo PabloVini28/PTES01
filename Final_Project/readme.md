@@ -34,7 +34,7 @@ For our final project, we developed a mini-game called "Jogo da Marmota" as a ba
 ## Components 🔋
 | Item               | Quantity  | Unit Price | Total Price |
 |--------------------|-----------|------------|-------------|
-| LEDs               | 4 units   | R$ 1.00    | R$ 4.00     |
+| LEDs               | 4 units   | R$ 3.50    | R$ 14.00    |
 | Buttons            | 6 units   | R$ 4.50    | R$ 27.00    |
 | Buzzer             | 1 unit    | R$ 5.00    | R$ 5.00     |
 | Protoboard         | 1 unit    | R$ 16.00   | R$ 16.00    |
